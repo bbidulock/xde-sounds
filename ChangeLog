@@ -1,0 +1,43 @@
+# created with git log --stat=76 -M -C -500|fmt -sct -w80
+
+commit 716117ba56d97913787626d99711b84c16d68b53
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue Apr 14 20:25:24 2020 -0600
+
+    added THANKS file
+
+ THANKS | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit 976cd683186ca88cfa7317a70b6232d05b71321b
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue Apr 14 20:24:10 2020 -0600
+
+    Initial commit
+
+ .gitignore                                       |  40 +++++++++
+ Makefile.am                                      |  84 +++++++++++++++++
+ README.md.in                                     |  80 +++++++++++++++++
+ RELEASE.md                                       |  18 ++++
+ TODO                                             |   7 ++
+ autogen.sh                                       |  44 +++++++++
+ configure.ac                                     |  90 +++++++++++++++++++
+ configure.sh                                     |  36 ++++++++
+ dist.sh                                          |   9 ++
+ gennews.sh                                       |  50 +++++++++++
+ rebuild.sh                                       |  11 +++
+ src/Makefile.am                                  |  21 +++++
+ src/sounds/XDE/index.theme                       |   7 ++
+ src/sounds/XDE/stereo/desktop-screen-lock.ogg    | Bin 0 -> 34441 bytes
+ src/sounds/XDE/stereo/desktop-screen-unlock.ogg  | Bin 0 -> 45635 bytes
+ src/sounds/XDE/stereo/desktop-switch-down.ogg    |   1 +
+ src/sounds/XDE/stereo/desktop-switch-left.ogg    |   1 +
+ src/sounds/XDE/stereo/desktop-switch-right.ogg   |   1 +
+ src/sounds/XDE/stereo/desktop-switch-up.ogg      |   1 +
+ src/sounds/XDE/stereo/lid-close.ogg              | Bin 0 -> 6397 bytes
+ src/sounds/XDE/stereo/lid-open.ogg               | Bin 0 -> 23348 bytes
+ src/sounds/XDE/stereo/system-bootup.ogg          | Bin 0 -> 14549 bytes
+ src/sounds/XDE/stereo/system-shutdown-reboot.ogg |   1 +
+ src/sounds/XDE/stereo/system-shutdown.ogg        | Bin 0 -> 14271 bytes
+ src/sounds/XDE/stereo/windowshade.ogg            | Bin 0 -> 6784 bytes
+ 25 files changed, 502 insertions(+)
