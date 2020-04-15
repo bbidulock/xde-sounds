@@ -1,0 +1,7 @@
+[Sound Theme]
+Name=XDE
+Inherits=Smooth
+Directories=stereo
+
+[stereo]
+OutputProfile=stereo
