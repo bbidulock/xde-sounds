@@ -6,16 +6,16 @@ nobase_dist_share_DATA += \
 	sounds/xde/index.theme
 
 nobase_dist_share_DATA += \
-	sounds/xde/stereo/desktop-screen-lock.ogg \
-	sounds/xde/stereo/desktop-screen-unlock.ogg \
-	sounds/xde/stereo/desktop-switch-down.ogg \
-	sounds/xde/stereo/desktop-switch-left.ogg \
-	sounds/xde/stereo/desktop-switch-right.ogg \
-	sounds/xde/stereo/desktop-switch-up.ogg \
-	sounds/xde/stereo/lid-close.ogg \
-	sounds/xde/stereo/lid-open.ogg \
-	sounds/xde/stereo/system-bootup.ogg \
-	sounds/xde/stereo/system-shutdown.ogg \
-	sounds/xde/stereo/system-shutdown-reboot.ogg \
-	sounds/xde/stereo/windowshade.ogg
+	sounds/xde/stereo/desktop-screen-lock.oga \
+	sounds/xde/stereo/desktop-screen-unlock.oga \
+	sounds/xde/stereo/desktop-switch-down.oga \
+	sounds/xde/stereo/desktop-switch-left.oga \
+	sounds/xde/stereo/desktop-switch-right.oga \
+	sounds/xde/stereo/desktop-switch-up.oga \
+	sounds/xde/stereo/lid-close.oga \
+	sounds/xde/stereo/lid-open.oga \
+	sounds/xde/stereo/system-bootup.oga \
+	sounds/xde/stereo/system-shutdown.oga \
+	sounds/xde/stereo/system-shutdown-reboot.oga \
+	sounds/xde/stereo/windowshade.oga
 
