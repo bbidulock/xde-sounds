@@ -1,0 +1,4 @@
+DisplayName=Rear Right
+DisplayName[en]=Rear Right
+DisplayName[en_CA]=Rear Right
+Description=The test sound for identifying the rear-right speaker.  A mono file with a voice saying 'rear right'.

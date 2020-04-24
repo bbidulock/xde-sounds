@@ -1,0 +1,4 @@
+DisplayName=Front Right
+DisplayName[en]=Front Right
+DisplayName[en_CA]=Front Right
+Description=The test sound for identifying the front-right speaker.  A mono file with a voice saying 'front right'.

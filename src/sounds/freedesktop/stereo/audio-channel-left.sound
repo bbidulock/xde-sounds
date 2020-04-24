@@ -1,0 +1,4 @@
+DisplayName=Left
+DisplayName[en]=Left
+DisplayName[en_CA]=Left
+Description=The test sound for identifying the left speaker.  A mono file with a voice saying 'left'.

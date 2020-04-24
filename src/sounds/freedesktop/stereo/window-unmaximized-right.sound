@@ -1,0 +1,2 @@
+DisplayName=Window restored from right.
+Description=The sound used when a window is unmaximized from the right half of the screen.  Falls back to window-unmaximized.

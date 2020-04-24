@@ -1,0 +1,4 @@
+DisplayName=Test Signal
+DisplayName[en]=Test Signal
+DisplayName[en_CA]=Test Signal
+Description=The test sound for testing audio.

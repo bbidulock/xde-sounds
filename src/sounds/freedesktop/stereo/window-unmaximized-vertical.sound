@@ -1,0 +1,2 @@
+DisplayName=Window restored vertically.
+Description=The sound used when a window is unmaximized in the vertical direction only.  Falls back to window-unmaximized.

@@ -1,0 +1,4 @@
+DisplayName=Rear Center
+DisplayName[en]=Rear Center
+DisplayName[en_CA]=Rear Centre
+Description=The test signal for identifying the rear-center speaker.  A mono file with a voice saying 'rear center'.

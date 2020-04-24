@@ -1,0 +1,2 @@
+DisplayName=Window restored from filled.
+Description=The sound used when a window is unmaximized from filling available area.  Falls back to window-unmaximized.

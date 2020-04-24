@@ -1,0 +1,2 @@
+DisplayName=Window floated.
+Description=The sound used when a window is not allowed to float in a tiling layout.  Falls back to window-stick.

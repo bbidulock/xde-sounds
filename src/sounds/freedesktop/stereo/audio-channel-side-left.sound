@@ -1,0 +1,4 @@
+DisplayName=Side Left
+DisplayName[en]=Side Left
+DisplayName[en_CA]=Side Left
+Description=The test sound for identifying the side-left speaker.  A mono file with a voice saying 'side left'.

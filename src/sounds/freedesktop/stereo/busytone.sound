@@ -1,0 +1,2 @@
+DisplayName=Busy Tone
+Description=Common sound used when the phone/voip call is dialed out and the responder is already engaged.  See also phone-outgoing-busy.

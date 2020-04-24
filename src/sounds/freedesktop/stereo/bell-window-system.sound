@@ -1,0 +1,2 @@
+DisplayName=Window System Bell
+Description=The sound to use as a generic bell for X11 and other window systems.

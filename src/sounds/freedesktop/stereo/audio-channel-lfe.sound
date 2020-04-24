@@ -1,0 +1,4 @@
+DisplayName=Subwoofer
+DisplayName[en]=Subwoofer
+DisplayName[en_CA]=Subwoofer
+Description=The test sound for identifying the lfe/subwoofer speaker.  A mono file with a voice saying 'sub-woofer', alternatively a low frequency noise.

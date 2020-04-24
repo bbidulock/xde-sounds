@@ -1,0 +1,4 @@
+DisplayName=Rear Left
+DisplayName[en]=Rear Left
+DisplayName[en_CA]=Rear Left
+Description=The test sound for identifying the rear-left speaker.  A mono file with a voice saying 'rear left'.
