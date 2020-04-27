@@ -1,5 +1,1235 @@
 # created with git log --stat=76 -M -C -500|fmt -sct -w80
 
+commit ada6cd9d925a388c37cfd8137200cb9dd1c78ab2
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Apr 27 09:56:27 2020 -0600
+
+    script for synthesizing voices
+
+ src/sounds/synthesize.sh | 50 ++++++++++++++++++++++++++------------------
+ 1 file changed, 30 insertions(+), 20 deletions(-)
+
+commit 3fd5bfe602d3e4ea28dee367b7b647cc0ecbc21c
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Apr 27 09:56:05 2020 -0600
+
+    add new sounds and themes
+
+ src/Makefile.am | 976 +++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 968 insertions(+), 8 deletions(-)
+
+commit c3c2e8672bf7ca43afd771ec4ae5e24bec6bc111
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Apr 27 09:55:38 2020 -0600
+
+    add documentation
+
+ man/Makefile.am |   23 +
+ man/sound.pod   | 1266 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 1289 insertions(+)
+
+commit c16397c4bd97e3530c7fa3b0e29472f20c3f463c
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Apr 27 09:54:33 2020 -0600
+
+    add xde sound theme sounds
+
+ src/sounds/xde/stereo/DoorClose.oga             | Bin 0 -> 6306 bytes
+ src/sounds/xde/stereo/DoorCreak.oga             | Bin 0 -> 21163 bytes
+ src/sounds/xde/stereo/cardshuffle.oga           | Bin 0 -> 7723 bytes
+ src/sounds/xde/stereo/desktop-screen-lock.oga   | Bin 38911 -> 13 bytes
+ src/sounds/xde/stereo/desktop-screen-unlock.oga | Bin 51170 -> 13 bytes
+ src/sounds/xde/stereo/desktop-switch.oga        |   1 +
+ src/sounds/xde/stereo/doorclose.oga             | Bin 0 -> 20910 bytes
+ src/sounds/xde/stereo/doorcreak.oga             | Bin 0 -> 13162 bytes
+ src/sounds/xde/stereo/ednamodeandguest.oga      | Bin 0 -> 44031 bytes
+ src/sounds/xde/stereo/game-card-shuffle.oga     |   1 +
+ src/sounds/xde/stereo/game-over.oga             |   1 +
+ src/sounds/xde/stereo/gameover.oga              | Bin 0 -> 25754 bytes
+ src/sounds/xde/stereo/neverlookbackdarling.oga  | Bin 0 -> 34968 bytes
+ src/sounds/xde/stereo/shutdown.oga              | Bin 0 -> 14317 bytes
+ src/sounds/xde/stereo/startup.oga               | Bin 0 -> 14448 bytes
+ src/sounds/xde/stereo/system-bootup.oga         | Bin 16039 -> 11 bytes
+ src/sounds/xde/stereo/system-shutdown.oga       | Bin 15887 -> 12 bytes
+ src/sounds/xde/stereo/whoosh.oga                | Bin 0 -> 3429 bytes
+ src/sounds/xde/stereo/whoosh1.oga               | Bin 0 -> 5599 bytes
+ src/sounds/xde/stereo/window-slide.oga          |   1 +
+ 20 files changed, 4 insertions(+)
+
+commit 2a29335d66e725eaa1daa7accf5c9e2fd0a16697
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Apr 27 09:49:16 2020 -0600
+
+    add Incredibles sound files
+
+ .../Incredibles/stereo/alarm-clock-elapsed.oga     | Bin 0 -> 80302 bytes
+ .../stereo/audio-channel-front-center.oga          | Bin 0 -> 9863 bytes
+ .../stereo/audio-channel-front-left.oga            | Bin 0 -> 9110 bytes
+ .../stereo/audio-channel-front-right.oga           | Bin 0 -> 8402 bytes
+ .../Incredibles/stereo/audio-channel-left.oga      | Bin 0 -> 7133 bytes
+ .../Incredibles/stereo/audio-channel-lfe.oga       | Bin 0 -> 8956 bytes
+ .../stereo/audio-channel-rear-center.oga           | Bin 0 -> 10362 bytes
+ .../Incredibles/stereo/audio-channel-rear-left.oga | Bin 0 -> 9424 bytes
+ .../stereo/audio-channel-rear-right.oga            | Bin 0 -> 8861 bytes
+ .../Incredibles/stereo/audio-channel-right.oga     | Bin 0 -> 6725 bytes
+ .../Incredibles/stereo/audio-channel-side-left.oga | Bin 0 -> 9658 bytes
+ .../stereo/audio-channel-side-right.oga            | Bin 0 -> 9242 bytes
+ .../Incredibles/stereo/audio-test-signal.oga       | Bin 0 -> 30284 bytes
+ .../Incredibles/stereo/audio-volume-change.oga     | Bin 0 -> 8766 bytes
+ src/sounds/Incredibles/stereo/battery-caution.oga  | Bin 0 -> 69148 bytes
+ src/sounds/Incredibles/stereo/battery-full.oga     | Bin 0 -> 36220 bytes
+ src/sounds/Incredibles/stereo/battery-low.oga      | Bin 0 -> 181684 bytes
+ src/sounds/Incredibles/stereo/bell-terminal.oga    | Bin 0 -> 5667 bytes
+ .../Incredibles/stereo/bell-window-system.oga      | Bin 0 -> 5477 bytes
+ src/sounds/Incredibles/stereo/bell.oga             | Bin 0 -> 7188 bytes
+ src/sounds/Incredibles/stereo/busytone.oga         | Bin 0 -> 23409 bytes
+ src/sounds/Incredibles/stereo/button-pressed.oga   | Bin 0 -> 6157 bytes
+ src/sounds/Incredibles/stereo/button-released.oga  | Bin 0 -> 5752 bytes
+ .../Incredibles/stereo/button-toggle-off.oga       | Bin 0 -> 11825 bytes
+ src/sounds/Incredibles/stereo/button-toggle-on.oga | Bin 0 -> 12374 bytes
+ src/sounds/Incredibles/stereo/camera-focus.oga     | Bin 0 -> 40744 bytes
+ src/sounds/Incredibles/stereo/camera-shutter.oga   | Bin 0 -> 8103 bytes
+ src/sounds/Incredibles/stereo/complete-copy.oga    | Bin 0 -> 28534 bytes
+ .../Incredibles/stereo/complete-download.oga       | Bin 0 -> 49821 bytes
+ .../Incredibles/stereo/complete-media-burn.oga     | Bin 0 -> 38147 bytes
+ .../Incredibles/stereo/complete-media-rip.oga      | Bin 0 -> 22100 bytes
+ src/sounds/Incredibles/stereo/complete-media.oga   | Bin 0 -> 18106 bytes
+ src/sounds/Incredibles/stereo/complete-print.oga   | Bin 0 -> 25130 bytes
+ src/sounds/Incredibles/stereo/complete-scan.oga    | Bin 0 -> 18106 bytes
+ src/sounds/Incredibles/stereo/complete.oga         | Bin 0 -> 30136 bytes
+ src/sounds/Incredibles/stereo/completion-fail.oga  | Bin 0 -> 7188 bytes
+ .../Incredibles/stereo/completion-partial.oga      | Bin 0 -> 25130 bytes
+ .../Incredibles/stereo/completion-rotation.oga     | Bin 0 -> 14239 bytes
+ .../Incredibles/stereo/completion-success.oga      | Bin 0 -> 22299 bytes
+ src/sounds/Incredibles/stereo/count-down.oga       | Bin 0 -> 24493 bytes
+ src/sounds/Incredibles/stereo/desktop-created.oga  | Bin 0 -> 52892 bytes
+ .../Incredibles/stereo/desktop-destroyed.oga       | Bin 0 -> 47999 bytes
+ .../Incredibles/stereo/desktop-layout-changed.oga  | Bin 0 -> 21925 bytes
+ src/sounds/Incredibles/stereo/desktop-login.oga    | Bin 0 -> 112975 bytes
+ src/sounds/Incredibles/stereo/desktop-logout.oga   | Bin 0 -> 88513 bytes
+ .../Incredibles/stereo/desktop-mode-floating.oga   | Bin 0 -> 22342 bytes
+ .../Incredibles/stereo/desktop-mode-grid.oga       | Bin 0 -> 25674 bytes
+ .../Incredibles/stereo/desktop-mode-monocle.oga    | Bin 0 -> 26310 bytes
+ .../stereo/desktop-mode-tiled-bottom.oga           | Bin 0 -> 19003 bytes
+ .../Incredibles/stereo/desktop-mode-tiled-left.oga | Bin 0 -> 18713 bytes
+ .../stereo/desktop-mode-tiled-right.oga            | Bin 0 -> 18739 bytes
+ .../Incredibles/stereo/desktop-mode-tiled-top.oga  | Bin 0 -> 18762 bytes
+ .../Incredibles/stereo/desktop-mode-tiled.oga      | Bin 0 -> 18996 bytes
+ src/sounds/Incredibles/stereo/desktop-mode.oga     |   1 +
+ .../Incredibles/stereo/desktop-screen-lock.oga     | Bin 0 -> 50641 bytes
+ .../Incredibles/stereo/desktop-screen-unlock.oga   | Bin 0 -> 44032 bytes
+ .../stereo/desktop-session-checkpoint.oga          | Bin 0 -> 55913 bytes
+ .../Incredibles/stereo/desktop-session-create.oga  | Bin 0 -> 82581 bytes
+ .../stereo/desktop-session-restore-failed.oga      | Bin 0 -> 42304 bytes
+ .../Incredibles/stereo/desktop-session-restore.oga | Bin 0 -> 32739 bytes
+ .../stereo/desktop-session-save-failed.oga         | Bin 0 -> 36220 bytes
+ .../Incredibles/stereo/desktop-session-save.oga    | Bin 0 -> 32293 bytes
+ .../Incredibles/stereo/desktop-showing-hideall.oga | Bin 0 -> 65796 bytes
+ .../Incredibles/stereo/desktop-showing-showall.oga | Bin 0 -> 65400 bytes
+ src/sounds/Incredibles/stereo/desktop-showing.oga  |   1 +
+ .../Incredibles/stereo/desktop-switch-down.oga     |   1 +
+ .../Incredibles/stereo/desktop-switch-left-up.oga  | Bin 0 -> 15745 bytes
+ .../Incredibles/stereo/desktop-switch-left.oga     | Bin 0 -> 15817 bytes
+ .../stereo/desktop-switch-right-down.oga           | Bin 0 -> 15686 bytes
+ .../Incredibles/stereo/desktop-switch-right.oga    | Bin 0 -> 15863 bytes
+ .../Incredibles/stereo/desktop-switch-up.oga       |   1 +
+ src/sounds/Incredibles/stereo/device-added.oga     | Bin 0 -> 32739 bytes
+ src/sounds/Incredibles/stereo/device-removed.oga   | Bin 0 -> 18273 bytes
+ src/sounds/Incredibles/stereo/dialog-cancel.oga    | Bin 0 -> 13409 bytes
+ .../Incredibles/stereo/dialog-error-critical.oga   | Bin 0 -> 58083 bytes
+ .../Incredibles/stereo/dialog-error-serious.oga    | Bin 0 -> 29590 bytes
+ src/sounds/Incredibles/stereo/dialog-error.oga     | Bin 0 -> 35962 bytes
+ .../Incredibles/stereo/dialog-information.oga      | Bin 0 -> 25447 bytes
+ src/sounds/Incredibles/stereo/dialog-ok.oga        | Bin 0 -> 13898 bytes
+ src/sounds/Incredibles/stereo/dialog-question.oga  | Bin 0 -> 14292 bytes
+ src/sounds/Incredibles/stereo/dialog-warning.oga   | Bin 0 -> 26863 bytes
+ src/sounds/Incredibles/stereo/dialtone.oga         | Bin 0 -> 99892 bytes
+ src/sounds/Incredibles/stereo/drag-accept.oga      | Bin 0 -> 11848 bytes
+ src/sounds/Incredibles/stereo/drag-fail.oga        | Bin 0 -> 37194 bytes
+ src/sounds/Incredibles/stereo/drag-start.oga       | Bin 0 -> 11994 bytes
+ src/sounds/Incredibles/stereo/dummy-message.oga    | Bin 0 -> 39035 bytes
+ .../Incredibles/stereo/expander-toggle-off.oga     | Bin 0 -> 14798 bytes
+ .../Incredibles/stereo/expander-toggle-on.oga      | Bin 0 -> 14491 bytes
+ src/sounds/Incredibles/stereo/file-trash.oga       | Bin 0 -> 90175 bytes
+ .../Incredibles/stereo/game-card-shuffle.oga       | Bin 0 -> 21925 bytes
+ .../Incredibles/stereo/game-computer-move.oga      | Bin 0 -> 20612 bytes
+ src/sounds/Incredibles/stereo/game-human-move.oga  | Bin 0 -> 11848 bytes
+ src/sounds/Incredibles/stereo/game-over-loser.oga  | Bin 0 -> 32427 bytes
+ src/sounds/Incredibles/stereo/game-over-winner.oga | Bin 0 -> 34464 bytes
+ src/sounds/Incredibles/stereo/item-deleted.oga     | Bin 0 -> 12374 bytes
+ src/sounds/Incredibles/stereo/item-selected.oga    | Bin 0 -> 14491 bytes
+ src/sounds/Incredibles/stereo/lid-close.oga        | Bin 0 -> 25047 bytes
+ src/sounds/Incredibles/stereo/lid-open.oga         | Bin 0 -> 26091 bytes
+ src/sounds/Incredibles/stereo/link-pressed.oga     | Bin 0 -> 6157 bytes
+ src/sounds/Incredibles/stereo/link-released.oga    | Bin 0 -> 5752 bytes
+ src/sounds/Incredibles/stereo/menu-click.oga       | Bin 0 -> 12374 bytes
+ src/sounds/Incredibles/stereo/menu-popdown.oga     | Bin 0 -> 9087 bytes
+ src/sounds/Incredibles/stereo/menu-popup.oga       | Bin 0 -> 8557 bytes
+ src/sounds/Incredibles/stereo/menu-replace.oga     | Bin 0 -> 18106 bytes
+ .../Incredibles/stereo/message-new-email.oga       | Bin 0 -> 32293 bytes
+ .../Incredibles/stereo/message-new-instant.oga     | Bin 0 -> 21884 bytes
+ .../Incredibles/stereo/message-new-voicemail.oga   |   1 +
+ src/sounds/Incredibles/stereo/message-new.oga      | Bin 0 -> 32293 bytes
+ .../Incredibles/stereo/message-sent-email.oga      | Bin 0 -> 48313 bytes
+ .../Incredibles/stereo/message-sent-instant.oga    | Bin 0 -> 41462 bytes
+ src/sounds/Incredibles/stereo/message.oga          | Bin 0 -> 21884 bytes
+ .../stereo/network-connectivity-error.oga          | Bin 0 -> 46473 bytes
+ .../stereo/network-connectivity-established.oga    | Bin 0 -> 74253 bytes
+ .../stereo/network-connectivity-lost.oga           | Bin 0 -> 64442 bytes
+ src/sounds/Incredibles/stereo/newmail.oga          |   1 +
+ src/sounds/Incredibles/stereo/newmessage.oga       |   1 +
+ .../Incredibles/stereo/notebook-tab-changed.oga    | Bin 0 -> 12374 bytes
+ src/sounds/Incredibles/stereo/phone-failure.oga    | Bin 0 -> 26630 bytes
+ src/sounds/Incredibles/stereo/phone-hangup.oga     | Bin 0 -> 26630 bytes
+ .../Incredibles/stereo/phone-incoming-call.oga     |   1 +
+ .../Incredibles/stereo/phone-outgoing-busy.oga     | Bin 0 -> 23409 bytes
+ .../Incredibles/stereo/phone-outgoing-calling.oga  | Bin 0 -> 48421 bytes
+ src/sounds/Incredibles/stereo/power-plug.oga       | Bin 0 -> 43530 bytes
+ .../stereo/power-unplug-battery-low.oga            | Bin 0 -> 183909 bytes
+ src/sounds/Incredibles/stereo/power-unplug.oga     | Bin 0 -> 37262 bytes
+ src/sounds/Incredibles/stereo/ring.oga             | Bin 0 -> 28571 bytes
+ src/sounds/Incredibles/stereo/screen-brighter.oga  | Bin 0 -> 43401 bytes
+ .../Incredibles/stereo/screen-capture-complete.oga | Bin 0 -> 20612 bytes
+ src/sounds/Incredibles/stereo/screen-capture.oga   | Bin 0 -> 25130 bytes
+ src/sounds/Incredibles/stereo/screen-darker.oga    | Bin 0 -> 26818 bytes
+ src/sounds/Incredibles/stereo/scroll-down-end.oga  | Bin 0 -> 14127 bytes
+ src/sounds/Incredibles/stereo/scroll-down.oga      | Bin 0 -> 10873 bytes
+ src/sounds/Incredibles/stereo/scroll-left-end.oga  | Bin 0 -> 13682 bytes
+ src/sounds/Incredibles/stereo/scroll-left.oga      | Bin 0 -> 10517 bytes
+ src/sounds/Incredibles/stereo/scroll-right-end.oga | Bin 0 -> 14000 bytes
+ src/sounds/Incredibles/stereo/scroll-right.oga     | Bin 0 -> 10509 bytes
+ src/sounds/Incredibles/stereo/scroll-up-end.oga    | Bin 0 -> 13661 bytes
+ src/sounds/Incredibles/stereo/scroll-up.oga        | Bin 0 -> 10776 bytes
+ .../Incredibles/stereo/search-results-empty.oga    | Bin 0 -> 19613 bytes
+ src/sounds/Incredibles/stereo/search-results.oga   | Bin 0 -> 28424 bytes
+ src/sounds/Incredibles/stereo/service-login.oga    | Bin 0 -> 35977 bytes
+ src/sounds/Incredibles/stereo/service-logout.oga   | Bin 0 -> 66443 bytes
+ .../stereo/software-update-available.oga           | Bin 0 -> 53267 bytes
+ .../Incredibles/stereo/software-update-urgent.oga  | Bin 0 -> 49490 bytes
+ src/sounds/Incredibles/stereo/startup.oga          |   1 +
+ src/sounds/Incredibles/stereo/suspend-error.oga    | Bin 0 -> 53448 bytes
+ src/sounds/Incredibles/stereo/suspend-resume.oga   | Bin 0 -> 144447 bytes
+ src/sounds/Incredibles/stereo/suspend-start.oga    | Bin 0 -> 59989 bytes
+ src/sounds/Incredibles/stereo/system-bootup.oga    | Bin 0 -> 88513 bytes
+ src/sounds/Incredibles/stereo/system-ready.oga     | Bin 0 -> 144447 bytes
+ .../Incredibles/stereo/system-shutdown-reboot.oga  |   1 +
+ src/sounds/Incredibles/stereo/system-shutdown.oga  | Bin 0 -> 59989 bytes
+ src/sounds/Incredibles/stereo/test.oga             |   1 +
+ src/sounds/Incredibles/stereo/thermal-caution.oga  | Bin 0 -> 42926 bytes
+ src/sounds/Incredibles/stereo/thermal-cool.oga     | Bin 0 -> 42537 bytes
+ src/sounds/Incredibles/stereo/thermal-hot.oga      | Bin 0 -> 305578 bytes
+ src/sounds/Incredibles/stereo/tooltip-popdown.oga  | Bin 0 -> 9087 bytes
+ src/sounds/Incredibles/stereo/tooltip-popup.oga    | Bin 0 -> 8557 bytes
+ src/sounds/Incredibles/stereo/trash-empty.oga      | Bin 0 -> 55913 bytes
+ src/sounds/Incredibles/stereo/voicemail.oga        | Bin 0 -> 110916 bytes
+ .../Incredibles/stereo/window-attention-active.oga | Bin 0 -> 8766 bytes
+ .../stereo/window-attention-inactive.oga           | Bin 0 -> 5477 bytes
+ src/sounds/Incredibles/stereo/window-attention.oga | Bin 0 -> 5477 bytes
+ .../stereo/window-close-kill-process.oga           | Bin 0 -> 48313 bytes
+ .../stereo/window-close-kill-server.oga            |   1 +
+ .../Incredibles/stereo/window-close-kill.oga       | Bin 0 -> 41462 bytes
+ src/sounds/Incredibles/stereo/window-close.oga     | Bin 0 -> 21403 bytes
+ src/sounds/Incredibles/stereo/window-decorated.oga | Bin 0 -> 43530 bytes
+ .../Incredibles/stereo/window-inactive-click.oga   | Bin 0 -> 7273 bytes
+ .../Incredibles/stereo/window-lower-below.oga      | Bin 0 -> 14127 bytes
+ src/sounds/Incredibles/stereo/window-lower.oga     | Bin 0 -> 10873 bytes
+ .../Incredibles/stereo/window-maximized-filled.oga | Bin 0 -> 23426 bytes
+ .../stereo/window-maximized-fullscreen.oga         | Bin 0 -> 21884 bytes
+ .../stereo/window-maximized-horizontal.oga         | Bin 0 -> 17969 bytes
+ .../Incredibles/stereo/window-maximized-left.oga   | Bin 0 -> 20612 bytes
+ .../Incredibles/stereo/window-maximized-right.oga  | Bin 0 -> 20635 bytes
+ .../stereo/window-maximized-vertical.oga           | Bin 0 -> 21478 bytes
+ src/sounds/Incredibles/stereo/window-maximized.oga | Bin 0 -> 20612 bytes
+ .../Incredibles/stereo/window-minimized-hidden.oga | Bin 0 -> 15161 bytes
+ src/sounds/Incredibles/stereo/window-minimized.oga | Bin 0 -> 21403 bytes
+ .../Incredibles/stereo/window-move-end-attract.oga | Bin 0 -> 10892 bytes
+ .../Incredibles/stereo/window-move-end-repel.oga   | Bin 0 -> 10725 bytes
+ src/sounds/Incredibles/stereo/window-move-end.oga  | Bin 0 -> 14407 bytes
+ .../stereo/window-move-start-unattract.oga         | Bin 0 -> 14108 bytes
+ .../stereo/window-move-start-unrepel.oga           | Bin 0 -> 12626 bytes
+ .../Incredibles/stereo/window-move-start.oga       | Bin 0 -> 10970 bytes
+ src/sounds/Incredibles/stereo/window-new.oga       | Bin 0 -> 25448 bytes
+ src/sounds/Incredibles/stereo/window-ping.oga      | Bin 0 -> 19984 bytes
+ src/sounds/Incredibles/stereo/window-question.oga  | Bin 0 -> 13078 bytes
+ .../Incredibles/stereo/window-raise-above.oga      | Bin 0 -> 13661 bytes
+ src/sounds/Incredibles/stereo/window-raise.oga     | Bin 0 -> 10776 bytes
+ .../stereo/window-resize-end-attract.oga           | Bin 0 -> 10892 bytes
+ .../Incredibles/stereo/window-resize-end-repel.oga | Bin 0 -> 10725 bytes
+ .../Incredibles/stereo/window-resize-end.oga       | Bin 0 -> 19258 bytes
+ .../stereo/window-resize-start-unattract.oga       | Bin 0 -> 22686 bytes
+ .../stereo/window-resize-start-unrepel.oga         | Bin 0 -> 17457 bytes
+ .../Incredibles/stereo/window-resize-start.oga     | Bin 0 -> 21403 bytes
+ .../Incredibles/stereo/window-slide-in-taketo.oga  | Bin 0 -> 12362 bytes
+ .../Incredibles/stereo/window-slide-in-unshade.oga | Bin 0 -> 23426 bytes
+ src/sounds/Incredibles/stereo/window-slide-in.oga  | Bin 0 -> 12905 bytes
+ .../Incredibles/stereo/window-slide-out-sendto.oga | Bin 0 -> 14239 bytes
+ .../Incredibles/stereo/window-slide-out-shade.oga  | Bin 0 -> 23223 bytes
+ src/sounds/Incredibles/stereo/window-slide-out.oga | Bin 0 -> 15753 bytes
+ src/sounds/Incredibles/stereo/window-slide.oga     | Bin 0 -> 12905 bytes
+ .../stereo/window-stack-lower-below.oga            |   1 +
+ .../Incredibles/stereo/window-stack-lower.oga      |   1 +
+ .../stereo/window-stack-raise-above.oga            |   1 +
+ .../Incredibles/stereo/window-stack-raise.oga      |   1 +
+ src/sounds/Incredibles/stereo/window-stack.oga     |   1 +
+ .../Incredibles/stereo/window-stick-pinned.oga     | Bin 0 -> 10725 bytes
+ .../Incredibles/stereo/window-stick-unfloat.oga    | Bin 0 -> 19491 bytes
+ src/sounds/Incredibles/stereo/window-stick.oga     | Bin 0 -> 21646 bytes
+ .../Incredibles/stereo/window-switch-left.oga      | Bin 0 -> 12179 bytes
+ .../Incredibles/stereo/window-switch-right.oga     | Bin 0 -> 12136 bytes
+ .../Incredibles/stereo/window-switch-zoom.oga      | Bin 0 -> 12374 bytes
+ src/sounds/Incredibles/stereo/window-switch.oga    | Bin 0 -> 11848 bytes
+ .../Incredibles/stereo/window-undecorated.oga      | Bin 0 -> 37262 bytes
+ .../stereo/window-unmaximized-fullscreen.oga       | Bin 0 -> 21643 bytes
+ .../stereo/window-unmaximized-horizontal.oga       | Bin 0 -> 19317 bytes
+ .../Incredibles/stereo/window-unmaximized-left.oga | Bin 0 -> 22717 bytes
+ .../stereo/window-unmaximized-right.oga            | Bin 0 -> 22717 bytes
+ .../stereo/window-unmaximized-unfilled.oga         | Bin 0 -> 23223 bytes
+ .../stereo/window-unmaximized-vertical.oga         | Bin 0 -> 23680 bytes
+ .../Incredibles/stereo/window-unmaximized.oga      | Bin 0 -> 22122 bytes
+ .../stereo/window-unminimized-unhidden.oga         | Bin 0 -> 20609 bytes
+ .../Incredibles/stereo/window-unminimized.oga      | Bin 0 -> 19258 bytes
+ .../Incredibles/stereo/window-unstick-float.oga    | Bin 0 -> 17396 bytes
+ .../Incredibles/stereo/window-unstick-unpinned.oga | Bin 0 -> 10892 bytes
+ src/sounds/Incredibles/stereo/window-unstick.oga   | Bin 0 -> 17998 bytes
+ src/sounds/Incredibles/stereo/window-urgent.oga    | Bin 0 -> 48755 bytes
+ src/sounds/Incredibles/stereo/windows-slide.oga    |   1 +
+ .../Incredibles/stereo/workspace-created.oga       |   1 +
+ .../Incredibles/stereo/workspace-destroyed.oga     |   1 +
+ 233 files changed, 20 insertions(+)
+
+commit 8081190a0c51b929e0e028b9377fc24067a96527
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Apr 27 09:48:38 2020 -0600
+
+    add Incredibles theme
+
+ src/sounds/Incredibles/index.theme | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+commit 06edda5560aa5f89e0e72ec775d579fc6d2de6fb
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Apr 27 09:23:41 2020 -0600
+
+    add male speech synthesis files
+
+ src/sounds/flite-M/stereo/alarm-clock-elapsed.oga   | Bin 0 -> 12286 bytes
+ .../flite-M/stereo/audio-channel-front-center.oga   | Bin 0 -> 9907 bytes
+ .../flite-M/stereo/audio-channel-front-left.oga     | Bin 0 -> 10469 bytes
+ .../flite-M/stereo/audio-channel-front-right.oga    | Bin 0 -> 9316 bytes
+ src/sounds/flite-M/stereo/audio-channel-left.oga    | Bin 0 -> 8374 bytes
+ src/sounds/flite-M/stereo/audio-channel-lfe.oga     | Bin 0 -> 8945 bytes
+ .../flite-M/stereo/audio-channel-rear-center.oga    | Bin 0 -> 9240 bytes
+ .../flite-M/stereo/audio-channel-rear-left.oga      | Bin 0 -> 9093 bytes
+ .../flite-M/stereo/audio-channel-rear-right.oga     | Bin 0 -> 8460 bytes
+ src/sounds/flite-M/stereo/audio-channel-right.oga   | Bin 0 -> 7307 bytes
+ .../flite-M/stereo/audio-channel-side-left.oga      | Bin 0 -> 10441 bytes
+ .../flite-M/stereo/audio-channel-side-right.oga     | Bin 0 -> 9585 bytes
+ src/sounds/flite-M/stereo/audio-test-signal.oga     | Bin 0 -> 10406 bytes
+ src/sounds/flite-M/stereo/audio-volume-change.oga   | Bin 0 -> 11376 bytes
+ src/sounds/flite-M/stereo/battery-caution.oga       | Bin 0 -> 17872 bytes
+ src/sounds/flite-M/stereo/battery-full.oga          | Bin 0 -> 13323 bytes
+ src/sounds/flite-M/stereo/battery-low.oga           | Bin 0 -> 20953 bytes
+ src/sounds/flite-M/stereo/bell-terminal.oga         | Bin 0 -> 10031 bytes
+ src/sounds/flite-M/stereo/bell-window-system.oga    | Bin 0 -> 11665 bytes
+ src/sounds/flite-M/stereo/bell.oga                  | Bin 0 -> 7159 bytes
+ src/sounds/flite-M/stereo/busytone.oga              | Bin 0 -> 9900 bytes
+ src/sounds/flite-M/stereo/button-pressed.oga        | Bin 0 -> 10889 bytes
+ src/sounds/flite-M/stereo/button-released.oga       | Bin 0 -> 11322 bytes
+ src/sounds/flite-M/stereo/button-toggle-off.oga     | Bin 0 -> 11351 bytes
+ src/sounds/flite-M/stereo/button-toggle-on.oga      | Bin 0 -> 10932 bytes
+ src/sounds/flite-M/stereo/camera-focus.oga          | Bin 0 -> 11297 bytes
+ src/sounds/flite-M/stereo/camera-shutter.oga        | Bin 0 -> 10017 bytes
+ src/sounds/flite-M/stereo/complete-copy.oga         | Bin 0 -> 12611 bytes
+ src/sounds/flite-M/stereo/complete-download.oga     | Bin 0 -> 12757 bytes
+ src/sounds/flite-M/stereo/complete-media-burn.oga   | Bin 0 -> 17419 bytes
+ src/sounds/flite-M/stereo/complete-media-rip.oga    | Bin 0 -> 17235 bytes
+ src/sounds/flite-M/stereo/complete-media.oga        | Bin 0 -> 19463 bytes
+ src/sounds/flite-M/stereo/complete-print.oga        | Bin 0 -> 12015 bytes
+ src/sounds/flite-M/stereo/complete-scan.oga         | Bin 0 -> 18188 bytes
+ src/sounds/flite-M/stereo/complete.oga              | Bin 0 -> 12140 bytes
+ src/sounds/flite-M/stereo/completion-fail.oga       | Bin 0 -> 20151 bytes
+ src/sounds/flite-M/stereo/completion-partial.oga    | Bin 0 -> 22834 bytes
+ src/sounds/flite-M/stereo/completion-rotation.oga   | Bin 0 -> 25788 bytes
+ src/sounds/flite-M/stereo/completion-success.oga    | Bin 0 -> 19052 bytes
+ src/sounds/flite-M/stereo/count-down.oga            | Bin 0 -> 9274 bytes
+ src/sounds/flite-M/stereo/desktop-created.oga       | Bin 0 -> 12646 bytes
+ src/sounds/flite-M/stereo/desktop-destroyed.oga     | Bin 0 -> 11850 bytes
+ .../flite-M/stereo/desktop-layout-changed.oga       | Bin 0 -> 14715 bytes
+ src/sounds/flite-M/stereo/desktop-login.oga         | Bin 0 -> 19364 bytes
+ src/sounds/flite-M/stereo/desktop-logout.oga        | Bin 0 -> 20364 bytes
+ src/sounds/flite-M/stereo/desktop-mode-floating.oga | Bin 0 -> 11426 bytes
+ src/sounds/flite-M/stereo/desktop-mode-grid.oga     | Bin 0 -> 10189 bytes
+ src/sounds/flite-M/stereo/desktop-mode-monocle.oga  | Bin 0 -> 10817 bytes
+ .../flite-M/stereo/desktop-mode-tiled-bottom.oga    | Bin 0 -> 16335 bytes
+ .../flite-M/stereo/desktop-mode-tiled-left.oga      | Bin 0 -> 16203 bytes
+ .../flite-M/stereo/desktop-mode-tiled-right.oga     | Bin 0 -> 15136 bytes
+ .../flite-M/stereo/desktop-mode-tiled-top.oga       | Bin 0 -> 15482 bytes
+ src/sounds/flite-M/stereo/desktop-mode-tiled.oga    | Bin 0 -> 10773 bytes
+ src/sounds/flite-M/stereo/desktop-mode.oga          | Bin 0 -> 11465 bytes
+ src/sounds/flite-M/stereo/desktop-screen-lock.oga   | Bin 0 -> 11213 bytes
+ src/sounds/flite-M/stereo/desktop-screen-unlock.oga | Bin 0 -> 11247 bytes
+ .../flite-M/stereo/desktop-session-checkpoint.oga   | Bin 0 -> 11872 bytes
+ .../flite-M/stereo/desktop-session-create.oga       | Bin 0 -> 11962 bytes
+ .../stereo/desktop-session-restore-failed.oga       | Bin 0 -> 15028 bytes
+ .../flite-M/stereo/desktop-session-restore.oga      | Bin 0 -> 11423 bytes
+ .../flite-M/stereo/desktop-session-save-failed.oga  | Bin 0 -> 12428 bytes
+ src/sounds/flite-M/stereo/desktop-session-save.oga  | Bin 0 -> 11109 bytes
+ .../flite-M/stereo/desktop-showing-hideall.oga      | Bin 0 -> 11311 bytes
+ .../flite-M/stereo/desktop-showing-showall.oga      | Bin 0 -> 12862 bytes
+ src/sounds/flite-M/stereo/desktop-showing.oga       | Bin 0 -> 11241 bytes
+ src/sounds/flite-M/stereo/desktop-switch-down.oga   | Bin 0 -> 10625 bytes
+ .../flite-M/stereo/desktop-switch-left-up.oga       | Bin 0 -> 10589 bytes
+ src/sounds/flite-M/stereo/desktop-switch-left.oga   | Bin 0 -> 12635 bytes
+ .../flite-M/stereo/desktop-switch-right-down.oga    | Bin 0 -> 10625 bytes
+ src/sounds/flite-M/stereo/desktop-switch-right.oga  | Bin 0 -> 12031 bytes
+ src/sounds/flite-M/stereo/desktop-switch-up.oga     | Bin 0 -> 10589 bytes
+ src/sounds/flite-M/stereo/device-added.oga          | Bin 0 -> 10226 bytes
+ src/sounds/flite-M/stereo/device-removed.oga        | Bin 0 -> 10829 bytes
+ src/sounds/flite-M/stereo/dialog-cancel.oga         | Bin 0 -> 10778 bytes
+ src/sounds/flite-M/stereo/dialog-error-critical.oga | Bin 0 -> 12873 bytes
+ src/sounds/flite-M/stereo/dialog-error-serious.oga  | Bin 0 -> 14792 bytes
+ src/sounds/flite-M/stereo/dialog-error.oga          | Bin 0 -> 9529 bytes
+ src/sounds/flite-M/stereo/dialog-information.oga    | Bin 0 -> 12345 bytes
+ src/sounds/flite-M/stereo/dialog-ok.oga             | Bin 0 -> 11291 bytes
+ src/sounds/flite-M/stereo/dialog-question.oga       | Bin 0 -> 11279 bytes
+ src/sounds/flite-M/stereo/dialog-warning.oga        | Bin 0 -> 10418 bytes
+ src/sounds/flite-M/stereo/dialtone.oga              | Bin 0 -> 9456 bytes
+ src/sounds/flite-M/stereo/drag-accept.oga           | Bin 0 -> 11014 bytes
+ src/sounds/flite-M/stereo/drag-fail.oga             | Bin 0 -> 10038 bytes
+ src/sounds/flite-M/stereo/drag-start.oga            | Bin 0 -> 10405 bytes
+ src/sounds/flite-M/stereo/dummy-message.oga         | Bin 0 -> 9929 bytes
+ src/sounds/flite-M/stereo/expander-toggle-off.oga   | Bin 0 -> 14881 bytes
+ src/sounds/flite-M/stereo/expander-toggle-on.oga    | Bin 0 -> 13538 bytes
+ src/sounds/flite-M/stereo/file-trash.oga            | Bin 0 -> 14346 bytes
+ src/sounds/flite-M/stereo/game-card-shuffle.oga     | Bin 0 -> 9923 bytes
+ src/sounds/flite-M/stereo/game-computer-move.oga    | Bin 0 -> 8934 bytes
+ src/sounds/flite-M/stereo/game-human-move.oga       | Bin 0 -> 8270 bytes
+ src/sounds/flite-M/stereo/game-over-loser.oga       | Bin 0 -> 12900 bytes
+ src/sounds/flite-M/stereo/game-over-winner.oga      | Bin 0 -> 12108 bytes
+ src/sounds/flite-M/stereo/item-deleted.oga          | Bin 0 -> 9974 bytes
+ src/sounds/flite-M/stereo/item-selected.oga         | Bin 0 -> 10451 bytes
+ src/sounds/flite-M/stereo/lid-close.oga             | Bin 0 -> 10045 bytes
+ src/sounds/flite-M/stereo/lid-open.oga              | Bin 0 -> 9384 bytes
+ src/sounds/flite-M/stereo/link-pressed.oga          | Bin 0 -> 10601 bytes
+ src/sounds/flite-M/stereo/link-released.oga         | Bin 0 -> 11503 bytes
+ src/sounds/flite-M/stereo/menu-click.oga            | Bin 0 -> 10995 bytes
+ src/sounds/flite-M/stereo/menu-popdown.oga          | Bin 0 -> 10575 bytes
+ src/sounds/flite-M/stereo/menu-popup.oga            | Bin 0 -> 10522 bytes
+ src/sounds/flite-M/stereo/menu-replace.oga          | Bin 0 -> 11285 bytes
+ src/sounds/flite-M/stereo/message-new-email.oga     | Bin 0 -> 11324 bytes
+ src/sounds/flite-M/stereo/message-new-instant.oga   | Bin 0 -> 11890 bytes
+ src/sounds/flite-M/stereo/message-new-voicemail.oga | Bin 0 -> 12407 bytes
+ src/sounds/flite-M/stereo/message-new.oga           | Bin 0 -> 9116 bytes
+ src/sounds/flite-M/stereo/message-sent-email.oga    | Bin 0 -> 12545 bytes
+ src/sounds/flite-M/stereo/message-sent-instant.oga  | Bin 0 -> 12485 bytes
+ src/sounds/flite-M/stereo/message.oga               | Bin 0 -> 8161 bytes
+ .../flite-M/stereo/network-connectivity-error.oga   | Bin 0 -> 14998 bytes
+ .../stereo/network-connectivity-established.oga     | Bin 0 -> 18141 bytes
+ .../flite-M/stereo/network-connectivity-lost.oga    | Bin 0 -> 14587 bytes
+ src/sounds/flite-M/stereo/newmail.oga               | Bin 0 -> 8422 bytes
+ src/sounds/flite-M/stereo/newmessage.oga            | Bin 0 -> 9116 bytes
+ src/sounds/flite-M/stereo/notebook-tab-changed.oga  | Bin 0 -> 12412 bytes
+ src/sounds/flite-M/stereo/phone-failure.oga         | Bin 0 -> 15593 bytes
+ src/sounds/flite-M/stereo/phone-hangup.oga          | Bin 0 -> 9366 bytes
+ src/sounds/flite-M/stereo/phone-incoming-call.oga   | Bin 0 -> 10567 bytes
+ src/sounds/flite-M/stereo/phone-outgoing-busy.oga   | Bin 0 -> 14137 bytes
+ .../flite-M/stereo/phone-outgoing-calling.oga       | Bin 0 -> 16513 bytes
+ src/sounds/flite-M/stereo/power-plug.oga            | Bin 0 -> 16323 bytes
+ .../flite-M/stereo/power-unplug-battery-low.oga     | Bin 0 -> 25093 bytes
+ src/sounds/flite-M/stereo/power-unplug.oga          | Bin 0 -> 15250 bytes
+ src/sounds/flite-M/stereo/ring.oga                  | Bin 0 -> 6508 bytes
+ src/sounds/flite-M/stereo/screen-brighter.oga       | Bin 0 -> 10464 bytes
+ .../flite-M/stereo/screen-capture-complete.oga      | Bin 0 -> 14160 bytes
+ src/sounds/flite-M/stereo/screen-capture.oga        | Bin 0 -> 16037 bytes
+ src/sounds/flite-M/stereo/screen-darker.oga         | Bin 0 -> 10307 bytes
+ src/sounds/flite-M/stereo/scroll-down-end.oga       | Bin 0 -> 19136 bytes
+ src/sounds/flite-M/stereo/scroll-down.oga           | Bin 0 -> 10173 bytes
+ src/sounds/flite-M/stereo/scroll-left-end.oga       | Bin 0 -> 20718 bytes
+ src/sounds/flite-M/stereo/scroll-left.oga           | Bin 0 -> 13301 bytes
+ src/sounds/flite-M/stereo/scroll-right-end.oga      | Bin 0 -> 19784 bytes
+ src/sounds/flite-M/stereo/scroll-right.oga          | Bin 0 -> 11902 bytes
+ src/sounds/flite-M/stereo/scroll-up-end.oga         | Bin 0 -> 19584 bytes
+ src/sounds/flite-M/stereo/scroll-up.oga             | Bin 0 -> 9759 bytes
+ src/sounds/flite-M/stereo/search-results-empty.oga  | Bin 0 -> 13945 bytes
+ src/sounds/flite-M/stereo/search-results.oga        | Bin 0 -> 12924 bytes
+ src/sounds/flite-M/stereo/service-login.oga         | Bin 0 -> 13898 bytes
+ src/sounds/flite-M/stereo/service-logout.oga        | Bin 0 -> 13517 bytes
+ .../flite-M/stereo/software-update-available.oga    | Bin 0 -> 30162 bytes
+ .../flite-M/stereo/software-update-urgent.oga       | Bin 0 -> 32543 bytes
+ src/sounds/flite-M/stereo/startup.oga               | Bin 0 -> 9658 bytes
+ src/sounds/flite-M/stereo/suspend-error.oga         | Bin 0 -> 13591 bytes
+ src/sounds/flite-M/stereo/suspend-resume.oga        | Bin 0 -> 18826 bytes
+ src/sounds/flite-M/stereo/suspend-start.oga         | Bin 0 -> 12971 bytes
+ src/sounds/flite-M/stereo/system-bootup.oga         | Bin 0 -> 16927 bytes
+ src/sounds/flite-M/stereo/system-ready.oga          | Bin 0 -> 13402 bytes
+ .../flite-M/stereo/system-shutdown-reboot.oga       | Bin 0 -> 17179 bytes
+ src/sounds/flite-M/stereo/system-shutdown.oga       | Bin 0 -> 16464 bytes
+ src/sounds/flite-M/stereo/test.oga                  | Bin 0 -> 8488 bytes
+ src/sounds/flite-M/stereo/thermal-caution.oga       | Bin 0 -> 12198 bytes
+ src/sounds/flite-M/stereo/thermal-cool.oga          | Bin 0 -> 12280 bytes
+ src/sounds/flite-M/stereo/thermal-hot.oga           | Bin 0 -> 22139 bytes
+ src/sounds/flite-M/stereo/tooltip-popdown.oga       | Bin 0 -> 10680 bytes
+ src/sounds/flite-M/stereo/tooltip-popup.oga         | Bin 0 -> 10610 bytes
+ src/sounds/flite-M/stereo/trash-empty.oga           | Bin 0 -> 10688 bytes
+ src/sounds/flite-M/stereo/voicemail.oga             | Bin 0 -> 12462 bytes
+ .../flite-M/stereo/window-attention-active.oga      | Bin 0 -> 17487 bytes
+ .../flite-M/stereo/window-attention-inactive.oga    | Bin 0 -> 17904 bytes
+ src/sounds/flite-M/stereo/window-attention.oga      | Bin 0 -> 15065 bytes
+ .../flite-M/stereo/window-close-kill-process.oga    | Bin 0 -> 19634 bytes
+ .../flite-M/stereo/window-close-kill-server.oga     | Bin 0 -> 12700 bytes
+ src/sounds/flite-M/stereo/window-close-kill.oga     | Bin 0 -> 9948 bytes
+ src/sounds/flite-M/stereo/window-close.oga          | Bin 0 -> 10913 bytes
+ src/sounds/flite-M/stereo/window-decorated.oga      | Bin 0 -> 12124 bytes
+ src/sounds/flite-M/stereo/window-inactive-click.oga | Bin 0 -> 15434 bytes
+ src/sounds/flite-M/stereo/window-lower-below.oga    | Bin 0 -> 17982 bytes
+ src/sounds/flite-M/stereo/window-lower.oga          | Bin 0 -> 9511 bytes
+ .../flite-M/stereo/window-maximized-filled.oga      | Bin 0 -> 15842 bytes
+ .../flite-M/stereo/window-maximized-fullscreen.oga  | Bin 0 -> 12987 bytes
+ .../flite-M/stereo/window-maximized-horizontal.oga  | Bin 0 -> 17730 bytes
+ src/sounds/flite-M/stereo/window-maximized-left.oga | Bin 0 -> 15982 bytes
+ .../flite-M/stereo/window-maximized-right.oga       | Bin 0 -> 15184 bytes
+ .../flite-M/stereo/window-maximized-vertical.oga    | Bin 0 -> 16102 bytes
+ src/sounds/flite-M/stereo/window-maximized.oga      | Bin 0 -> 12485 bytes
+ .../flite-M/stereo/window-minimized-hidden.oga      | Bin 0 -> 9297 bytes
+ src/sounds/flite-M/stereo/window-minimized.oga      | Bin 0 -> 10676 bytes
+ .../flite-M/stereo/window-move-end-attract.oga      | Bin 0 -> 9566 bytes
+ src/sounds/flite-M/stereo/window-move-end-repel.oga | Bin 0 -> 9440 bytes
+ src/sounds/flite-M/stereo/window-move-end.oga       | Bin 0 -> 11417 bytes
+ .../flite-M/stereo/window-move-start-unattract.oga  | Bin 0 -> 12408 bytes
+ .../flite-M/stereo/window-move-start-unrepel.oga    | Bin 0 -> 12197 bytes
+ src/sounds/flite-M/stereo/window-move-start.oga     | Bin 0 -> 12502 bytes
+ src/sounds/flite-M/stereo/window-new.oga            | Bin 0 -> 10761 bytes
+ src/sounds/flite-M/stereo/window-ping.oga           | Bin 0 -> 9964 bytes
+ src/sounds/flite-M/stereo/window-question.oga       | Bin 0 -> 13502 bytes
+ src/sounds/flite-M/stereo/window-raise-above.oga    | Bin 0 -> 18265 bytes
+ src/sounds/flite-M/stereo/window-raise.oga          | Bin 0 -> 10422 bytes
+ .../flite-M/stereo/window-resize-end-attract.oga    | Bin 0 -> 12526 bytes
+ .../flite-M/stereo/window-resize-end-repel.oga      | Bin 0 -> 11763 bytes
+ src/sounds/flite-M/stereo/window-resize-end.oga     | Bin 0 -> 12329 bytes
+ .../stereo/window-resize-start-unattract.oga        | Bin 0 -> 14963 bytes
+ .../flite-M/stereo/window-resize-start-unrepel.oga  | Bin 0 -> 14167 bytes
+ src/sounds/flite-M/stereo/window-resize-start.oga   | Bin 0 -> 13148 bytes
+ .../flite-M/stereo/window-slide-in-taketo.oga       | Bin 0 -> 15833 bytes
+ .../flite-M/stereo/window-slide-in-unshade.oga      | Bin 0 -> 10866 bytes
+ src/sounds/flite-M/stereo/window-slide-in.oga       | Bin 0 -> 11082 bytes
+ .../flite-M/stereo/window-slide-out-sendto.oga      | Bin 0 -> 15160 bytes
+ .../flite-M/stereo/window-slide-out-shade.oga       | Bin 0 -> 10701 bytes
+ src/sounds/flite-M/stereo/window-slide-out.oga      | Bin 0 -> 11607 bytes
+ src/sounds/flite-M/stereo/window-slide.oga          | Bin 0 -> 10587 bytes
+ .../flite-M/stereo/window-stack-lower-below.oga     | Bin 0 -> 17982 bytes
+ src/sounds/flite-M/stereo/window-stack-lower.oga    | Bin 0 -> 9511 bytes
+ .../flite-M/stereo/window-stack-raise-above.oga     | Bin 0 -> 18265 bytes
+ src/sounds/flite-M/stereo/window-stack-raise.oga    | Bin 0 -> 10422 bytes
+ src/sounds/flite-M/stereo/window-stack.oga          | Bin 0 -> 10375 bytes
+ src/sounds/flite-M/stereo/window-stick-pinned.oga   | Bin 0 -> 10033 bytes
+ src/sounds/flite-M/stereo/window-stick-unfloat.oga  | Bin 0 -> 10574 bytes
+ src/sounds/flite-M/stereo/window-stick.oga          | Bin 0 -> 10233 bytes
+ src/sounds/flite-M/stereo/window-switch-left.oga    | Bin 0 -> 12671 bytes
+ src/sounds/flite-M/stereo/window-switch-right.oga   | Bin 0 -> 11964 bytes
+ src/sounds/flite-M/stereo/window-switch-zoom.oga    | Bin 0 -> 10674 bytes
+ src/sounds/flite-M/stereo/window-switch.oga         | Bin 0 -> 11412 bytes
+ src/sounds/flite-M/stereo/window-undecorated.oga    | Bin 0 -> 11970 bytes
+ .../stereo/window-unmaximized-fullscreen.oga        | Bin 0 -> 14996 bytes
+ .../stereo/window-unmaximized-horizontal.oga        | Bin 0 -> 15817 bytes
+ .../flite-M/stereo/window-unmaximized-left.oga      | Bin 0 -> 13643 bytes
+ .../flite-M/stereo/window-unmaximized-right.oga     | Bin 0 -> 13336 bytes
+ .../flite-M/stereo/window-unmaximized-unfilled.oga  | Bin 0 -> 13473 bytes
+ .../flite-M/stereo/window-unmaximized-vertical.oga  | Bin 0 -> 13991 bytes
+ src/sounds/flite-M/stereo/window-unmaximized.oga    | Bin 0 -> 13024 bytes
+ .../flite-M/stereo/window-unminimized-unhidden.oga  | Bin 0 -> 10256 bytes
+ src/sounds/flite-M/stereo/window-unminimized.oga    | Bin 0 -> 11631 bytes
+ src/sounds/flite-M/stereo/window-unstick-float.oga  | Bin 0 -> 10408 bytes
+ .../flite-M/stereo/window-unstick-unpinned.oga      | Bin 0 -> 9618 bytes
+ src/sounds/flite-M/stereo/window-unstick.oga        | Bin 0 -> 10845 bytes
+ src/sounds/flite-M/stereo/window-urgent.oga         | Bin 0 -> 9883 bytes
+ src/sounds/flite-M/stereo/windows-slide.oga         | Bin 0 -> 10664 bytes
+ src/sounds/flite-M/stereo/workspace-created.oga     | Bin 0 -> 13494 bytes
+ src/sounds/flite-M/stereo/workspace-destroyed.oga   | Bin 0 -> 12743 bytes
+ 233 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 1218984d98d5d16dbc38cf92175a792e6655289a
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Apr 27 09:23:11 2020 -0600
+
+    add minor reverberation versions
+
+ src/sounds/flite-F/stereo/alarm-clock-elapsed.ogg   | Bin 0 -> 26135 bytes
+ .../flite-F/stereo/audio-channel-front-center.ogg   | Bin 0 -> 16743 bytes
+ .../flite-F/stereo/audio-channel-front-left.ogg     | Bin 0 -> 15027 bytes
+ .../flite-F/stereo/audio-channel-front-right.ogg    | Bin 0 -> 13834 bytes
+ src/sounds/flite-F/stereo/audio-channel-left.ogg    | Bin 0 -> 11102 bytes
+ src/sounds/flite-F/stereo/audio-channel-lfe.ogg     | Bin 0 -> 15018 bytes
+ .../flite-F/stereo/audio-channel-rear-center.ogg    | Bin 0 -> 16633 bytes
+ .../flite-F/stereo/audio-channel-rear-left.ogg      | Bin 0 -> 15694 bytes
+ .../flite-F/stereo/audio-channel-rear-right.ogg     | Bin 0 -> 15281 bytes
+ src/sounds/flite-F/stereo/audio-channel-right.ogg   | Bin 0 -> 11269 bytes
+ .../flite-F/stereo/audio-channel-side-left.ogg      | Bin 0 -> 16099 bytes
+ .../flite-F/stereo/audio-channel-side-right.ogg     | Bin 0 -> 15644 bytes
+ src/sounds/flite-F/stereo/audio-volume-change.ogg   | Bin 0 -> 28016 bytes
+ src/sounds/flite-F/stereo/battery-caution.ogg       | Bin 0 -> 44332 bytes
+ src/sounds/flite-F/stereo/battery-full.ogg          | Bin 0 -> 34630 bytes
+ src/sounds/flite-F/stereo/battery-low.ogg           | Bin 0 -> 52182 bytes
+ src/sounds/flite-F/stereo/busytone.ogg              | Bin 0 -> 59458 bytes
+ src/sounds/flite-F/stereo/camera-focus.ogg          | Bin 0 -> 22332 bytes
+ src/sounds/flite-F/stereo/camera-shutter.ogg        | Bin 0 -> 18807 bytes
+ src/sounds/flite-F/stereo/complete-copy.ogg         | Bin 0 -> 28486 bytes
+ src/sounds/flite-F/stereo/complete-download.ogg     | Bin 0 -> 29003 bytes
+ src/sounds/flite-F/stereo/complete-media-burn.ogg   | Bin 0 -> 36132 bytes
+ src/sounds/flite-F/stereo/complete-media-rip.ogg    | Bin 0 -> 35842 bytes
+ src/sounds/flite-F/stereo/complete-print.ogg        | Bin 0 -> 26011 bytes
+ src/sounds/flite-F/stereo/complete-scan.ogg         | Bin 0 -> 40278 bytes
+ src/sounds/flite-F/stereo/complete.ogg              | Bin 0 -> 22191 bytes
+ src/sounds/flite-F/stereo/count-down.ogg            | Bin 0 -> 22288 bytes
+ src/sounds/flite-F/stereo/desktop-created.ogg       | Bin 0 -> 30813 bytes
+ src/sounds/flite-F/stereo/desktop-destroyed.ogg     | Bin 0 -> 32089 bytes
+ src/sounds/flite-F/stereo/desktop-login.ogg         | Bin 0 -> 41718 bytes
+ src/sounds/flite-F/stereo/desktop-logout.ogg        | Bin 0 -> 41093 bytes
+ src/sounds/flite-F/stereo/desktop-screen-lock.ogg   | Bin 0 -> 23631 bytes
+ src/sounds/flite-F/stereo/desktop-screen-unlock.ogg | Bin 0 -> 24810 bytes
+ src/sounds/flite-F/stereo/desktop-switch-down.ogg   | Bin 0 -> 26377 bytes
+ .../flite-F/stereo/desktop-switch-left-up.ogg       | Bin 0 -> 25489 bytes
+ src/sounds/flite-F/stereo/desktop-switch-left.ogg   | Bin 0 -> 29270 bytes
+ .../flite-F/stereo/desktop-switch-right-down.ogg    | Bin 0 -> 26173 bytes
+ src/sounds/flite-F/stereo/desktop-switch-right.ogg  | Bin 0 -> 27505 bytes
+ src/sounds/flite-F/stereo/desktop-switch-up.ogg     | Bin 0 -> 25247 bytes
+ src/sounds/flite-F/stereo/device-added.ogg          | Bin 0 -> 24487 bytes
+ src/sounds/flite-F/stereo/device-removed.ogg        | Bin 0 -> 25633 bytes
+ src/sounds/flite-F/stereo/dialog-cancel.ogg         | Bin 0 -> 25000 bytes
+ src/sounds/flite-F/stereo/dialog-error-critical.ogg | Bin 0 -> 27884 bytes
+ src/sounds/flite-F/stereo/dialog-error-serious.ogg  | Bin 0 -> 31513 bytes
+ src/sounds/flite-F/stereo/dialog-error.ogg          | Bin 0 -> 21091 bytes
+ src/sounds/flite-F/stereo/dialog-information.ogg    | Bin 0 -> 27936 bytes
+ src/sounds/flite-F/stereo/dialog-ok.ogg             | Bin 0 -> 26993 bytes
+ src/sounds/flite-F/stereo/dialog-question.ogg       | Bin 0 -> 24399 bytes
+ src/sounds/flite-F/stereo/dialog-warning.ogg        | Bin 0 -> 23233 bytes
+ src/sounds/flite-F/stereo/dialtone.ogg              | Bin 0 -> 67487 bytes
+ src/sounds/flite-F/stereo/dummy-message.ogg         | Bin 0 -> 20933 bytes
+ src/sounds/flite-F/stereo/file-trash.ogg            | Bin 0 -> 37436 bytes
+ src/sounds/flite-F/stereo/game-card-shuffle.ogg     | Bin 0 -> 48051 bytes
+ src/sounds/flite-F/stereo/game-computer-move.ogg    | Bin 0 -> 17882 bytes
+ src/sounds/flite-F/stereo/game-human-move.ogg       | Bin 0 -> 42009 bytes
+ src/sounds/flite-F/stereo/game-over-loser.ogg       | Bin 0 -> 28491 bytes
+ src/sounds/flite-F/stereo/game-over-winner.ogg      | Bin 0 -> 26425 bytes
+ src/sounds/flite-F/stereo/item-deleted.ogg          | Bin 0 -> 19920 bytes
+ src/sounds/flite-F/stereo/item-selected.ogg         | Bin 0 -> 22597 bytes
+ src/sounds/flite-F/stereo/lid-close.ogg             | Bin 0 -> 22177 bytes
+ src/sounds/flite-F/stereo/lid-open.ogg              | Bin 0 -> 21215 bytes
+ src/sounds/flite-F/stereo/message-new-email.ogg     | Bin 0 -> 29131 bytes
+ src/sounds/flite-F/stereo/message-new-instant.ogg   | Bin 0 -> 30069 bytes
+ src/sounds/flite-F/stereo/message-sent-email.ogg    | Bin 0 -> 29648 bytes
+ src/sounds/flite-F/stereo/message-sent-instant.ogg  | Bin 0 -> 31421 bytes
+ src/sounds/flite-F/stereo/message.ogg               | Bin 0 -> 20980 bytes
+ .../flite-F/stereo/network-connectivity-error.ogg   | Bin 0 -> 37452 bytes
+ .../stereo/network-connectivity-established.ogg     | Bin 0 -> 44068 bytes
+ .../flite-F/stereo/network-connectivity-lost.ogg    | Bin 0 -> 37614 bytes
+ src/sounds/flite-F/stereo/newmail.ogg               | Bin 0 -> 21212 bytes
+ src/sounds/flite-F/stereo/newmessage.ogg            | Bin 0 -> 23530 bytes
+ src/sounds/flite-F/stereo/phone-failure.ogg         | Bin 0 -> 45826 bytes
+ src/sounds/flite-F/stereo/phone-hangup.ogg          | Bin 0 -> 23912 bytes
+ src/sounds/flite-F/stereo/phone-incoming-call.ogg   | Bin 0 -> 31036 bytes
+ src/sounds/flite-F/stereo/phone-outgoing-busy.ogg   | Bin 0 -> 41236 bytes
+ .../flite-F/stereo/phone-outgoing-calling.ogg       | Bin 0 -> 44638 bytes
+ src/sounds/flite-F/stereo/power-plug.ogg            | Bin 0 -> 35693 bytes
+ .../flite-F/stereo/power-unplug-battery-low.ogg     | Bin 0 -> 53642 bytes
+ src/sounds/flite-F/stereo/power-unplug.ogg          | Bin 0 -> 36286 bytes
+ src/sounds/flite-F/stereo/ring.ogg                  | Bin 0 -> 40016 bytes
+ .../flite-F/stereo/screen-capture-complete.ogg      | Bin 0 -> 30452 bytes
+ src/sounds/flite-F/stereo/screen-capture.ogg        | Bin 0 -> 34354 bytes
+ src/sounds/flite-F/stereo/search-results-empty.ogg  | Bin 0 -> 36476 bytes
+ src/sounds/flite-F/stereo/search-results.ogg        | Bin 0 -> 30956 bytes
+ src/sounds/flite-F/stereo/service-login.ogg         | Bin 0 -> 31191 bytes
+ src/sounds/flite-F/stereo/service-logout.ogg        | Bin 0 -> 30591 bytes
+ .../flite-F/stereo/software-update-available.ogg    | Bin 0 -> 63810 bytes
+ .../flite-F/stereo/software-update-urgent.ogg       | Bin 0 -> 71087 bytes
+ src/sounds/flite-F/stereo/suspend-error.ogg         | Bin 0 -> 37117 bytes
+ src/sounds/flite-F/stereo/suspend-resume.ogg        | Bin 0 -> 46116 bytes
+ src/sounds/flite-F/stereo/suspend-start.ogg         | Bin 0 -> 32036 bytes
+ src/sounds/flite-F/stereo/system-bootup.ogg         | Bin 0 -> 51241 bytes
+ src/sounds/flite-F/stereo/system-ready.ogg          | Bin 0 -> 45200 bytes
+ .../flite-F/stereo/system-shutdown-reboot.ogg       | Bin 0 -> 74175 bytes
+ src/sounds/flite-F/stereo/system-shutdown.ogg       | Bin 0 -> 73941 bytes
+ src/sounds/flite-F/stereo/trash-empty.ogg           | Bin 0 -> 24895 bytes
+ src/sounds/flite-F/stereo/voicemail.ogg             | Bin 0 -> 26921 bytes
+ src/sounds/flite-F/stereo/workspace-created.ogg     | Bin 0 -> 34173 bytes
+ src/sounds/flite-F/stereo/workspace-destroyed.ogg   | Bin 0 -> 35754 bytes
+ 99 files changed, 0 insertions(+), 0 deletions(-)
+
+commit da80c918c2401ebadb9d1fd2a6619e02882f6a65
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Apr 27 09:22:39 2020 -0600
+
+    add female synthesis files
+
+ src/sounds/flite-F/stereo/alarm-clock-elapsed.oga   | Bin 0 -> 11366 bytes
+ .../flite-F/stereo/audio-channel-front-center.oga   | Bin 0 -> 9863 bytes
+ .../flite-F/stereo/audio-channel-front-left.oga     | Bin 0 -> 9110 bytes
+ .../flite-F/stereo/audio-channel-front-right.oga    | Bin 0 -> 8402 bytes
+ src/sounds/flite-F/stereo/audio-channel-left.oga    | Bin 0 -> 7133 bytes
+ src/sounds/flite-F/stereo/audio-channel-lfe.oga     | Bin 0 -> 8956 bytes
+ .../flite-F/stereo/audio-channel-rear-center.oga    | Bin 0 -> 10362 bytes
+ .../flite-F/stereo/audio-channel-rear-left.oga      | Bin 0 -> 9424 bytes
+ .../flite-F/stereo/audio-channel-rear-right.oga     | Bin 0 -> 8861 bytes
+ src/sounds/flite-F/stereo/audio-channel-right.oga   | Bin 0 -> 6725 bytes
+ .../flite-F/stereo/audio-channel-side-left.oga      | Bin 0 -> 9658 bytes
+ .../flite-F/stereo/audio-channel-side-right.oga     | Bin 0 -> 9242 bytes
+ src/sounds/flite-F/stereo/audio-test-signal.oga     | Bin 0 -> 10093 bytes
+ src/sounds/flite-F/stereo/audio-volume-change.oga   | Bin 0 -> 10863 bytes
+ src/sounds/flite-F/stereo/battery-caution.oga       | Bin 0 -> 15939 bytes
+ src/sounds/flite-F/stereo/battery-full.oga          | Bin 0 -> 13133 bytes
+ src/sounds/flite-F/stereo/battery-low.oga           | Bin 0 -> 19258 bytes
+ src/sounds/flite-F/stereo/bell-terminal.oga         | Bin 0 -> 9510 bytes
+ src/sounds/flite-F/stereo/bell-window-system.oga    | Bin 0 -> 11645 bytes
+ src/sounds/flite-F/stereo/bell.oga                  | Bin 0 -> 7421 bytes
+ src/sounds/flite-F/stereo/busytone.oga              | Bin 0 -> 19278 bytes
+ src/sounds/flite-F/stereo/button-pressed.oga        | Bin 0 -> 9622 bytes
+ src/sounds/flite-F/stereo/button-released.oga       | Bin 0 -> 9317 bytes
+ src/sounds/flite-F/stereo/button-toggle-off.oga     | Bin 0 -> 10073 bytes
+ src/sounds/flite-F/stereo/button-toggle-on.oga      | Bin 0 -> 10545 bytes
+ src/sounds/flite-F/stereo/camera-focus.oga          | Bin 0 -> 9801 bytes
+ src/sounds/flite-F/stereo/camera-shutter.oga        | Bin 0 -> 8390 bytes
+ src/sounds/flite-F/stereo/complete-copy.oga         | Bin 0 -> 12018 bytes
+ src/sounds/flite-F/stereo/complete-download.oga     | Bin 0 -> 12078 bytes
+ src/sounds/flite-F/stereo/complete-media-burn.oga   | Bin 0 -> 15114 bytes
+ src/sounds/flite-F/stereo/complete-media-rip.oga    | Bin 0 -> 15109 bytes
+ src/sounds/flite-F/stereo/complete-media.oga        | Bin 0 -> 16701 bytes
+ src/sounds/flite-F/stereo/complete-print.oga        | Bin 0 -> 11092 bytes
+ src/sounds/flite-F/stereo/complete-scan.oga         | Bin 0 -> 16168 bytes
+ src/sounds/flite-F/stereo/complete.oga              | Bin 0 -> 10029 bytes
+ src/sounds/flite-F/stereo/completion-fail.oga       | Bin 0 -> 19819 bytes
+ src/sounds/flite-F/stereo/completion-partial.oga    | Bin 0 -> 20936 bytes
+ src/sounds/flite-F/stereo/completion-rotation.oga   | Bin 0 -> 22947 bytes
+ src/sounds/flite-F/stereo/completion-success.oga    | Bin 0 -> 18053 bytes
+ src/sounds/flite-F/stereo/count-down.oga            | Bin 0 -> 10700 bytes
+ src/sounds/flite-F/stereo/desktop-created.oga       | Bin 0 -> 11706 bytes
+ src/sounds/flite-F/stereo/desktop-destroyed.oga     | Bin 0 -> 12154 bytes
+ .../flite-F/stereo/desktop-layout-changed.oga       | Bin 0 -> 14040 bytes
+ src/sounds/flite-F/stereo/desktop-login.oga         | Bin 0 -> 17080 bytes
+ src/sounds/flite-F/stereo/desktop-logout.oga        | Bin 0 -> 16858 bytes
+ src/sounds/flite-F/stereo/desktop-mode-floating.oga | Bin 0 -> 10311 bytes
+ src/sounds/flite-F/stereo/desktop-mode-grid.oga     | Bin 0 -> 9450 bytes
+ src/sounds/flite-F/stereo/desktop-mode-monocle.oga  | Bin 0 -> 10711 bytes
+ .../flite-F/stereo/desktop-mode-tiled-bottom.oga    | Bin 0 -> 15020 bytes
+ .../flite-F/stereo/desktop-mode-tiled-left.oga      | Bin 0 -> 15803 bytes
+ .../flite-F/stereo/desktop-mode-tiled-right.oga     | Bin 0 -> 15377 bytes
+ .../flite-F/stereo/desktop-mode-tiled-top.oga       | Bin 0 -> 15455 bytes
+ src/sounds/flite-F/stereo/desktop-mode-tiled.oga    | Bin 0 -> 10011 bytes
+ src/sounds/flite-F/stereo/desktop-mode.oga          | Bin 0 -> 12406 bytes
+ src/sounds/flite-F/stereo/desktop-screen-lock.oga   | Bin 0 -> 10298 bytes
+ src/sounds/flite-F/stereo/desktop-screen-unlock.oga | Bin 0 -> 10790 bytes
+ .../flite-F/stereo/desktop-session-checkpoint.oga   | Bin 0 -> 11146 bytes
+ .../flite-F/stereo/desktop-session-create.oga       | Bin 0 -> 10404 bytes
+ .../stereo/desktop-session-restore-failed.oga       | Bin 0 -> 14574 bytes
+ .../flite-F/stereo/desktop-session-restore.oga      | Bin 0 -> 11194 bytes
+ .../flite-F/stereo/desktop-session-save-failed.oga  | Bin 0 -> 12093 bytes
+ src/sounds/flite-F/stereo/desktop-session-save.oga  | Bin 0 -> 9232 bytes
+ .../flite-F/stereo/desktop-showing-hideall.oga      | Bin 0 -> 11642 bytes
+ .../flite-F/stereo/desktop-showing-showall.oga      | Bin 0 -> 12671 bytes
+ src/sounds/flite-F/stereo/desktop-showing.oga       | Bin 0 -> 11281 bytes
+ src/sounds/flite-F/stereo/desktop-switch-down.oga   | Bin 0 -> 11470 bytes
+ .../flite-F/stereo/desktop-switch-left-up.oga       | Bin 0 -> 11091 bytes
+ src/sounds/flite-F/stereo/desktop-switch-left.oga   | Bin 0 -> 12178 bytes
+ .../flite-F/stereo/desktop-switch-right-down.oga    | Bin 0 -> 11470 bytes
+ src/sounds/flite-F/stereo/desktop-switch-right.oga  | Bin 0 -> 11792 bytes
+ src/sounds/flite-F/stereo/desktop-switch-up.oga     | Bin 0 -> 11091 bytes
+ src/sounds/flite-F/stereo/device-added.oga          | Bin 0 -> 9773 bytes
+ src/sounds/flite-F/stereo/device-removed.oga        | Bin 0 -> 9962 bytes
+ src/sounds/flite-F/stereo/dialog-cancel.oga         | Bin 0 -> 11409 bytes
+ src/sounds/flite-F/stereo/dialog-error-critical.oga | Bin 0 -> 12040 bytes
+ src/sounds/flite-F/stereo/dialog-error-serious.oga  | Bin 0 -> 13039 bytes
+ src/sounds/flite-F/stereo/dialog-error.oga          | Bin 0 -> 9252 bytes
+ src/sounds/flite-F/stereo/dialog-information.oga    | Bin 0 -> 12190 bytes
+ src/sounds/flite-F/stereo/dialog-ok.oga             | Bin 0 -> 11874 bytes
+ src/sounds/flite-F/stereo/dialog-question.oga       | Bin 0 -> 10955 bytes
+ src/sounds/flite-F/stereo/dialog-warning.oga        | Bin 0 -> 10204 bytes
+ src/sounds/flite-F/stereo/dialtone.oga              | Bin 0 -> 22063 bytes
+ src/sounds/flite-F/stereo/drag-accept.oga           | Bin 0 -> 11835 bytes
+ src/sounds/flite-F/stereo/drag-fail.oga             | Bin 0 -> 9314 bytes
+ src/sounds/flite-F/stereo/drag-start.oga            | Bin 0 -> 10294 bytes
+ src/sounds/flite-F/stereo/dummy-message.oga         | Bin 0 -> 9658 bytes
+ src/sounds/flite-F/stereo/expander-toggle-off.oga   | Bin 0 -> 13124 bytes
+ src/sounds/flite-F/stereo/expander-toggle-on.oga    | Bin 0 -> 12084 bytes
+ src/sounds/flite-F/stereo/file-trash.oga            | Bin 0 -> 15282 bytes
+ src/sounds/flite-F/stereo/game-card-shuffle.oga     | Bin 0 -> 19507 bytes
+ src/sounds/flite-F/stereo/game-computer-move.oga    | Bin 0 -> 8228 bytes
+ src/sounds/flite-F/stereo/game-human-move.oga       | Bin 0 -> 17013 bytes
+ src/sounds/flite-F/stereo/game-over-loser.oga       | Bin 0 -> 12330 bytes
+ src/sounds/flite-F/stereo/game-over-winner.oga      | Bin 0 -> 11263 bytes
+ src/sounds/flite-F/stereo/item-deleted.oga          | Bin 0 -> 8946 bytes
+ src/sounds/flite-F/stereo/item-selected.oga         | Bin 0 -> 10057 bytes
+ src/sounds/flite-F/stereo/lid-close.oga             | Bin 0 -> 10189 bytes
+ src/sounds/flite-F/stereo/lid-open.oga              | Bin 0 -> 9730 bytes
+ src/sounds/flite-F/stereo/link-pressed.oga          | Bin 0 -> 9823 bytes
+ src/sounds/flite-F/stereo/link-released.oga         | Bin 0 -> 9268 bytes
+ src/sounds/flite-F/stereo/menu-click.oga            | Bin 0 -> 9622 bytes
+ src/sounds/flite-F/stereo/menu-popdown.oga          | Bin 0 -> 10764 bytes
+ src/sounds/flite-F/stereo/menu-popup.oga            | Bin 0 -> 9900 bytes
+ src/sounds/flite-F/stereo/menu-replace.oga          | Bin 0 -> 10255 bytes
+ src/sounds/flite-F/stereo/message-new-email.oga     | Bin 0 -> 10829 bytes
+ src/sounds/flite-F/stereo/message-new-instant.oga   | Bin 0 -> 11627 bytes
+ src/sounds/flite-F/stereo/message-new-voicemail.oga | Bin 0 -> 11795 bytes
+ src/sounds/flite-F/stereo/message-new.oga           | Bin 0 -> 9431 bytes
+ src/sounds/flite-F/stereo/message-sent-email.oga    | Bin 0 -> 11212 bytes
+ src/sounds/flite-F/stereo/message-sent-instant.oga  | Bin 0 -> 12137 bytes
+ src/sounds/flite-F/stereo/message.oga               | Bin 0 -> 8351 bytes
+ .../flite-F/stereo/network-connectivity-error.oga   | Bin 0 -> 14267 bytes
+ .../stereo/network-connectivity-established.oga     | Bin 0 -> 16347 bytes
+ .../flite-F/stereo/network-connectivity-lost.oga    | Bin 0 -> 14313 bytes
+ src/sounds/flite-F/stereo/newmail.oga               | Bin 0 -> 8530 bytes
+ src/sounds/flite-F/stereo/newmessage.oga            | Bin 0 -> 9431 bytes
+ src/sounds/flite-F/stereo/notebook-tab-changed.oga  | Bin 0 -> 12956 bytes
+ src/sounds/flite-F/stereo/phone-failure.oga         | Bin 0 -> 16294 bytes
+ src/sounds/flite-F/stereo/phone-hangup.oga          | Bin 0 -> 9331 bytes
+ src/sounds/flite-F/stereo/phone-incoming-call.oga   | Bin 0 -> 12249 bytes
+ src/sounds/flite-F/stereo/phone-outgoing-busy.oga   | Bin 0 -> 14836 bytes
+ .../flite-F/stereo/phone-outgoing-calling.oga       | Bin 0 -> 15606 bytes
+ src/sounds/flite-F/stereo/power-plug.oga            | Bin 0 -> 14755 bytes
+ .../flite-F/stereo/power-unplug-battery-low.oga     | Bin 0 -> 21456 bytes
+ src/sounds/flite-F/stereo/power-unplug.oga          | Bin 0 -> 14309 bytes
+ src/sounds/flite-F/stereo/ring.oga                  | Bin 0 -> 14002 bytes
+ src/sounds/flite-F/stereo/screen-brighter.oga       | Bin 0 -> 9823 bytes
+ .../flite-F/stereo/screen-capture-complete.oga      | Bin 0 -> 13149 bytes
+ src/sounds/flite-F/stereo/screen-capture.oga        | Bin 0 -> 14820 bytes
+ src/sounds/flite-F/stereo/screen-darker.oga         | Bin 0 -> 9945 bytes
+ src/sounds/flite-F/stereo/scroll-down-end.oga       | Bin 0 -> 17846 bytes
+ src/sounds/flite-F/stereo/scroll-down.oga           | Bin 0 -> 10545 bytes
+ src/sounds/flite-F/stereo/scroll-left-end.oga       | Bin 0 -> 17848 bytes
+ src/sounds/flite-F/stereo/scroll-left.oga           | Bin 0 -> 11145 bytes
+ src/sounds/flite-F/stereo/scroll-right-end.oga      | Bin 0 -> 18300 bytes
+ src/sounds/flite-F/stereo/scroll-right.oga          | Bin 0 -> 11124 bytes
+ src/sounds/flite-F/stereo/scroll-up-end.oga         | Bin 0 -> 18145 bytes
+ src/sounds/flite-F/stereo/scroll-up.oga             | Bin 0 -> 9682 bytes
+ src/sounds/flite-F/stereo/search-results-empty.oga  | Bin 0 -> 15112 bytes
+ src/sounds/flite-F/stereo/search-results.oga        | Bin 0 -> 13101 bytes
+ src/sounds/flite-F/stereo/service-login.oga         | Bin 0 -> 13195 bytes
+ src/sounds/flite-F/stereo/service-logout.oga        | Bin 0 -> 13097 bytes
+ .../flite-F/stereo/software-update-available.oga    | Bin 0 -> 25354 bytes
+ .../flite-F/stereo/software-update-urgent.oga       | Bin 0 -> 27729 bytes
+ src/sounds/flite-F/stereo/startup.oga               | Bin 0 -> 9600 bytes
+ src/sounds/flite-F/stereo/suspend-error.oga         | Bin 0 -> 13815 bytes
+ src/sounds/flite-F/stereo/suspend-resume.oga        | Bin 0 -> 17347 bytes
+ src/sounds/flite-F/stereo/suspend-start.oga         | Bin 0 -> 12003 bytes
+ src/sounds/flite-F/stereo/system-bootup.oga         | Bin 0 -> 13686 bytes
+ src/sounds/flite-F/stereo/system-ready.oga          | Bin 0 -> 12431 bytes
+ .../flite-F/stereo/system-shutdown-reboot.oga       | Bin 0 -> 13470 bytes
+ src/sounds/flite-F/stereo/system-shutdown.oga       | Bin 0 -> 14382 bytes
+ src/sounds/flite-F/stereo/test.oga                  | Bin 0 -> 7496 bytes
+ src/sounds/flite-F/stereo/thermal-caution.oga       | Bin 0 -> 11560 bytes
+ src/sounds/flite-F/stereo/thermal-cool.oga          | Bin 0 -> 12984 bytes
+ src/sounds/flite-F/stereo/thermal-hot.oga           | Bin 0 -> 18657 bytes
+ src/sounds/flite-F/stereo/tooltip-popdown.oga       | Bin 0 -> 13122 bytes
+ src/sounds/flite-F/stereo/tooltip-popup.oga         | Bin 0 -> 12095 bytes
+ src/sounds/flite-F/stereo/trash-empty.oga           | Bin 0 -> 10843 bytes
+ src/sounds/flite-F/stereo/voicemail.oga             | Bin 0 -> 11609 bytes
+ .../flite-F/stereo/window-attention-active.oga      | Bin 0 -> 15649 bytes
+ .../flite-F/stereo/window-attention-inactive.oga    | Bin 0 -> 16617 bytes
+ src/sounds/flite-F/stereo/window-attention.oga      | Bin 0 -> 13466 bytes
+ .../flite-F/stereo/window-close-kill-process.oga    | Bin 0 -> 17428 bytes
+ .../flite-F/stereo/window-close-kill-server.oga     | Bin 0 -> 11887 bytes
+ src/sounds/flite-F/stereo/window-close-kill.oga     | Bin 0 -> 9527 bytes
+ src/sounds/flite-F/stereo/window-close.oga          | Bin 0 -> 9832 bytes
+ src/sounds/flite-F/stereo/window-decorated.oga      | Bin 0 -> 11043 bytes
+ src/sounds/flite-F/stereo/window-inactive-click.oga | Bin 0 -> 16065 bytes
+ src/sounds/flite-F/stereo/window-lower-below.oga    | Bin 0 -> 17349 bytes
+ src/sounds/flite-F/stereo/window-lower.oga          | Bin 0 -> 9440 bytes
+ .../flite-F/stereo/window-maximized-filled.oga      | Bin 0 -> 14141 bytes
+ .../flite-F/stereo/window-maximized-fullscreen.oga  | Bin 0 -> 11520 bytes
+ .../flite-F/stereo/window-maximized-horizontal.oga  | Bin 0 -> 14877 bytes
+ src/sounds/flite-F/stereo/window-maximized-left.oga | Bin 0 -> 13282 bytes
+ .../flite-F/stereo/window-maximized-right.oga       | Bin 0 -> 12891 bytes
+ .../flite-F/stereo/window-maximized-vertical.oga    | Bin 0 -> 14150 bytes
+ src/sounds/flite-F/stereo/window-maximized.oga      | Bin 0 -> 11302 bytes
+ .../flite-F/stereo/window-minimized-hidden.oga      | Bin 0 -> 8665 bytes
+ src/sounds/flite-F/stereo/window-minimized.oga      | Bin 0 -> 10498 bytes
+ .../flite-F/stereo/window-move-end-attract.oga      | Bin 0 -> 10180 bytes
+ src/sounds/flite-F/stereo/window-move-end-repel.oga | Bin 0 -> 8947 bytes
+ src/sounds/flite-F/stereo/window-move-end.oga       | Bin 0 -> 10805 bytes
+ .../flite-F/stereo/window-move-start-unattract.oga  | Bin 0 -> 12582 bytes
+ .../flite-F/stereo/window-move-start-unrepel.oga    | Bin 0 -> 11992 bytes
+ src/sounds/flite-F/stereo/window-move-start.oga     | Bin 0 -> 11874 bytes
+ src/sounds/flite-F/stereo/window-new.oga            | Bin 0 -> 10659 bytes
+ src/sounds/flite-F/stereo/window-ping.oga           | Bin 0 -> 9581 bytes
+ src/sounds/flite-F/stereo/window-question.oga       | Bin 0 -> 12295 bytes
+ src/sounds/flite-F/stereo/window-raise-above.oga    | Bin 0 -> 16689 bytes
+ src/sounds/flite-F/stereo/window-raise.oga          | Bin 0 -> 9077 bytes
+ .../flite-F/stereo/window-resize-end-attract.oga    | Bin 0 -> 12540 bytes
+ .../flite-F/stereo/window-resize-end-repel.oga      | Bin 0 -> 11110 bytes
+ src/sounds/flite-F/stereo/window-resize-end.oga     | Bin 0 -> 12788 bytes
+ .../stereo/window-resize-start-unattract.oga        | Bin 0 -> 14904 bytes
+ .../flite-F/stereo/window-resize-start-unrepel.oga  | Bin 0 -> 13865 bytes
+ src/sounds/flite-F/stereo/window-resize-start.oga   | Bin 0 -> 13520 bytes
+ .../flite-F/stereo/window-slide-in-taketo.oga       | Bin 0 -> 15491 bytes
+ .../flite-F/stereo/window-slide-in-unshade.oga      | Bin 0 -> 10457 bytes
+ src/sounds/flite-F/stereo/window-slide-in.oga       | Bin 0 -> 10613 bytes
+ .../flite-F/stereo/window-slide-out-sendto.oga      | Bin 0 -> 14289 bytes
+ .../flite-F/stereo/window-slide-out-shade.oga       | Bin 0 -> 9795 bytes
+ src/sounds/flite-F/stereo/window-slide-out.oga      | Bin 0 -> 11019 bytes
+ src/sounds/flite-F/stereo/window-slide.oga          | Bin 0 -> 10540 bytes
+ .../flite-F/stereo/window-stack-lower-below.oga     | Bin 0 -> 17349 bytes
+ src/sounds/flite-F/stereo/window-stack-lower.oga    | Bin 0 -> 9440 bytes
+ .../flite-F/stereo/window-stack-raise-above.oga     | Bin 0 -> 16689 bytes
+ src/sounds/flite-F/stereo/window-stack-raise.oga    | Bin 0 -> 9077 bytes
+ src/sounds/flite-F/stereo/window-stack.oga          | Bin 0 -> 11297 bytes
+ src/sounds/flite-F/stereo/window-stick-pinned.oga   | Bin 0 -> 9366 bytes
+ src/sounds/flite-F/stereo/window-stick-unfloat.oga  | Bin 0 -> 9399 bytes
+ src/sounds/flite-F/stereo/window-stick.oga          | Bin 0 -> 9456 bytes
+ src/sounds/flite-F/stereo/window-switch-left.oga    | Bin 0 -> 11079 bytes
+ src/sounds/flite-F/stereo/window-switch-right.oga   | Bin 0 -> 10182 bytes
+ src/sounds/flite-F/stereo/window-switch-zoom.oga    | Bin 0 -> 9337 bytes
+ src/sounds/flite-F/stereo/window-switch.oga         | Bin 0 -> 9942 bytes
+ src/sounds/flite-F/stereo/window-undecorated.oga    | Bin 0 -> 11644 bytes
+ .../stereo/window-unmaximized-fullscreen.oga        | Bin 0 -> 14020 bytes
+ .../stereo/window-unmaximized-horizontal.oga        | Bin 0 -> 14616 bytes
+ .../flite-F/stereo/window-unmaximized-left.oga      | Bin 0 -> 12524 bytes
+ .../flite-F/stereo/window-unmaximized-right.oga     | Bin 0 -> 11917 bytes
+ .../flite-F/stereo/window-unmaximized-unfilled.oga  | Bin 0 -> 12970 bytes
+ .../flite-F/stereo/window-unmaximized-vertical.oga  | Bin 0 -> 13647 bytes
+ src/sounds/flite-F/stereo/window-unmaximized.oga    | Bin 0 -> 11512 bytes
+ .../flite-F/stereo/window-unminimized-unhidden.oga  | Bin 0 -> 9635 bytes
+ src/sounds/flite-F/stereo/window-unminimized.oga    | Bin 0 -> 11065 bytes
+ src/sounds/flite-F/stereo/window-unstick-float.oga  | Bin 0 -> 9614 bytes
+ .../flite-F/stereo/window-unstick-unpinned.oga      | Bin 0 -> 9584 bytes
+ src/sounds/flite-F/stereo/window-unstick.oga        | Bin 0 -> 10090 bytes
+ src/sounds/flite-F/stereo/window-urgent.oga         | Bin 0 -> 9633 bytes
+ src/sounds/flite-F/stereo/windows-slide.oga         | Bin 0 -> 10423 bytes
+ src/sounds/flite-F/stereo/workspace-created.oga     | Bin 0 -> 12354 bytes
+ src/sounds/flite-F/stereo/workspace-destroyed.oga   | Bin 0 -> 12635 bytes
+ 233 files changed, 0 insertions(+), 0 deletions(-)
+
+commit cbf4b269bea2117c7d7f9ae1108c379412dc15c8
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Apr 27 09:21:20 2020 -0600
+
+    add speech synthesis themes
+
+ src/sounds/flite-F/index.theme | 6 ++++++
+ src/sounds/flite-M/index.theme | 6 ++++++
+ 2 files changed, 12 insertions(+)
+
+commit 220b201745a5ad228b7973df407761adf727d2c7
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Apr 27 09:20:24 2020 -0600
+
+    add new sound data files
+
+ src/sounds/freedesktop/stereo/complete-media-burn.sound         | 2 +-
+ src/sounds/freedesktop/stereo/complete-media.sound              | 2 ++
+ src/sounds/freedesktop/stereo/desktop-mode.sound                | 2 +-
+ src/sounds/freedesktop/stereo/desktop-session-save-failed.sound | 4 ++--
+ src/sounds/freedesktop/stereo/desktop-session-save.sound        | 4 ++--
+ src/sounds/freedesktop/stereo/message-new-voicemail.sound       | 2 ++
+ src/sounds/freedesktop/stereo/message-new.sound                 | 2 ++
+ src/sounds/freedesktop/stereo/screen-brighter.sound             | 2 ++
+ src/sounds/freedesktop/stereo/screen-darker.sound               | 2 ++
+ src/sounds/freedesktop/stereo/thermal-caution.sound             | 2 ++
+ src/sounds/freedesktop/stereo/thermal-cool.sound                | 2 ++
+ src/sounds/freedesktop/stereo/thermal-hot.sound                 | 2 ++
+ src/sounds/freedesktop/stereo/window-close-kill-process.sound   | 2 ++
+ src/sounds/freedesktop/stereo/window-close-kill-server.sound    | 2 ++
+ src/sounds/freedesktop/stereo/window-close-kill.sound           | 2 ++
+ src/sounds/freedesktop/stereo/window-ping.sound                 | 2 ++
+ src/sounds/freedesktop/stereo/window-switch-zoom.sound          | 2 ++
+ 17 files changed, 32 insertions(+), 6 deletions(-)
+
+commit 66aeb507c6a48743d42de04d7effb0a280c79eac
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Fri Apr 24 18:03:18 2020 -0600
+
+    added new non-standard sounds
+
+ src/sounds/freedesktop/stereo/desktop-layout-changed.sound         | 2 ++
+ src/sounds/freedesktop/stereo/desktop-mode-floating.sound          | 2 ++
+ src/sounds/freedesktop/stereo/desktop-mode-grid.sound              | 2 ++
+ src/sounds/freedesktop/stereo/desktop-mode-monocle.sound           | 2 ++
+ src/sounds/freedesktop/stereo/desktop-mode-tiled-bottom.sound      | 2 ++
+ src/sounds/freedesktop/stereo/desktop-mode-tiled-left.sound        | 2 ++
+ src/sounds/freedesktop/stereo/desktop-mode-tiled-right.sound       | 2 ++
+ src/sounds/freedesktop/stereo/desktop-mode-tiled-top.sound         | 2 ++
+ src/sounds/freedesktop/stereo/desktop-mode-tiled.sound             | 2 ++
+ src/sounds/freedesktop/stereo/desktop-mode.sound                   | 2 ++
+ src/sounds/freedesktop/stereo/desktop-session-checkpoint.sound     | 2 ++
+ src/sounds/freedesktop/stereo/desktop-session-create.sound         | 2 ++
+ src/sounds/freedesktop/stereo/desktop-session-restore-failed.sound | 2 ++
+ src/sounds/freedesktop/stereo/desktop-session-restore.sound        | 2 ++
+ src/sounds/freedesktop/stereo/desktop-session-save-failed.sound    | 2 ++
+ src/sounds/freedesktop/stereo/desktop-session-save.sound           | 2 ++
+ src/sounds/freedesktop/stereo/desktop-showing-hideall.sound        | 2 ++
+ src/sounds/freedesktop/stereo/desktop-showing-showall.sound        | 2 ++
+ src/sounds/freedesktop/stereo/desktop-showing.sound                | 2 ++
+ src/sounds/freedesktop/stereo/window-move-end-attract.sound        | 2 ++
+ src/sounds/freedesktop/stereo/window-move-end-repel.sound          | 2 ++
+ src/sounds/freedesktop/stereo/window-move-start-unattract.sound    | 2 ++
+ src/sounds/freedesktop/stereo/window-move-start-unrepel.sound      | 2 ++
+ src/sounds/freedesktop/stereo/window-resize-end-attract.sound      | 2 ++
+ src/sounds/freedesktop/stereo/window-resize-end-repel.sound        | 2 ++
+ src/sounds/freedesktop/stereo/window-resize-start-unattract.sound  | 2 ++
+ src/sounds/freedesktop/stereo/window-resize-start-unrepel.sound    | 2 ++
+ src/sounds/freedesktop/stereo/window-stack-lower-below.sound       | 2 ++
+ src/sounds/freedesktop/stereo/window-stack-lower.sound             | 2 ++
+ src/sounds/freedesktop/stereo/window-stack-raise-above.sound       | 2 ++
+ src/sounds/freedesktop/stereo/window-stack-raise.sound             | 2 ++
+ src/sounds/freedesktop/stereo/window-stack.sound                   | 2 ++
+ 32 files changed, 64 insertions(+)
+
+commit d879f16b00521c6ef2ec71697a823dece5378d98
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Fri Apr 24 17:21:58 2020 -0600
+
+    add sound data for standard and known sounds
+
+ src/sounds/freedesktop/stereo/alarm-clock-elapsed.sound           | 2 ++
+ src/sounds/freedesktop/stereo/audio-channel-front-center.sound    | 4 ++++
+ src/sounds/freedesktop/stereo/audio-channel-front-left.sound      | 4 ++++
+ src/sounds/freedesktop/stereo/audio-channel-front-right.sound     | 4 ++++
+ src/sounds/freedesktop/stereo/audio-channel-left.sound            | 4 ++++
+ src/sounds/freedesktop/stereo/audio-channel-lfe.sound             | 4 ++++
+ src/sounds/freedesktop/stereo/audio-channel-rear-center.sound     | 4 ++++
+ src/sounds/freedesktop/stereo/audio-channel-rear-left.sound       | 4 ++++
+ src/sounds/freedesktop/stereo/audio-channel-rear-right.sound      | 4 ++++
+ src/sounds/freedesktop/stereo/audio-channel-right.sound           | 4 ++++
+ src/sounds/freedesktop/stereo/audio-channel-side-left.sound       | 4 ++++
+ src/sounds/freedesktop/stereo/audio-channel-side-right.sound      | 4 ++++
+ src/sounds/freedesktop/stereo/audio-test-signal.sound             | 4 ++++
+ src/sounds/freedesktop/stereo/audio-volume-change.sound           | 4 ++++
+ src/sounds/freedesktop/stereo/battery-caution.sound               | 2 ++
+ src/sounds/freedesktop/stereo/battery-full.sound                  | 2 ++
+ src/sounds/freedesktop/stereo/battery-low.sound                   | 2 ++
+ src/sounds/freedesktop/stereo/bell-terminal.sound                 | 2 ++
+ src/sounds/freedesktop/stereo/bell-window-system.sound            | 2 ++
+ src/sounds/freedesktop/stereo/bell.sound                          | 2 ++
+ src/sounds/freedesktop/stereo/busytone.sound                      | 2 ++
+ src/sounds/freedesktop/stereo/button-pressed.sound                | 2 ++
+ src/sounds/freedesktop/stereo/button-released.sound               | 2 ++
+ src/sounds/freedesktop/stereo/button-toggle-off.sound             | 2 ++
+ src/sounds/freedesktop/stereo/button-toggle-on.sound              | 2 ++
+ src/sounds/freedesktop/stereo/camera-focus.sound                  | 2 ++
+ src/sounds/freedesktop/stereo/camera-shutter.sound                | 2 ++
+ src/sounds/freedesktop/stereo/complete-copy.sound                 | 2 ++
+ src/sounds/freedesktop/stereo/complete-download.sound             | 2 ++
+ src/sounds/freedesktop/stereo/complete-media-burn.sound           | 2 ++
+ src/sounds/freedesktop/stereo/complete-media-rip.sound            | 2 ++
+ src/sounds/freedesktop/stereo/complete-print.sound                | 2 ++
+ src/sounds/freedesktop/stereo/complete-scan.sound                 | 2 ++
+ src/sounds/freedesktop/stereo/complete.sound                      | 2 ++
+ src/sounds/freedesktop/stereo/completion-fail.sound               | 2 ++
+ src/sounds/freedesktop/stereo/completion-partial.sound            | 2 ++
+ src/sounds/freedesktop/stereo/completion-rotation.sound           | 2 ++
+ src/sounds/freedesktop/stereo/completion-success.sound            | 2 ++
+ src/sounds/freedesktop/stereo/count-down.sound                    | 2 ++
+ src/sounds/freedesktop/stereo/desktop-created.sound               | 2 ++
+ src/sounds/freedesktop/stereo/desktop-destroyed.sound             | 2 ++
+ src/sounds/freedesktop/stereo/desktop-login.sound                 | 2 ++
+ src/sounds/freedesktop/stereo/desktop-logout.sound                | 2 ++
+ src/sounds/freedesktop/stereo/desktop-screen-lock.sound           | 2 ++
+ src/sounds/freedesktop/stereo/desktop-screen-unlock.sound         | 2 ++
+ src/sounds/freedesktop/stereo/desktop-switch-down.sound           | 2 ++
+ src/sounds/freedesktop/stereo/desktop-switch-left-up.sound        | 2 ++
+ src/sounds/freedesktop/stereo/desktop-switch-left.sound           | 2 ++
+ src/sounds/freedesktop/stereo/desktop-switch-right-down.sound     | 2 ++
+ src/sounds/freedesktop/stereo/desktop-switch-right.sound          | 2 ++
+ src/sounds/freedesktop/stereo/desktop-switch-up.sound             | 2 ++
+ src/sounds/freedesktop/stereo/device-added.sound                  | 2 ++
+ src/sounds/freedesktop/stereo/device-removed.sound                | 2 ++
+ src/sounds/freedesktop/stereo/dialog-cancel.sound                 | 2 ++
+ src/sounds/freedesktop/stereo/dialog-error-critical.sound         | 2 ++
+ src/sounds/freedesktop/stereo/dialog-error-serious.sound          | 2 ++
+ src/sounds/freedesktop/stereo/dialog-error.sound                  | 2 ++
+ src/sounds/freedesktop/stereo/dialog-information.sound            | 2 ++
+ src/sounds/freedesktop/stereo/dialog-ok.sound                     | 2 ++
+ src/sounds/freedesktop/stereo/dialog-question.sound               | 2 ++
+ src/sounds/freedesktop/stereo/dialog-warning.sound                | 2 ++
+ src/sounds/freedesktop/stereo/dialtone.sound                      | 2 ++
+ src/sounds/freedesktop/stereo/drag-accept.sound                   | 2 ++
+ src/sounds/freedesktop/stereo/drag-fail.sound                     | 2 ++
+ src/sounds/freedesktop/stereo/drag-start.sound                    | 2 ++
+ src/sounds/freedesktop/stereo/dummy-message.sound                 | 2 ++
+ src/sounds/freedesktop/stereo/expander-toggle-off.sound           | 2 ++
+ src/sounds/freedesktop/stereo/expander-toggle-on.sound            | 2 ++
+ src/sounds/freedesktop/stereo/file-trash.sound                    | 2 ++
+ src/sounds/freedesktop/stereo/game-card-shuffle.sound             | 2 ++
+ src/sounds/freedesktop/stereo/game-computer-move.sound            | 2 ++
+ src/sounds/freedesktop/stereo/game-human-move.sound               | 2 ++
+ src/sounds/freedesktop/stereo/game-over-loser.sound               | 2 ++
+ src/sounds/freedesktop/stereo/game-over-winner.sound              | 2 ++
+ src/sounds/freedesktop/stereo/item-deleted.sound                  | 2 ++
+ src/sounds/freedesktop/stereo/item-selected.sound                 | 2 ++
+ src/sounds/freedesktop/stereo/lid-close.sound                     | 2 ++
+ src/sounds/freedesktop/stereo/lid-open.sound                      | 2 ++
+ src/sounds/freedesktop/stereo/link-pressed.sound                  | 2 ++
+ src/sounds/freedesktop/stereo/link-released.sound                 | 2 ++
+ src/sounds/freedesktop/stereo/menu-click.sound                    | 2 ++
+ src/sounds/freedesktop/stereo/menu-popdown.sound                  | 2 ++
+ src/sounds/freedesktop/stereo/menu-popup.sound                    | 2 ++
+ src/sounds/freedesktop/stereo/menu-replace.sound                  | 2 ++
+ src/sounds/freedesktop/stereo/message-new-email.sound             | 2 ++
+ src/sounds/freedesktop/stereo/message-new-instant.sound           | 2 ++
+ src/sounds/freedesktop/stereo/message-sent-email.sound            | 2 ++
+ src/sounds/freedesktop/stereo/message-sent-instant.sound          | 2 ++
+ src/sounds/freedesktop/stereo/message.sound                       | 2 ++
+ src/sounds/freedesktop/stereo/network-connectivity-error.sound    | 2 ++
+ .../freedesktop/stereo/network-connectivity-established.sound     | 2 ++
+ src/sounds/freedesktop/stereo/network-connectivity-lost.sound     | 2 ++
+ src/sounds/freedesktop/stereo/newmail.sound                       | 2 ++
+ src/sounds/freedesktop/stereo/newmessage.sound                    | 2 ++
+ src/sounds/freedesktop/stereo/notebook-tab-changed.sound          | 2 ++
+ src/sounds/freedesktop/stereo/phone-failure.sound                 | 2 ++
+ src/sounds/freedesktop/stereo/phone-hangup.sound                  | 2 ++
+ src/sounds/freedesktop/stereo/phone-incoming-call.sound           | 2 ++
+ src/sounds/freedesktop/stereo/phone-outgoing-busy.sound           | 2 ++
+ src/sounds/freedesktop/stereo/phone-outgoing-calling.sound        | 2 ++
+ src/sounds/freedesktop/stereo/power-plug.sound                    | 2 ++
+ src/sounds/freedesktop/stereo/power-unplug-battery-low.sound      | 2 ++
+ src/sounds/freedesktop/stereo/power-unplug.sound                  | 2 ++
+ src/sounds/freedesktop/stereo/ring.sound                          | 2 ++
+ src/sounds/freedesktop/stereo/screen-capture-complete.sound       | 2 ++
+ src/sounds/freedesktop/stereo/screen-capture.sound                | 2 ++
+ src/sounds/freedesktop/stereo/scroll-down-end.sound               | 2 ++
+ src/sounds/freedesktop/stereo/scroll-down.sound                   | 2 ++
+ src/sounds/freedesktop/stereo/scroll-left-end.sound               | 2 ++
+ src/sounds/freedesktop/stereo/scroll-left.sound                   | 2 ++
+ src/sounds/freedesktop/stereo/scroll-right-end.sound              | 2 ++
+ src/sounds/freedesktop/stereo/scroll-right.sound                  | 2 ++
+ src/sounds/freedesktop/stereo/scroll-up-end.sound                 | 2 ++
+ src/sounds/freedesktop/stereo/scroll-up.sound                     | 2 ++
+ src/sounds/freedesktop/stereo/search-results-empty.sound          | 2 ++
+ src/sounds/freedesktop/stereo/search-results.sound                | 2 ++
+ src/sounds/freedesktop/stereo/service-login.sound                 | 2 ++
+ src/sounds/freedesktop/stereo/service-logout.sound                | 2 ++
+ src/sounds/freedesktop/stereo/software-update-available.sound     | 2 ++
+ src/sounds/freedesktop/stereo/software-update-urgent.sound        | 2 ++
+ src/sounds/freedesktop/stereo/startup.sound                       | 2 ++
+ src/sounds/freedesktop/stereo/suspend-error.sound                 | 2 ++
+ src/sounds/freedesktop/stereo/suspend-resume.sound                | 2 ++
+ src/sounds/freedesktop/stereo/suspend-start.sound                 | 2 ++
+ src/sounds/freedesktop/stereo/system-bootup.sound                 | 2 ++
+ src/sounds/freedesktop/stereo/system-ready.sound                  | 2 ++
+ src/sounds/freedesktop/stereo/system-shutdown-reboot.sound        | 2 ++
+ src/sounds/freedesktop/stereo/system-shutdown.sound               | 2 ++
+ src/sounds/freedesktop/stereo/test.sound                          | 2 ++
+ src/sounds/freedesktop/stereo/tooltip-popdown.sound               | 2 ++
+ src/sounds/freedesktop/stereo/tooltip-popup.sound                 | 2 ++
+ src/sounds/freedesktop/stereo/trash-empty.sound                   | 2 ++
+ src/sounds/freedesktop/stereo/voicemail.sound                     | 2 ++
+ src/sounds/freedesktop/stereo/window-attention-active.sound       | 2 ++
+ src/sounds/freedesktop/stereo/window-attention-inactive.sound     | 2 ++
+ src/sounds/freedesktop/stereo/window-attention.sound              | 2 ++
+ src/sounds/freedesktop/stereo/window-close.sound                  | 2 ++
+ src/sounds/freedesktop/stereo/window-decorated.sound              | 2 ++
+ src/sounds/freedesktop/stereo/window-inactive-click.sound         | 2 ++
+ src/sounds/freedesktop/stereo/window-lower-below.sound            | 2 ++
+ src/sounds/freedesktop/stereo/window-lower.sound                  | 2 ++
+ src/sounds/freedesktop/stereo/window-maximized-filled.sound       | 2 ++
+ src/sounds/freedesktop/stereo/window-maximized-fullscreen.sound   | 2 ++
+ src/sounds/freedesktop/stereo/window-maximized-horizontal.sound   | 2 ++
+ src/sounds/freedesktop/stereo/window-maximized-left.sound         | 2 ++
+ src/sounds/freedesktop/stereo/window-maximized-right.sound        | 2 ++
+ src/sounds/freedesktop/stereo/window-maximized-vertical.sound     | 2 ++
+ src/sounds/freedesktop/stereo/window-maximized.sound              | 2 ++
+ src/sounds/freedesktop/stereo/window-minimized-hidden.sound       | 2 ++
+ src/sounds/freedesktop/stereo/window-minimized.sound              | 2 ++
+ src/sounds/freedesktop/stereo/window-move-end.sound               | 2 ++
+ src/sounds/freedesktop/stereo/window-move-start.sound             | 2 ++
+ src/sounds/freedesktop/stereo/window-new.sound                    | 2 ++
+ src/sounds/freedesktop/stereo/window-question.sound               | 2 ++
+ src/sounds/freedesktop/stereo/window-raise-above.sound            | 2 ++
+ src/sounds/freedesktop/stereo/window-raise.sound                  | 2 ++
+ src/sounds/freedesktop/stereo/window-resize-end.sound             | 2 ++
+ src/sounds/freedesktop/stereo/window-resize-start.sound           | 2 ++
+ src/sounds/freedesktop/stereo/window-slide-in-taketo.sound        | 2 ++
+ src/sounds/freedesktop/stereo/window-slide-in-unshade.sound       | 2 ++
+ src/sounds/freedesktop/stereo/window-slide-in.sound               | 2 ++
+ src/sounds/freedesktop/stereo/window-slide-out-sendto.sound       | 2 ++
+ src/sounds/freedesktop/stereo/window-slide-out-shade.sound        | 2 ++
+ src/sounds/freedesktop/stereo/window-slide-out.sound              | 2 ++
+ src/sounds/freedesktop/stereo/window-slide.sound                  | 2 ++
+ src/sounds/freedesktop/stereo/window-stick-pinned.sound           | 2 ++
+ src/sounds/freedesktop/stereo/window-stick-unfloat.sound          | 2 ++
+ src/sounds/freedesktop/stereo/window-stick.sound                  | 2 ++
+ src/sounds/freedesktop/stereo/window-switch-left.sound            | 2 ++
+ src/sounds/freedesktop/stereo/window-switch-right.sound           | 2 ++
+ src/sounds/freedesktop/stereo/window-switch.sound                 | 2 ++
+ src/sounds/freedesktop/stereo/window-undecorated.sound            | 2 ++
+ src/sounds/freedesktop/stereo/window-unmaximized-fullscreen.sound | 2 ++
+ src/sounds/freedesktop/stereo/window-unmaximized-horizontal.sound | 2 ++
+ src/sounds/freedesktop/stereo/window-unmaximized-left.sound       | 2 ++
+ src/sounds/freedesktop/stereo/window-unmaximized-right.sound      | 2 ++
+ src/sounds/freedesktop/stereo/window-unmaximized-unfilled.sound   | 2 ++
+ src/sounds/freedesktop/stereo/window-unmaximized-vertical.sound   | 2 ++
+ src/sounds/freedesktop/stereo/window-unmaximized.sound            | 2 ++
+ src/sounds/freedesktop/stereo/window-unminimized-unhidden.sound   | 2 ++
+ src/sounds/freedesktop/stereo/window-unminimized.sound            | 2 ++
+ src/sounds/freedesktop/stereo/window-unstick-float.sound          | 2 ++
+ src/sounds/freedesktop/stereo/window-unstick-unpinned.sound       | 2 ++
+ src/sounds/freedesktop/stereo/window-unstick.sound                | 2 ++
+ src/sounds/freedesktop/stereo/window-urgent.sound                 | 2 ++
+ src/sounds/freedesktop/stereo/windows-slide.sound                 | 2 ++
+ src/sounds/freedesktop/stereo/workspace-created.sound             | 2 ++
+ src/sounds/freedesktop/stereo/workspace-destroyed.sound           | 2 ++
+ 188 files changed, 402 insertions(+)
+
+commit 5b11fd7646d7debd3d995ea7b7cfa236c65bdfd6
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Fri Apr 24 17:16:14 2020 -0600
+
+    add voice synthesis script
+
+ src/sounds/synthesize.sh | 32 ++++++++++++++++++++++++++++++++
+ 1 file changed, 32 insertions(+)
+
+commit b538aba2f0cdcb6ea24e6c538839432324db203a
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Wed Apr 15 01:38:04 2020 -0600
+
+    rename samples
+
+ src/Makefile.am | 24 ++++++++++++------------
+ 1 file changed, 12 insertions(+), 12 deletions(-)
+
+commit 35fb1e398621ee3964fb152b4630b570cc1fb743
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Wed Apr 15 01:36:58 2020 -0600
+
+    update samples
+
+ src/Makefile.am                                  |  26 +++++++++----------
+ src/sounds/XDE/stereo/desktop-screen-lock.ogg    | Bin 34441 -> 0 bytes
+ src/sounds/XDE/stereo/desktop-screen-unlock.ogg  | Bin 45635 -> 0 bytes
+ src/sounds/XDE/stereo/desktop-switch-down.ogg    |   1 -
+ src/sounds/XDE/stereo/desktop-switch-left.ogg    |   1 -
+ src/sounds/XDE/stereo/desktop-switch-right.ogg   |   1 -
+ src/sounds/XDE/stereo/desktop-switch-up.ogg      |   1 -
+ src/sounds/XDE/stereo/lid-close.ogg              | Bin 6397 -> 0 bytes
+ src/sounds/XDE/stereo/lid-open.ogg               | Bin 23348 -> 0 bytes
+ src/sounds/XDE/stereo/system-bootup.ogg          | Bin 14549 -> 0 bytes
+ src/sounds/XDE/stereo/system-shutdown-reboot.ogg |   1 -
+ src/sounds/XDE/stereo/system-shutdown.ogg        | Bin 14271 -> 0 bytes
+ src/sounds/XDE/stereo/windowshade.ogg            | Bin 6784 -> 0 bytes
+ src/sounds/{XDE => xde}/index.theme              |   0
+ src/sounds/xde/stereo/desktop-screen-lock.oga    | Bin 0 -> 38911 bytes
+ src/sounds/xde/stereo/desktop-screen-unlock.oga  | Bin 0 -> 51170 bytes
+ src/sounds/xde/stereo/desktop-switch-down.oga    |   1 +
+ src/sounds/xde/stereo/desktop-switch-left.oga    |   1 +
+ src/sounds/xde/stereo/desktop-switch-right.oga   |   1 +
+ src/sounds/xde/stereo/desktop-switch-up.oga      |   1 +
+ src/sounds/xde/stereo/dummy-message.oga          | Bin 0 -> 59525 bytes
+ src/sounds/xde/stereo/lid-close.oga              | Bin 0 -> 6306 bytes
+ src/sounds/xde/stereo/lid-open.oga               | Bin 0 -> 21163 bytes
+ src/sounds/xde/stereo/system-bootup.oga          | Bin 0 -> 16039 bytes
+ src/sounds/xde/stereo/system-shutdown-reboot.oga |   1 +
+ src/sounds/xde/stereo/system-shutdown.oga        | Bin 0 -> 15887 bytes
+ src/sounds/xde/stereo/weeek.oga                  | Bin 0 -> 4158 bytes
+ src/sounds/xde/stereo/windowshade.oga            | Bin 0 -> 10162 bytes
+ 28 files changed, 18 insertions(+), 18 deletions(-)
+
+commit eeaa89286220e3c2f832d0606af5b7808c0612e9
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue Apr 14 20:33:19 2020 -0600
+
+    update release files
+
+ ChangeLog | 14 ++++++++++++++
+ NEWS      |  3 ++-
+ 2 files changed, 16 insertions(+), 1 deletion(-)
+
 commit 40e5a3b751f26ef15aadbda4040c1600375b18f3
 Author: Brian Bidulock <bidulock@openss7.org>
 Date:   Tue Apr 14 20:31:21 2020 -0600

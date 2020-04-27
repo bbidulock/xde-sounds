@@ -17,10 +17,10 @@ AC_CONFIG_SRCDIR([configure.ac])
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_AUX_DIR([scripts])
 
-DATE='2020-04-14'
+DATE='2020-04-27'
 AC_SUBST([DATE])
 
-MDOCDATE='April 14, 2020'
+MDOCDATE='April 27, 2020'
 AC_SUBST([MDOCDATE])
 
 BRANCH='1.0'
@@ -84,6 +84,7 @@ soundsdir='$(datadir)/sounds'
 AC_SUBST([soundsdir])
 
 AC_CONFIG_FILES([Makefile
+		 man/Makefile
 		 src/Makefile])
 AC_OUTPUT
 
