@@ -1,0 +1,7 @@
+[Sound Theme]
+Name=Incredibles
+Inherits=Smooth,linux-a11y,flite-F
+Directories=stereo
+
+[stereo]
+OutputProfile=stereo
