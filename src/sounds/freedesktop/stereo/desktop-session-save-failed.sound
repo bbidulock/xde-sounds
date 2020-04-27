@@ -1,2 +1,2 @@
-DisplayName=Session Saved
-Description=The sound used when a desktop session is saved.
+DisplayName=Session Save Failed
+Description=The sound used when saving a desktop session failed.

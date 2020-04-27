@@ -1,0 +1,2 @@
+DisplayName=Device has Heated Up
+Description=The sound to use when the computer or device has heated up (e.g. to 80% of thermal limits).

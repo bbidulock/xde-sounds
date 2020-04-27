@@ -1,0 +1,2 @@
+DisplayName=Device has Cooled Down
+Description=The sound to use when the computer or device has cooled down (e.g. to 20% of thermal limits).

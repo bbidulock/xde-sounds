@@ -1,0 +1,2 @@
+DisplayName=Window Pinged
+Description=The sound used when an existing window is pinged on the windowing system server to determine whether it's application is still responsive.
