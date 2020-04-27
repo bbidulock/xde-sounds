@@ -1,0 +1,6 @@
+[Sound Theme]
+Name=Flite Female
+Directories=stereo
+
+[stereo]
+OutputProfile=stereo
