@@ -1,0 +1,1266 @@
+=pod
+
+=head1 NAME
+
+ sound - Freedesktop Sound Themes
+
+
+=head1 STANDARD SOUNDS
+
+=head2 STANDARD ALERT SOUNDS
+
+This is to notify the user of an action or event which may have a major
+impact on the system or their current use case.
+
+=over
+
+=item I<network-connectivity-lost>
+
+The sound used when network connectivity is lost.
+Provides an audible indication to the user that network connectivity
+that was previously established has now been lost.  Activities that rely
+on network connectivity will cease, so this is a major change in the
+use case for the device, thus, this alert.
+
+B<Spoken words:>
+"Network connectivity lost."
+
+=item I<network-connectivity-error>
+
+The sound used when an error occurs when it is tried to initialize the
+network connection of the computing device.
+Provides an audible indication to the user that network connectivity
+that is normally automatically established has encountered an error.
+Activities that rely on network connectivity cannot start or proceed, so
+this is a major change in the use case for the devices, thus, this
+alert.
+
+B<Spoken words:>
+"Network connectivity error."
+
+=item I<dialog-error>
+
+Common sound used when a dialog is opened to explain an error condition
+to the user.
+
+B<Spoken words:>
+"Error dialog."
+
+=item B<dialog-error-critical>
+
+Common sound used when a dialog is opened to explain a critical error
+condition to the user.
+
+B<Spoken words:>
+"Critical error dialog."
+
+=item B<dialog-error-serious>
+
+Common sound used when a dialog is opened to explain a serious error
+condition to the user.
+
+B<Spoken words:>
+"Serious error dialog."
+
+=item I<battery-low>
+
+The sound used when the battery is low (below 20%, for example).
+Most battery operated systems will automatically
+hybrid-suspend-hibernate once the battery level goes below a specific
+point.  Provides an audible indication to the user of an impending
+automatic hybrid suspend/hibernate.
+
+B<Spoken words:>
+"Low battery! Low battery! Low battery!"
+
+=item I<suspend-error>
+
+The machine failed to suspend.
+
+B<Spoken words:>
+"Machine suspend failed."
+
+=item I<software-update-urgent>
+
+The sound used when an urgent update is available through the system
+software update program.
+
+B<Spoken words:>
+"An urgent software update is available through the system
+software update program."
+
+=item I<power-unplug-battery-low>
+
+The power cable has been unplugged and the battery level is low.
+
+B<Spoken words:>
+"The power cable has been unplugged and the battery level
+is low."
+
+=item B<thermal-hot>
+
+The sound used when the computer or device has become hot (above 90% of
+thermal limits, for example).
+Most mobile systems have limited thermal cooling capability under some
+circumstances (vents blocked, for example) and will automatically
+power-off to protect the CPU and other electronic components once
+temperatures reach a critical level.  Provides an audible indication to
+the user of an impending automatic power-down.
+
+B<Spoken words:>
+"Device hot! Device hot! Device hot!"
+
+=item B<desktop-session-save-failed>
+
+The sound used when saving a desktop session failed.
+
+B<Spoken words:>
+"Session save failed."
+
+=item B<desktop-session-restore-failed>
+
+The sound used when the restoration of a desktop session fails.
+
+B<Spoken words:>
+"Session restoration failed."
+
+=back
+
+=head2 STARDARD NOTIFICATION SOUNDS
+
+This is to alert the user that the system, or their current use case,
+has changed state in some way - new email arriving, new non-critical
+update to an application available.
+
+=over
+
+=item I<message-new-instant>
+
+"New instant message."
+The sound used when a new instant message is received.
+
+=item I<message-new-email>
+
+New Email message.
+The sound used when a new email is received.
+
+=item I<complete-media-burn>
+
+Optical medium burning complete
+The sound used when a optical medium completed burning.
+
+=item I<complete-media-rip>
+
+Optical medium ripping complete
+The sound used when an optical medium completed ripping.
+
+=item I<complete-download>
+
+File download complete
+The sound used when a file completed downloading.
+
+=item I<complete-copy>
+
+File copy complete
+The sound use when a file completed copying.
+
+=item I<complete-scan>
+
+Scanner completed image acquisition
+The sound used when a scanner completed image acquisition and software completed image processing.
+
+=item I<phone-incoming-call>
+
+Incoming Phone Call
+The sound used when a phone/voip call is coming in.  Usually some kind of ring sound.
+
+=item I<phone-outgoing-busy>
+
+Outgoing Phone Call Busy
+The sound used when a phone/voip call is dialed out and the responder is already engaged.
+
+=item I<phone-hangup>
+
+Phone hung up.
+The sound used when a phone/voip call is ended due to hangup.
+
+=item I<phone-failure>
+
+Phone call cancelled due to error.
+The sound used when a phone/voip call is canceled due to some error.
+
+=item I<network-connectivity-established>
+
+Network Connectivity Established
+The sound used when network connectivity is established.
+
+=item I<system-bootup>
+
+Initiating startup sequence.
+The sound used when the computer is being booted up, played as early in bootup as possible.
+
+=item I<system-ready>
+
+Ready for system log in.
+The sound used when the computer is booted up and shows the login screen.
+
+=item I<system-shutdown>
+
+Initiating shutdown sequence.
+The sound used when the computer is being shut down.
+
+=item B<system-shutdown-reboot>
+
+Initiating restart sequence.
+Common sound used when the computer is being restarted.
+
+=item I<search-results>
+
+Search results returned.
+The sound used when no search results are returned.
+
+=item I<search-results-empty>
+
+No search results returned.
+The sound used when one or more search results are returned.
+
+=item I<desktop-login>
+
+Welcome to the X desktop environment.
+The sound used when the user logs into the system, played as a welcome sound immediate afte the login screen disappeared.
+
+=item I<desktop-logout>
+
+Logging out of the X desktop environment.
+The sound used when a user logs out of the system.
+
+=item I<desktop-screen-lock>
+
+Screen Locked
+The sound used when the user locs their current session.
+
+=item B<desktop-screen-unlock>
+
+Screen Unlocked
+Common sound used when the user unlocks their current session.
+
+=item I<service-login>
+
+User logged into service.
+The sound used when a user logs into a service (i.e. Gaim login).
+
+=item I<service-logout>
+
+User logged out of service.
+The sound used when a user logs out of a service (i.e. Gaim logout).
+
+=item I<battery-caution>
+
+Caution
+battery nearing exhaustion.
+The sound used when the battery is nearing exhaustion (below 40%, for example).
+
+=item I<battery-full>
+
+Battery is fully charged.
+The sound used when the battery is fully loaded up.
+
+=item I<dialog-warning>
+
+Warning Dialog
+The sound used when a dialog is opened to give information to the user that may be pertinent to the requested action.
+
+=item I<dialog-information>
+
+Information Dialog
+The sound used when a dialog is opened to give information to the user that may be pertinent to the requested action.
+
+=item I<dialog-question>
+
+Question Dialog
+The sound used when a dialog is opened to ask the user a question.
+
+=item I<software-update-available>
+
+A software update is available through the system software update program.
+The sound used when an update is available for software installed on the computing device, through the system software update program.
+
+=item I<device-added>
+
+Device Added
+The sound used when a device has become available to the desktop, i.e. due to USB plugging.
+
+=item I<device-removed>
+
+Device Removed
+The sound used when a device has become unavailable to the desktop, i.e. due to USB unplug.
+
+=item I<window-new>
+
+New Window Opened
+The sound used when a new window or dialog is opened.
+
+=item I<power-plug>
+
+The power cable has been plugged in.
+The power cable has been plugged in.
+
+=item I<power-unplug>
+
+The power cable has been unplugged.
+The power cable has been unplugged.
+
+=item I<suspend-start>
+
+Machine suspending.
+The machine is about to suspend.
+
+=item I<suspend-resume>
+
+Machine returned from suspended state.
+The machine has returned from suspended state.
+
+=item I<lid-open>
+
+Lid Opened
+The lid has been opened (for laptops, mobile devices).
+
+=item I<lid-close>
+
+Lid Closed
+The lid has been closed (for laptops, mobile devices).
+
+=item I<alarm-clock-elapsed>
+
+Alarm clock elapsed.
+A user configured alarm elapsed.
+
+=item I<window-attention-active>
+
+Active Window Requires Attention
+An active/visible window demands attention.
+
+=item I<window-attention-inactive>
+
+Inactive Window Requires Attention
+An inactive/invisible window demands attention.
+
+=item B<window-urgent>
+
+Urgent Window
+The sound used when a window is marked as urgent.
+
+=item B<desktop-session-create>
+
+Session Created
+The sound used when a new desktop session is created.
+
+=item B<desktop-session-save>
+
+Session Saved
+The sound used when a desktop session is saved.
+
+=item B<desktop-session-checkpoint>
+
+Session Check-Point
+The sound used when a desktop session is checkpointed.
+
+=item B<desktop-session-restore>
+
+Session Restored
+The sound used when a desktop session is restored.
+
+=item B<thermal-caution>
+
+"Device has Heated Up."
+The sound to use when the computer or device has heated up (above 80% of
+thermal limits, for example).
+
+=item B<thermal-cool>
+
+"Device has Cooled Down."
+The sound to use when the computer or device has cooled down (below 20%
+of thermal limits, for example).
+
+=back
+
+=head2 STANDARD ACTION SOUNDS
+
+Action sounds are use as feedback for user operations.
+
+=over
+
+=item I<phone-outgoing-calling>
+
+Outgoing Phone Call in progress.
+The sound used when a phone/voip call is dialed out.
+
+=item I<message-sent-instant>
+
+Instant Message Sent
+The sound used when a new IM is sent.
+
+=item I<message-sent-email>
+
+Email Message Sent
+The sound used when a new email is sent.
+
+=item I<bell-terminal>
+
+Terminal Bell
+The sound to use as a terminal bell.
+
+=item I<bell-window-system>
+
+Window System Bell
+The sound to use as a generic bell for X11 and other window systems.
+
+=item I<trash-empty>
+
+Trash Emptied
+The sound used when the user empties the trash.
+
+=item I<item-deleted>
+
+Item Deleted
+The sound used when an item is deleted.
+
+=item I<file-trash>
+
+File/Folder sent to Trash
+The sound used when a file or folder is sent to the trash.
+
+=item I<camera-shutter>
+
+Say "Cheese"!
+A photo has been shot.
+
+=item I<camera-focus>
+
+Camera focus
+A camera has the focus.
+
+=item I<screen-capture>
+
+Screen Capture Initiated
+A screenshot was made.
+
+=item I<count-down>
+
+Counting down.
+A countdown (e.g. for a photo shooting) sound that is repeated each second.
+
+=item I<completion-success>
+
+Text completion attempt successful.
+A text completion was attempted and was successful.
+
+=item I<completion-fail>
+
+Text completion attempt not successful.
+A text completion was attempted and was not successful.
+
+=item I<completion-partial>
+
+Text completion attempt partially successful.
+A text completion was attempted and was partially successful.
+
+=item I<completion-rotation>
+
+Text completion attempt available options restarting.
+A test completion was attempted and the list of available options reached the end and completion started from the beginning.
+
+=item I<audio-volume-change>
+
+Volume Change
+The test sound that is used to make volume changes noticeable by the user when he uses a volume slider.
+
+=item I<audio-channel-left>
+
+Left.
+The test sound for identifying the left speaker.  A mono file with a voice saying 'left'.
+
+=item I<audio-channel-right>
+
+Right
+The test sound for identifying the right speaker.  A mono file with a voice saying 'right'.
+
+=item I<audio-channel-front-left>
+
+Front left.
+The test sound for identifying the front-left speaker.  A mono file with a voice saying 'front left'.
+
+=item I<audio-channel-front-right>
+
+Front right.
+The test sound for identifying the front-right speaker.  A mono file with a voice saying 'front right'.
+
+=item I<audio-channel-front-center>
+
+Front center.
+The test sound for identify the front-center speaker.  A mono file with a voice saying 'front right'.
+
+=item I<audio-channel-rear-left>
+
+Rear Left
+The test sound for identifying the rear-left speaker.  A mono file with a voice saying 'rear left'.
+
+=item I<audio-channel-rear-right>
+
+Rear Right
+The test sound for identifying the rear-right speaker.  A mono file with a voice saying 'rear right'.
+
+=item I<audio-channel-rear-center>
+
+Rear Center
+The test signal for identifying the rear-center speaker.  A mono file with a voice saying 'rear center'.
+
+=item I<audio-channel-lfe>
+
+Subwoofer
+The test sound for identifying the lfe/subwoofer speaker.  A mono file with a voice saying 'sub-woofer', alternatively a low frequency noise.
+
+=item I<audio-channel-side-left>
+
+Side Left
+The test sound for identifying the side-left speaker.  A mono file with a voice saying 'side left'.
+
+=item I<audio-channel-side-right>
+
+Side Right
+The test sound for identifying the side-right speaker.  A mono file with a voice saying 'side right'.
+
+=item I<audio-test-signal>
+
+Test Signal
+The test sound for testing audio.
+
+=back
+
+=head2 STANDARD INPUT FEEDBACK SOUNDS
+
+Actions sounds are used as feedback for user input events, such as mouse
+clicks, or key presses.  In contrast to the sounds listed in "Actions"
+theres sounds contain much less context information and are solely used
+to give the user audible feedback to input events the user himself
+directly caused.
+
+=over
+
+=item I<window-close>
+
+Window Closed
+The sound used when an existing window is closed.
+
+=item B<window-close-kill>
+
+Window Killed.
+The sound used when an existing window is killed.
+
+=item B<window-close-kill-process>
+
+Window Killed by Process Identifier.
+The sound used when an existing window is killed by process identifier.
+
+=item B<window-close-kill-server>
+
+Window Killed by Server.
+The sound used when an existing window is killed by the windowing system server.
+
+=item B<window-ping>
+
+Window Pinged.
+The sound used when an existing window is pinged on the windowing system server to determine whether it's application is still responsive.
+
+=item I<window-slide-in>
+
+Window Slided In
+The sound used when a window is slided in by some means.  Example
+panel.
+
+=item I<window-slide-out>
+
+Window Slided Out
+The sound used when a window is slided out by some means.  Example
+panel.
+
+=item B<window-slide-in-unshade>
+
+Window unshaded.
+The sound used when an existing window is unshaded.
+
+=item B<window-slide-out-shade>
+
+Window Shaded
+The sound used when an existing window is shaded.
+
+=item B<window-slide-in-taketo>
+
+Window taken to other desktop.
+The sound used when an existing window is taken to another desktop.
+
+=item B<window-slide-out-sendto>
+
+Window sent to other desktop.
+The sound used when and existing window is sent to another desktop.
+
+=item I<window-minimized>
+
+Window Minimized
+The sound used when when an existing window is iconified (minimized).
+
+=item I<window-unminimized>
+
+Window Unminimized
+The sound used when an existing window is unminimized.
+
+=item B<window-minimized-hidden>
+
+Window hidden.
+The sound used when an existing window is hidden.
+
+=item B<window-unminimized-unhidden>
+
+Window revealed.
+The sound used when a window is unhidden.  Falls back to window-unminimized.
+
+=item I<window-maximized>
+
+Window Maximized
+The sound used when an existing window is maximized in both directions (horizontal and vertical).
+
+=item I<window-unmaximized>
+
+Window Unmaximized
+The sound used when an existing window is unmaximized.
+
+=item B<window-maximized-vertical>
+
+Window maximized vertically.
+The sound used when an existing window is maximized in the vertical direction.
+
+=item B<window-unmaximized-vertical>
+
+Window restored vertically.
+The sound used when a window is unmaximized in the vertical direction only.  Falls back to window-unmaximized.
+
+=item B<window-maximized-horizontal>
+
+Window maximized horizontally.
+The sound used when an active window is set to maximized in the horizontal direction.
+
+=item B<window-unmaximized-horizontal>
+
+Window restored horizontally.
+The sound used when a window is unmaximized in the horizontal direction.
+
+=item B<window-maximized-filled>
+
+Window will fill available area.
+The sound used when an active window is set to fill available space.
+
+=item B<window-unmaximized-unfilled>
+
+Window restored from filled.
+The sound used when a window is unmaximized from filling available area.  Falls back to window-unmaximized.
+
+=item B<window-maximized-left>
+
+Window maximized to the left.
+The sound used when an active window is set to maximize on the left of the screen.
+
+=item B<window-unmaximized-left>
+
+Window restored from left.
+The sound used when a window is unmaximized from the left half of the screen.  Falls back to window-unmaximized.
+
+=item B<window-maximized-right>
+
+Window maximized to the right.
+The sound used when an active window is set to maximize on the right of the screen.
+
+=item B<window-unmaximized-right>
+
+Window restored from right.
+The sound used when a window is unmaximized from the right half of the screen.  Falls back to window-unmaximized.
+
+=item B<window-maximized-fullscreen>
+
+Window made fullscreen
+The sound used when an active window is set to fullscreen.
+
+=item B<window-unmaximized-fullscreen>
+
+Window restored from Fullscreen.
+The sound used when a window is restored from fullscreen.
+
+=item B<window-stick>
+
+Window stuck.
+The sound used when a window is stuck to the viewport.
+
+=item B<window-unstick>
+
+Window unstuck.
+The sound used when a window is unstuck from the viewport.
+
+=item B<window-stick-pinned>
+
+Window pinned.
+The sound used when an existing window is pinned so that it appears on all desktops.
+
+=item B<window-unstick-unpinned>
+
+Window unpinned.
+The sound used when a window is unpinned from all workspaces.  Falls back to window-unstick.
+
+=item B<window-stick-unfloat>
+
+Window tiled.
+The sound used when a window is allowed to float.
+
+=item B<window-unstick-float>
+
+Window floated.
+The sound used when a window is not allowed to float in a tiling layout.  Falls back to window-stick.
+
+=item B<window-decorated>
+
+Window Decorated
+The sound used when an undecorated window is decorated.
+
+=item B<window-undecorated>
+
+Window undecorated.
+The sound used when decorations are removed from an existing window.
+
+=item B<window-stack>
+
+Window restacked.
+The sound used when an existing window is restacked.
+
+=item B<window-raise>
+
+Window raised.
+The sound used when an existing window is raised.
+
+=item B<window-lower>
+
+Window Lowered
+The sound used when an active window is lowered.
+
+=item B<window-stack-raise>
+
+Window raised.
+The sound used when an existing window is raised.
+
+=item B<window-stack-lower>
+
+Window Lowered
+The sound used when an active window is lowered.
+
+=item B<window-raise-above>
+
+Window will be placed above other windows.
+The sound used when an active window is set to be placed above other windows.
+
+=item B<window-lower-below>
+
+Window will be placed below other windows.
+The sound used when an active window is set to be below other windows on the desktop.
+
+=item B<window-stack-raise-above>
+
+Window will be placed above other windows.
+The sound used when an active window is set to be placed above other windows.
+
+=item B<window-stack-lower-below>
+
+Window will be placed below other windows.
+The sound used when an active window is set to be below other windows on the desktop.
+
+=item I<window-inactive-click>
+
+Mouse Clicked in Inactive Window
+The sound used when the user clicks on an inactive window.
+
+=item I<window-move-start>
+
+Window Move Started
+A window move started.
+
+=item I<window-move-end>
+
+Window Move Ended
+A window move ended.
+
+=item B<window-move-end-repel>
+
+Repelling Move
+The sound used when moving a window and the movement is repelled by another window or workspace boundary.
+
+=item B<window-move-end-attract>
+
+Attracting Move
+The sound used when moving a window and the movement is attracted by another window or workspace boundary.
+
+=item B<window-move-start-unrepel>
+
+Stopped Repelling Move
+The sound used when moving a window and the movement has stopped being repelled by another window or workspace boundary.
+
+=item B<window-move-start-unattract>
+
+Stopped Attracting Move
+The sound used when moving a window and the movement has stopped being attracted by another window or workspace boundary.
+
+=item I<window-resize-start>
+
+Window Resize Started
+A window resize started.
+
+=item I<window-resize-end>
+
+Window Resize Ended
+A window resize ended.
+
+=item B<window-resize-end-repel>
+
+Repelling Resize
+The sound used when resizing a window and the resize is repelled by another window or workspace boundary.
+
+=item B<window-resize-end-attract>
+
+Attracting Resize
+The sound used when resizing a window and the resize is attracted by another window or workspace boundary.
+
+=item B<window-resize-start-unrepel>
+
+Stopped Repelling Resize
+The sound used when resizing a window and the resize has stopped being repelled by another window or workspace boundary.
+
+=item B<window-resize-start-unattract>
+
+Stopped Attracting Resize
+The sound used when resizing a window and the resize has stopped being attracted by another window or workspace boundary.
+
+=item I<desktop-switch-left>
+
+Desktop to the Left
+Common sound used when the window manager switches to another desktop which is located to the left the current screen.
+
+=item I<desktop-switch-right>
+
+Desktop to the Right
+Common sound used when the window manager switches to another desktop which is located to the right of the current screen.
+
+=item B<desktop-switch-left-up>
+
+Desktop Above
+Common sound used when the window manager switches to another desktop which is located above the current screen.
+
+=item B<desktop-switch-right-down>
+
+Desktop Below
+Common sound used when the window manager switches to another desktop which is located below the current screen.
+
+=item I<window-switch>
+
+Window Switched
+The sound used when the window manager switches to another window.
+
+=item B<window-switch-left>
+
+Window Switched Left
+The sound used when the window manager switches to another window on the left.
+
+=item B<window-switch-right>
+
+Window Switched Right
+The sound used when the window manager switches to another window on the right.
+
+=item I<notebook-tab-changed>
+
+Notebok Tab Changed
+The sound used when a notebook tab is changed.
+
+=item I<scroll-up>
+
+Scrolling Up
+Some window was scrolled up.
+
+=item I<scroll-down>
+
+Scrolling down.
+Some window was scrolled down.
+
+=item I<scroll-left>
+
+Scrolling to the Left
+Some window was scrolled left.
+
+=item I<scroll-right>
+
+Scrolling to the Right
+Some window was scrolled right.
+
+=item I<scroll-up-end>
+
+Scroll up has reached the end of the scroll-bar.
+Some window was scrolled up and reached the end of the scroll-bar.
+
+=item I<scroll-down-end>
+
+Scroll down has reached the end of the scroll-bar.
+Some window was scrolled down and reached the end of the scroll-bar.
+
+=item I<scroll-left-end>
+
+Scroll left has reached the end of the scroll-bar.
+Some window was scrolled left and reached the end of the scroll-bar.
+
+=item I<scroll-right-end>
+
+Scroll right has reached the end of the scroll-bar.
+Some window was scrolled right and reached the end of the scroll-bar.
+
+=item I<dialog-ok>
+
+Dialog Acknowledged
+The sound used when a window is closed by clicking on the OK button for a window.
+
+=item I<dialog-cancel>
+
+Dialog Cancelled
+The sound used when a window is closed by clicking the Cancel button for a window.
+
+=item I<drag-start>
+
+Drag Started
+The sound used when drag of a file/item is started.
+
+=item I<drag-accept>
+
+Drag Accepted
+The sound used when a file/item drag is accepted by a window, such as a folder or IM conversation.
+
+=item I<drag-fail>
+
+Drag Failed
+The sound used when a file/item drag is not accepted by a window, such as a folder or IM conversation.
+
+=item I<link-pressed>
+
+Link Pressed
+The sound used when a link in a web or help browser is pressed.
+
+=item I<link-released>
+
+Link Released
+The sound used when a link in a web or help browser is released.
+
+=item I<button-pressed>
+
+Button Pressed
+The sound used when a button is pressed.
+
+=item I<button-released>
+
+Button Released
+The sound used when a button is released.
+
+=item I<menu-click>
+
+Menu Clicked
+The sound used when a menu item is clicked.
+
+=item I<button-toggle-on>
+
+Button toggled on
+The sound used when the toggle/check/radio button is activated.
+
+=item I<button-toggle-off>
+
+Button toggled off
+The sound used when the toggle/check/radio button is deactivated.
+
+=item I<expander-toggle-on>
+
+Expander activated.
+The sound used when an expander is activated.
+
+=item I<expander-toggle-off>
+
+Expander deactivated.
+The sound used when an expander is deactivated.
+
+=item I<menu-popup>
+
+Menu Popup
+The sound used when a menu is popped up.
+
+=item I<menu-popdown>
+
+Menu Popdown
+The sound used when a menu is popped down.
+
+=item I<menu-replace>
+
+Menu Replace
+The sound used when replacing an active menu with another menu.
+
+=item I<tooltip-popup>
+
+Tooltip Popup
+The sound used when a tooltip is popped up.
+
+=item I<tooltip-popdown>
+
+Tooltip Popdown
+The sound used when a tooltip is popped down.
+
+=item I<item-selected>
+
+Item Selected
+The sound used when an item is selected.
+
+=item B<screen-brighter>
+
+Screen Brighter
+The sound used when the device screen is made brighter.
+
+=item B<screen-darker>
+
+Screen Darker
+The sound used when the device screen is made darker.
+
+=back
+
+=head2 STANDARD GAME SOUNDS
+
+Sounds for usage in games.
+
+=over
+
+=item I<game-over-winner>
+
+Game-Over, Winner
+The sound used when the game os over and the player won!
+
+=item I<game-over-loser>
+
+Game-Over, Loser
+The sound used when the game is over and the player lost.
+
+=item I<game-card-shuffle>
+
+Cards Shuffled
+In card games, when the cards are shuffled.
+
+=item I<game-human-move>
+
+Your move.
+The sound used when the user makes a move.
+
+=item I<game-computer-move>
+
+My move.
+The sound used when the computer makes a move.
+
+=item B<desktop-created>
+
+Desktop created.
+Common sound used when a new desktop is created.
+
+=item B<desktop-destroyed>
+
+Desktop destroyed.
+Common sound used when a desktop is destroyed.
+
+=item B<workspace-created>
+
+Work space created.
+The sound used when a workspace is created on the screen.
+
+=item B<workspace-destroyed>
+
+Work space destroyed.
+The sound used when a workspace is destroyed on the screen.
+
+=item B<desktop-layout-changed>
+
+Desk Top Layout Changed.
+The sound used when the desktop layout (rows and columns) changes.
+
+=item B<desktop-mode>
+
+Arrangement Changed
+The sound used when the desktop mode changes its arrangement.
+
+=item B<desktop-mode-floating>
+
+Arrange Floating
+The sound used when the desktop mode is changed to a floating arrangement.
+
+=item B<desktop-mode-grid>
+
+Arrange Grid
+The sound used when the desktop mode is set to a grid arrangement.
+
+=item B<desktop-mode-monocle>
+
+Arrange Monocle
+The sound used when the desktop mode is set to a monocle arrangement.
+
+=item B<desktop-mode-tiled>
+
+Arrange Tiled
+The sound used when the desktop mode is set to a tiled arrangement.
+
+=item B<desktop-mode-tiled-left>
+
+Arrange Tiled with Left Master
+The sound used when the desktop mode is set to a tiled arrangement with a left master position.
+
+=item B<desktop-mode-tiled-right>
+
+Arrange Tiled with Right Master
+The sound used when the desktop mode is set to a tiled arrangement with a right master position.
+
+=item B<desktop-mode-tiled-top>
+
+Arrange Tiled with Top Master
+The sound used when the desktop mode is set to a tiled arrangement with a top master position.
+
+=item B<desktop-mode-tiled-bottom>
+
+Arrange Tiled with Bottom Master
+The sound used when the desktop mode is set to a tiled arrangement with a bottom master position.
+
+=item B<desktop-showing>
+
+Desktop Showing
+The sound used when showing the desktop changes.
+
+=item B<desktop-showing-hideall>
+
+Showing Desktop
+The sound used when the desktop is revealed (all windows are hidden).
+
+=item B<desktop-showing-showall>
+
+Not Showing Desktop
+The sound used when the windows hidden to show the desktop are restored.
+
+=back
+
+=head2 OTHER COMMON EVENT IDS
+
+=over
+
+=item B<bell>
+
+Bell
+A common sound acting as a fallback for bell-terminal and bell-window-system.
+
+=item I<busytone>
+
+Busy Tone
+Common sound used when the phone/voip call is dialed out and the responder is already engaged.  See also phone-outgoing-busy.
+
+=item B<complete>
+
+Action complete
+Common sound used when an action is complete.
+
+=item B<complete-print>
+
+File print complete
+Common sound used when a file has completed printing.
+
+=item B<desktop-switch-up>
+
+Desktop Above
+Common sound used when the window manager switches to another desktop which is located above the current screen.
+
+=item B<desktop-switch-down>
+
+Desktop Below
+Common sound used when the window manager switches to another desktop which is located below the current screen.
+
+=item I<dialtone>
+
+Dial Tone
+Common sound used when the receive of a telephone goes off-hook for dialing a call.
+
+=item I<dummy-message>
+
+Dummy Message
+Common sound used when any message is needed, usually to show how notifications are done.
+
+=item I<message>
+
+Message
+Common sound used when a message is sent.
+
+=item I<newmail>
+
+New Mail
+Common sound used when new mail arrives.  See also message-new-email.
+
+=item I<newmessage>
+
+New Message
+Common sound used when a new IM arrives.  See also message-new-instant.
+
+=item I<ring>
+
+Ring
+Common sound used when a call is incoming.
+
+=item B<screen-capture-complete>
+
+Screen Capture Complete
+Common sound used when a screen capture completes.
+
+=item I<startup>
+
+Starting up.
+Common sound used when the system starts up.
+
+=item I<test>
+
+Test
+Common sound used to test with.
+
+=item I<voicemail>
+
+Voicemail Available
+Common sound used when voicemail is available.
+
+=item B<window-attention>
+
+Window Requires Attention
+Common sound used when a window demands attention.
+
+=item I<window-question>
+
+Question Window Opened
+The sound used when a new dialog window is opened.
+
+=item B<window-slide>
+
+Window Slided
+The sound used when a window is slid.
+
+=item I<windows-slide>
+
+Windows Slided
+The sound used when multiple windows are slid.
+
+=back
+
+
+=cut
+
+# vim: set sw=4 tw=72 nocin spell spelllang=en_ca:
