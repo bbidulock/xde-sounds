@@ -76,8 +76,24 @@ nobase_dist_share_DATA += \
 	sounds/freedesktop/stereo/desktop-layout-changed.sound \
 	sounds/freedesktop/stereo/desktop-login.sound \
 	sounds/freedesktop/stereo/desktop-logout.sound \
+	sounds/freedesktop/stereo/desktop-mode-decrease-border.sound \
+	sounds/freedesktop/stereo/desktop-mode-decrease-count-grid-col.sound \
+	sounds/freedesktop/stereo/desktop-mode-decrease-count-grid-row.sound \
+	sounds/freedesktop/stereo/desktop-mode-decrease-count-grid.sound \
+	sounds/freedesktop/stereo/desktop-mode-decrease-count.sound \
+	sounds/freedesktop/stereo/desktop-mode-decrease-count-tiled.sound \
+	sounds/freedesktop/stereo/desktop-mode-decrease-margin.sound \
+	sounds/freedesktop/stereo/desktop-mode-decrease-width-tiled.sound \
 	sounds/freedesktop/stereo/desktop-mode-floating.sound \
 	sounds/freedesktop/stereo/desktop-mode-grid.sound \
+	sounds/freedesktop/stereo/desktop-mode-increase-border.sound \
+	sounds/freedesktop/stereo/desktop-mode-increase-count-grid-col.sound \
+	sounds/freedesktop/stereo/desktop-mode-increase-count-grid-row.sound \
+	sounds/freedesktop/stereo/desktop-mode-increase-count-grid.sound \
+	sounds/freedesktop/stereo/desktop-mode-increase-count.sound \
+	sounds/freedesktop/stereo/desktop-mode-increase-count-tiled.sound \
+	sounds/freedesktop/stereo/desktop-mode-increase-margin.sound \
+	sounds/freedesktop/stereo/desktop-mode-increase-width-tiled.sound \
 	sounds/freedesktop/stereo/desktop-mode-monocle.sound \
 	sounds/freedesktop/stereo/desktop-mode.sound \
 	sounds/freedesktop/stereo/desktop-mode-tiled-bottom.sound \
@@ -85,6 +101,11 @@ nobase_dist_share_DATA += \
 	sounds/freedesktop/stereo/desktop-mode-tiled-right.sound \
 	sounds/freedesktop/stereo/desktop-mode-tiled.sound \
 	sounds/freedesktop/stereo/desktop-mode-tiled-top.sound \
+	sounds/freedesktop/stereo/desktop-monitor-switch-left-down.sound \
+	sounds/freedesktop/stereo/desktop-monitor-switch-left.sound \
+	sounds/freedesktop/stereo/desktop-monitor-switch-right.sound \
+	sounds/freedesktop/stereo/desktop-monitor-switch-right-up.sound \
+	sounds/freedesktop/stereo/desktop-monitor-switch.sound \
 	sounds/freedesktop/stereo/desktop-screen-lock.sound \
 	sounds/freedesktop/stereo/desktop-screen-unlock.sound \
 	sounds/freedesktop/stereo/desktop-session-checkpoint.sound \
@@ -93,8 +114,12 @@ nobase_dist_share_DATA += \
 	sounds/freedesktop/stereo/desktop-session-restore.sound \
 	sounds/freedesktop/stereo/desktop-session-save-failed.sound \
 	sounds/freedesktop/stereo/desktop-session-save.sound \
+	sounds/freedesktop/stereo/desktop-showing-hideall-decorations.sound \
 	sounds/freedesktop/stereo/desktop-showing-hideall.sound \
+	sounds/freedesktop/stereo/desktop-showing-hideall-struts.sound \
+	sounds/freedesktop/stereo/desktop-showing-showall-decorations.sound \
 	sounds/freedesktop/stereo/desktop-showing-showall.sound \
+	sounds/freedesktop/stereo/desktop-showing-showall-struts.sound \
 	sounds/freedesktop/stereo/desktop-showing.sound \
 	sounds/freedesktop/stereo/desktop-switch-down.sound \
 	sounds/freedesktop/stereo/desktop-switch-left.sound \
@@ -102,6 +127,18 @@ nobase_dist_share_DATA += \
 	sounds/freedesktop/stereo/desktop-switch-right-down.sound \
 	sounds/freedesktop/stereo/desktop-switch-right.sound \
 	sounds/freedesktop/stereo/desktop-switch-up.sound \
+	sounds/freedesktop/stereo/desktop-view-flip.sound \
+	sounds/freedesktop/stereo/desktop-view-rotate.sound \
+	sounds/freedesktop/stereo/desktop-view.sound \
+	sounds/freedesktop/stereo/desktop-view-unrotate.sound \
+	sounds/freedesktop/stereo/desktop-windows-flip.sound \
+	sounds/freedesktop/stereo/desktop-windows-rotate.sound \
+	sounds/freedesktop/stereo/desktop-windows.sound \
+	sounds/freedesktop/stereo/desktop-windows-unrotate.sound \
+	sounds/freedesktop/stereo/desktop-zone-flip.sound \
+	sounds/freedesktop/stereo/desktop-zone-rotate.sound \
+	sounds/freedesktop/stereo/desktop-zone.sound \
+	sounds/freedesktop/stereo/desktop-zone-unrotate.sound \
 	sounds/freedesktop/stereo/device-added.sound \
 	sounds/freedesktop/stereo/device-removed.sound \
 	sounds/freedesktop/stereo/dialog-cancel.sound \
@@ -202,6 +239,10 @@ nobase_dist_share_DATA += \
 	sounds/freedesktop/stereo/window-inactive-click.sound \
 	sounds/freedesktop/stereo/window-lower-below.sound \
 	sounds/freedesktop/stereo/window-lower.sound \
+	sounds/freedesktop/stereo/window-manager-quit.sound \
+	sounds/freedesktop/stereo/window-manager-reload.sound \
+	sounds/freedesktop/stereo/window-manager-restart.sound \
+	sounds/freedesktop/stereo/window-manager-start.sound \
 	sounds/freedesktop/stereo/window-maximized-filled.sound \
 	sounds/freedesktop/stereo/window-maximized-fullscreen.sound \
 	sounds/freedesktop/stereo/window-maximized-horizontal.sound \
@@ -269,53 +310,100 @@ nobase_dist_share_DATA += \
 	sounds/flite-F/index.theme
 
 nobase_dist_share_DATA += \
+	sounds/flite-F/stereo/alarm-clock-elapsed.oga \
 	sounds/flite-F/stereo/alarm-clock-elapsed.ogg \
+	sounds/flite-F/stereo/audio-channel-front-center.oga \
 	sounds/flite-F/stereo/audio-channel-front-center.ogg \
+	sounds/flite-F/stereo/audio-channel-front-left.oga \
 	sounds/flite-F/stereo/audio-channel-front-left.ogg \
+	sounds/flite-F/stereo/audio-channel-front-right.oga \
 	sounds/flite-F/stereo/audio-channel-front-right.ogg \
+	sounds/flite-F/stereo/audio-channel-left.oga \
 	sounds/flite-F/stereo/audio-channel-left.ogg \
+	sounds/flite-F/stereo/audio-channel-lfe.oga \
 	sounds/flite-F/stereo/audio-channel-lfe.ogg \
+	sounds/flite-F/stereo/audio-channel-rear-center.oga \
 	sounds/flite-F/stereo/audio-channel-rear-center.ogg \
+	sounds/flite-F/stereo/audio-channel-rear-left.oga \
 	sounds/flite-F/stereo/audio-channel-rear-left.ogg \
+	sounds/flite-F/stereo/audio-channel-rear-right.oga \
 	sounds/flite-F/stereo/audio-channel-rear-right.ogg \
+	sounds/flite-F/stereo/audio-channel-right.oga \
 	sounds/flite-F/stereo/audio-channel-right.ogg \
+	sounds/flite-F/stereo/audio-channel-side-left.oga \
 	sounds/flite-F/stereo/audio-channel-side-left.ogg \
+	sounds/flite-F/stereo/audio-channel-side-right.oga \
 	sounds/flite-F/stereo/audio-channel-side-right.ogg \
 	sounds/flite-F/stereo/audio-test-signal.oga \
+	sounds/flite-F/stereo/audio-volume-change.oga \
 	sounds/flite-F/stereo/audio-volume-change.ogg \
+	sounds/flite-F/stereo/battery-caution.oga \
 	sounds/flite-F/stereo/battery-caution.ogg \
+	sounds/flite-F/stereo/battery-full.oga \
 	sounds/flite-F/stereo/battery-full.ogg \
+	sounds/flite-F/stereo/battery-low.oga \
 	sounds/flite-F/stereo/battery-low.ogg \
 	sounds/flite-F/stereo/bell.oga \
 	sounds/flite-F/stereo/bell-terminal.oga \
 	sounds/flite-F/stereo/bell-window-system.oga \
+	sounds/flite-F/stereo/busytone.oga \
 	sounds/flite-F/stereo/busytone.ogg \
 	sounds/flite-F/stereo/button-pressed.oga \
 	sounds/flite-F/stereo/button-released.oga \
 	sounds/flite-F/stereo/button-toggle-off.oga \
 	sounds/flite-F/stereo/button-toggle-on.oga \
+	sounds/flite-F/stereo/camera-focus.oga \
 	sounds/flite-F/stereo/camera-focus.ogg \
+	sounds/flite-F/stereo/camera-shutter.oga \
 	sounds/flite-F/stereo/camera-shutter.ogg \
+	sounds/flite-F/stereo/complete-copy.oga \
 	sounds/flite-F/stereo/complete-copy.ogg \
+	sounds/flite-F/stereo/complete-download.oga \
 	sounds/flite-F/stereo/complete-download.ogg \
+	sounds/flite-F/stereo/complete-media-burn.oga \
 	sounds/flite-F/stereo/complete-media-burn.ogg \
 	sounds/flite-F/stereo/complete-media.oga \
+	sounds/flite-F/stereo/complete-media-rip.oga \
 	sounds/flite-F/stereo/complete-media-rip.ogg \
+	sounds/flite-F/stereo/complete.oga \
 	sounds/flite-F/stereo/complete.ogg \
+	sounds/flite-F/stereo/complete-print.oga \
 	sounds/flite-F/stereo/complete-print.ogg \
+	sounds/flite-F/stereo/complete-scan.oga \
 	sounds/flite-F/stereo/complete-scan.ogg \
 	sounds/flite-F/stereo/completion-fail.oga \
 	sounds/flite-F/stereo/completion-partial.oga \
 	sounds/flite-F/stereo/completion-rotation.oga \
 	sounds/flite-F/stereo/completion-success.oga \
+	sounds/flite-F/stereo/count-down.oga \
 	sounds/flite-F/stereo/count-down.ogg \
+	sounds/flite-F/stereo/desktop-created.oga \
 	sounds/flite-F/stereo/desktop-created.ogg \
+	sounds/flite-F/stereo/desktop-destroyed.oga \
 	sounds/flite-F/stereo/desktop-destroyed.ogg \
 	sounds/flite-F/stereo/desktop-layout-changed.oga \
+	sounds/flite-F/stereo/desktop-login.oga \
 	sounds/flite-F/stereo/desktop-login.ogg \
+	sounds/flite-F/stereo/desktop-logout.oga \
 	sounds/flite-F/stereo/desktop-logout.ogg \
+	sounds/flite-F/stereo/desktop-mode-decrease-border.disabled \
+	sounds/flite-F/stereo/desktop-mode-decrease-count.disabled \
+	sounds/flite-F/stereo/desktop-mode-decrease-count-grid-col.disabled \
+	sounds/flite-F/stereo/desktop-mode-decrease-count-grid.disabled \
+	sounds/flite-F/stereo/desktop-mode-decrease-count-grid-row.disabled \
+	sounds/flite-F/stereo/desktop-mode-decrease-count-tiled.disabled \
+	sounds/flite-F/stereo/desktop-mode-decrease-margin.disabled \
+	sounds/flite-F/stereo/desktop-mode-decrease-width-tiled.disabled \
 	sounds/flite-F/stereo/desktop-mode-floating.oga \
 	sounds/flite-F/stereo/desktop-mode-grid.oga \
+	sounds/flite-F/stereo/desktop-mode-increase-border.disabled \
+	sounds/flite-F/stereo/desktop-mode-increase-count.disabled \
+	sounds/flite-F/stereo/desktop-mode-increase-count-grid-col.disabled \
+	sounds/flite-F/stereo/desktop-mode-increase-count-grid.disabled \
+	sounds/flite-F/stereo/desktop-mode-increase-count-grid-row.disabled \
+	sounds/flite-F/stereo/desktop-mode-increase-count-tiled.disabled \
+	sounds/flite-F/stereo/desktop-mode-increase-margin.disabled \
+	sounds/flite-F/stereo/desktop-mode-increase-width-tiled.disabled \
 	sounds/flite-F/stereo/desktop-mode-monocle.oga \
 	sounds/flite-F/stereo/desktop-mode.oga \
 	sounds/flite-F/stereo/desktop-mode-tiled-bottom.oga \
@@ -323,7 +411,14 @@ nobase_dist_share_DATA += \
 	sounds/flite-F/stereo/desktop-mode-tiled.oga \
 	sounds/flite-F/stereo/desktop-mode-tiled-right.oga \
 	sounds/flite-F/stereo/desktop-mode-tiled-top.oga \
+	sounds/flite-F/stereo/desktop-monitor-switch.disabled \
+	sounds/flite-F/stereo/desktop-monitor-switch-left.disabled \
+	sounds/flite-F/stereo/desktop-monitor-switch-left-down.disabled \
+	sounds/flite-F/stereo/desktop-monitor-switch-right.disabled \
+	sounds/flite-F/stereo/desktop-monitor-switch-right-up.disabled \
+	sounds/flite-F/stereo/desktop-screen-lock.oga \
 	sounds/flite-F/stereo/desktop-screen-lock.ogg \
+	sounds/flite-F/stereo/desktop-screen-unlock.oga \
 	sounds/flite-F/stereo/desktop-screen-unlock.ogg \
 	sounds/flite-F/stereo/desktop-session-checkpoint.oga \
 	sounds/flite-F/stereo/desktop-session-create.oga \
@@ -331,41 +426,86 @@ nobase_dist_share_DATA += \
 	sounds/flite-F/stereo/desktop-session-restore.oga \
 	sounds/flite-F/stereo/desktop-session-save-failed.oga \
 	sounds/flite-F/stereo/desktop-session-save.oga \
+	sounds/flite-F/stereo/desktop-showing-hideall-decorations.disabled \
 	sounds/flite-F/stereo/desktop-showing-hideall.oga \
+	sounds/flite-F/stereo/desktop-showing-hideall-struts.disabled \
 	sounds/flite-F/stereo/desktop-showing.oga \
+	sounds/flite-F/stereo/desktop-showing-showall-decorations.disabled \
 	sounds/flite-F/stereo/desktop-showing-showall.oga \
+	sounds/flite-F/stereo/desktop-showing-showall-struts.disabled \
+	sounds/flite-F/stereo/desktop-switch-down.oga \
 	sounds/flite-F/stereo/desktop-switch-down.ogg \
+	sounds/flite-F/stereo/desktop-switch-left.oga \
 	sounds/flite-F/stereo/desktop-switch-left.ogg \
+	sounds/flite-F/stereo/desktop-switch-left-up.oga \
 	sounds/flite-F/stereo/desktop-switch-left-up.ogg \
+	sounds/flite-F/stereo/desktop-switch-right-down.oga \
 	sounds/flite-F/stereo/desktop-switch-right-down.ogg \
+	sounds/flite-F/stereo/desktop-switch-right.oga \
 	sounds/flite-F/stereo/desktop-switch-right.ogg \
+	sounds/flite-F/stereo/desktop-switch-up.oga \
 	sounds/flite-F/stereo/desktop-switch-up.ogg \
+	sounds/flite-F/stereo/desktop-view.disabled \
+	sounds/flite-F/stereo/desktop-view-flip.disabled \
+	sounds/flite-F/stereo/desktop-view-rotate.disabled \
+	sounds/flite-F/stereo/desktop-view-unrotate.disabled \
+	sounds/flite-F/stereo/desktop-windows.disabled \
+	sounds/flite-F/stereo/desktop-windows-flip.disabled \
+	sounds/flite-F/stereo/desktop-windows-rotate.disabled \
+	sounds/flite-F/stereo/desktop-windows-unrotate.disabled \
+	sounds/flite-F/stereo/desktop-window-unrotate.oga \
+	sounds/flite-F/stereo/desktop-zone.disabled \
+	sounds/flite-F/stereo/desktop-zone-flip.disabled \
+	sounds/flite-F/stereo/desktop-zone-rotate.disabled \
+	sounds/flite-F/stereo/desktop-zone-unrotate.disabled \
+	sounds/flite-F/stereo/device-added.oga \
 	sounds/flite-F/stereo/device-added.ogg \
+	sounds/flite-F/stereo/device-removed.oga \
 	sounds/flite-F/stereo/device-removed.ogg \
+	sounds/flite-F/stereo/dialog-cancel.oga \
 	sounds/flite-F/stereo/dialog-cancel.ogg \
+	sounds/flite-F/stereo/dialog-error-critical.oga \
 	sounds/flite-F/stereo/dialog-error-critical.ogg \
+	sounds/flite-F/stereo/dialog-error.oga \
 	sounds/flite-F/stereo/dialog-error.ogg \
+	sounds/flite-F/stereo/dialog-error-serious.oga \
 	sounds/flite-F/stereo/dialog-error-serious.ogg \
+	sounds/flite-F/stereo/dialog-information.oga \
 	sounds/flite-F/stereo/dialog-information.ogg \
+	sounds/flite-F/stereo/dialog-ok.oga \
 	sounds/flite-F/stereo/dialog-ok.ogg \
+	sounds/flite-F/stereo/dialog-question.oga \
 	sounds/flite-F/stereo/dialog-question.ogg \
+	sounds/flite-F/stereo/dialog-warning.oga \
 	sounds/flite-F/stereo/dialog-warning.ogg \
+	sounds/flite-F/stereo/dialtone.oga \
 	sounds/flite-F/stereo/dialtone.ogg \
 	sounds/flite-F/stereo/drag-accept.oga \
 	sounds/flite-F/stereo/drag-fail.oga \
 	sounds/flite-F/stereo/drag-start.oga \
+	sounds/flite-F/stereo/dummy-message.oga \
 	sounds/flite-F/stereo/dummy-message.ogg \
 	sounds/flite-F/stereo/expander-toggle-off.oga \
 	sounds/flite-F/stereo/expander-toggle-on.oga \
+	sounds/flite-F/stereo/file-trash.oga \
 	sounds/flite-F/stereo/file-trash.ogg \
+	sounds/flite-F/stereo/game-card-shuffle.oga \
 	sounds/flite-F/stereo/game-card-shuffle.ogg \
+	sounds/flite-F/stereo/game-computer-move.oga \
 	sounds/flite-F/stereo/game-computer-move.ogg \
+	sounds/flite-F/stereo/game-human-move.oga \
 	sounds/flite-F/stereo/game-human-move.ogg \
+	sounds/flite-F/stereo/game-over-loser.oga \
 	sounds/flite-F/stereo/game-over-loser.ogg \
+	sounds/flite-F/stereo/game-over-winner.oga \
 	sounds/flite-F/stereo/game-over-winner.ogg \
+	sounds/flite-F/stereo/item-deleted.oga \
 	sounds/flite-F/stereo/item-deleted.ogg \
+	sounds/flite-F/stereo/item-selected.oga \
 	sounds/flite-F/stereo/item-selected.ogg \
+	sounds/flite-F/stereo/lid-close.oga \
 	sounds/flite-F/stereo/lid-close.ogg \
+	sounds/flite-F/stereo/lid-open.oga \
 	sounds/flite-F/stereo/lid-open.ogg \
 	sounds/flite-F/stereo/link-pressed.oga \
 	sounds/flite-F/stereo/link-released.oga \
@@ -373,30 +513,51 @@ nobase_dist_share_DATA += \
 	sounds/flite-F/stereo/menu-popdown.oga \
 	sounds/flite-F/stereo/menu-popup.oga \
 	sounds/flite-F/stereo/menu-replace.oga \
+	sounds/flite-F/stereo/message-new-email.oga \
 	sounds/flite-F/stereo/message-new-email.ogg \
+	sounds/flite-F/stereo/message-new-instant.oga \
 	sounds/flite-F/stereo/message-new-instant.ogg \
 	sounds/flite-F/stereo/message-new.oga \
 	sounds/flite-F/stereo/message-new-voicemail.oga \
+	sounds/flite-F/stereo/message.oga \
 	sounds/flite-F/stereo/message.ogg \
+	sounds/flite-F/stereo/message-sent-email.oga \
 	sounds/flite-F/stereo/message-sent-email.ogg \
+	sounds/flite-F/stereo/message-sent-instant.oga \
 	sounds/flite-F/stereo/message-sent-instant.ogg \
+	sounds/flite-F/stereo/network-connectivity-error.oga \
 	sounds/flite-F/stereo/network-connectivity-error.ogg \
+	sounds/flite-F/stereo/network-connectivity-established.oga \
 	sounds/flite-F/stereo/network-connectivity-established.ogg \
+	sounds/flite-F/stereo/network-connectivity-lost.oga \
 	sounds/flite-F/stereo/network-connectivity-lost.ogg \
+	sounds/flite-F/stereo/newmail.oga \
 	sounds/flite-F/stereo/newmail.ogg \
+	sounds/flite-F/stereo/newmessage.oga \
 	sounds/flite-F/stereo/newmessage.ogg \
 	sounds/flite-F/stereo/notebook-tab-changed.oga \
+	sounds/flite-F/stereo/phone-failure.oga \
 	sounds/flite-F/stereo/phone-failure.ogg \
+	sounds/flite-F/stereo/phone-hangup.oga \
 	sounds/flite-F/stereo/phone-hangup.ogg \
+	sounds/flite-F/stereo/phone-incoming-call.oga \
 	sounds/flite-F/stereo/phone-incoming-call.ogg \
+	sounds/flite-F/stereo/phone-outgoing-busy.oga \
 	sounds/flite-F/stereo/phone-outgoing-busy.ogg \
+	sounds/flite-F/stereo/phone-outgoing-calling.oga \
 	sounds/flite-F/stereo/phone-outgoing-calling.ogg \
+	sounds/flite-F/stereo/power-plug.oga \
 	sounds/flite-F/stereo/power-plug.ogg \
+	sounds/flite-F/stereo/power-unplug-battery-low.oga \
 	sounds/flite-F/stereo/power-unplug-battery-low.ogg \
+	sounds/flite-F/stereo/power-unplug.oga \
 	sounds/flite-F/stereo/power-unplug.ogg \
+	sounds/flite-F/stereo/ring.oga \
 	sounds/flite-F/stereo/ring.ogg \
 	sounds/flite-F/stereo/screen-brighter.oga \
+	sounds/flite-F/stereo/screen-capture-complete.oga \
 	sounds/flite-F/stereo/screen-capture-complete.ogg \
+	sounds/flite-F/stereo/screen-capture.oga \
 	sounds/flite-F/stereo/screen-capture.ogg \
 	sounds/flite-F/stereo/screen-darker.oga \
 	sounds/flite-F/stereo/scroll-down-end.oga \
@@ -407,19 +568,32 @@ nobase_dist_share_DATA += \
 	sounds/flite-F/stereo/scroll-right.oga \
 	sounds/flite-F/stereo/scroll-up-end.oga \
 	sounds/flite-F/stereo/scroll-up.oga \
+	sounds/flite-F/stereo/search-results-empty.oga \
 	sounds/flite-F/stereo/search-results-empty.ogg \
+	sounds/flite-F/stereo/search-results.oga \
 	sounds/flite-F/stereo/search-results.ogg \
+	sounds/flite-F/stereo/service-login.oga \
 	sounds/flite-F/stereo/service-login.ogg \
+	sounds/flite-F/stereo/service-logout.oga \
 	sounds/flite-F/stereo/service-logout.ogg \
+	sounds/flite-F/stereo/software-update-available.oga \
 	sounds/flite-F/stereo/software-update-available.ogg \
+	sounds/flite-F/stereo/software-update-urgent.oga \
 	sounds/flite-F/stereo/software-update-urgent.ogg \
 	sounds/flite-F/stereo/startup.oga \
+	sounds/flite-F/stereo/suspend-error.oga \
 	sounds/flite-F/stereo/suspend-error.ogg \
+	sounds/flite-F/stereo/suspend-resume.oga \
 	sounds/flite-F/stereo/suspend-resume.ogg \
+	sounds/flite-F/stereo/suspend-start.oga \
 	sounds/flite-F/stereo/suspend-start.ogg \
+	sounds/flite-F/stereo/system-bootup.oga \
 	sounds/flite-F/stereo/system-bootup.ogg \
+	sounds/flite-F/stereo/system-ready.oga \
 	sounds/flite-F/stereo/system-ready.ogg \
+	sounds/flite-F/stereo/system-shutdown.oga \
 	sounds/flite-F/stereo/system-shutdown.ogg \
+	sounds/flite-F/stereo/system-shutdown-reboot.oga \
 	sounds/flite-F/stereo/system-shutdown-reboot.ogg \
 	sounds/flite-F/stereo/test.oga \
 	sounds/flite-F/stereo/thermal-caution.oga \
@@ -427,7 +601,9 @@ nobase_dist_share_DATA += \
 	sounds/flite-F/stereo/thermal-hot.oga \
 	sounds/flite-F/stereo/tooltip-popdown.oga \
 	sounds/flite-F/stereo/tooltip-popup.oga \
+	sounds/flite-F/stereo/trash-empty.oga \
 	sounds/flite-F/stereo/trash-empty.ogg \
+	sounds/flite-F/stereo/voicemail.oga \
 	sounds/flite-F/stereo/voicemail.ogg \
 	sounds/flite-F/stereo/window-attention-active.oga \
 	sounds/flite-F/stereo/window-attention-inactive.oga \
@@ -440,6 +616,10 @@ nobase_dist_share_DATA += \
 	sounds/flite-F/stereo/window-inactive-click.oga \
 	sounds/flite-F/stereo/window-lower-below.oga \
 	sounds/flite-F/stereo/window-lower.oga \
+	sounds/flite-F/stereo/window-manager-quit.disabled \
+	sounds/flite-F/stereo/window-manager-reload.disabled \
+	sounds/flite-F/stereo/window-manager-restart.disabled \
+	sounds/flite-F/stereo/window-manager-start.disabled \
 	sounds/flite-F/stereo/window-maximized-filled.oga \
 	sounds/flite-F/stereo/window-maximized-fullscreen.oga \
 	sounds/flite-F/stereo/window-maximized-horizontal.oga \
@@ -500,7 +680,9 @@ nobase_dist_share_DATA += \
 	sounds/flite-F/stereo/window-unstick.oga \
 	sounds/flite-F/stereo/window-unstick-unpinned.oga \
 	sounds/flite-F/stereo/window-urgent.oga \
+	sounds/flite-F/stereo/workspace-created.oga \
 	sounds/flite-F/stereo/workspace-created.ogg \
+	sounds/flite-F/stereo/workspace-destroyed.oga \
 	sounds/flite-F/stereo/workspace-destroyed.ogg
 
 nobase_dist_share_DATA += \
@@ -552,8 +734,24 @@ nobase_dist_share_DATA += \
 	sounds/flite-M/stereo/desktop-layout-changed.oga \
 	sounds/flite-M/stereo/desktop-login.oga \
 	sounds/flite-M/stereo/desktop-logout.oga \
+	sounds/flite-M/stereo/desktop-mode-decrease-border.disabled \
+	sounds/flite-M/stereo/desktop-mode-decrease-count.disabled \
+	sounds/flite-M/stereo/desktop-mode-decrease-count-grid-col.disabled \
+	sounds/flite-M/stereo/desktop-mode-decrease-count-grid.disabled \
+	sounds/flite-M/stereo/desktop-mode-decrease-count-grid-row.disabled \
+	sounds/flite-M/stereo/desktop-mode-decrease-count-tiled.disabled \
+	sounds/flite-M/stereo/desktop-mode-decrease-margin.disabled \
+	sounds/flite-M/stereo/desktop-mode-decrease-width-tiled.disabled \
 	sounds/flite-M/stereo/desktop-mode-floating.oga \
 	sounds/flite-M/stereo/desktop-mode-grid.oga \
+	sounds/flite-M/stereo/desktop-mode-increase-border.disabled \
+	sounds/flite-M/stereo/desktop-mode-increase-count.disabled \
+	sounds/flite-M/stereo/desktop-mode-increase-count-grid-col.disabled \
+	sounds/flite-M/stereo/desktop-mode-increase-count-grid.disabled \
+	sounds/flite-M/stereo/desktop-mode-increase-count-grid-row.disabled \
+	sounds/flite-M/stereo/desktop-mode-increase-count-tiled.disabled \
+	sounds/flite-M/stereo/desktop-mode-increase-margin.disabled \
+	sounds/flite-M/stereo/desktop-mode-increase-width-tiled.disabled \
 	sounds/flite-M/stereo/desktop-mode-monocle.oga \
 	sounds/flite-M/stereo/desktop-mode.oga \
 	sounds/flite-M/stereo/desktop-mode-tiled-bottom.oga \
@@ -561,6 +759,11 @@ nobase_dist_share_DATA += \
 	sounds/flite-M/stereo/desktop-mode-tiled.oga \
 	sounds/flite-M/stereo/desktop-mode-tiled-right.oga \
 	sounds/flite-M/stereo/desktop-mode-tiled-top.oga \
+	sounds/flite-M/stereo/desktop-monitor-switch.disabled \
+	sounds/flite-M/stereo/desktop-monitor-switch-left.disabled \
+	sounds/flite-M/stereo/desktop-monitor-switch-left-down.disabled \
+	sounds/flite-M/stereo/desktop-monitor-switch-right.disabled \
+	sounds/flite-M/stereo/desktop-monitor-switch-right-up.disabled \
 	sounds/flite-M/stereo/desktop-screen-lock.oga \
 	sounds/flite-M/stereo/desktop-screen-unlock.oga \
 	sounds/flite-M/stereo/desktop-session-checkpoint.oga \
@@ -569,15 +772,32 @@ nobase_dist_share_DATA += \
 	sounds/flite-M/stereo/desktop-session-restore.oga \
 	sounds/flite-M/stereo/desktop-session-save-failed.oga \
 	sounds/flite-M/stereo/desktop-session-save.oga \
+	sounds/flite-M/stereo/desktop-showing-hideall-decorations.disabled \
 	sounds/flite-M/stereo/desktop-showing-hideall.oga \
+	sounds/flite-M/stereo/desktop-showing-hideall-struts.disabled \
 	sounds/flite-M/stereo/desktop-showing.oga \
+	sounds/flite-M/stereo/desktop-showing-showall-decorations.disabled \
 	sounds/flite-M/stereo/desktop-showing-showall.oga \
+	sounds/flite-M/stereo/desktop-showing-showall-struts.disabled \
 	sounds/flite-M/stereo/desktop-switch-down.oga \
 	sounds/flite-M/stereo/desktop-switch-left.oga \
 	sounds/flite-M/stereo/desktop-switch-left-up.oga \
 	sounds/flite-M/stereo/desktop-switch-right-down.oga \
 	sounds/flite-M/stereo/desktop-switch-right.oga \
 	sounds/flite-M/stereo/desktop-switch-up.oga \
+	sounds/flite-M/stereo/desktop-view.disabled \
+	sounds/flite-M/stereo/desktop-view-flip.disabled \
+	sounds/flite-M/stereo/desktop-view-rotate.disabled \
+	sounds/flite-M/stereo/desktop-view-unrotate.disabled \
+	sounds/flite-M/stereo/desktop-windows.disabled \
+	sounds/flite-M/stereo/desktop-windows-flip.disabled \
+	sounds/flite-M/stereo/desktop-windows-rotate.disabled \
+	sounds/flite-M/stereo/desktop-windows-unrotate.disabled \
+	sounds/flite-M/stereo/desktop-window-unrotate.oga \
+	sounds/flite-M/stereo/desktop-zone.disabled \
+	sounds/flite-M/stereo/desktop-zone-flip.disabled \
+	sounds/flite-M/stereo/desktop-zone-rotate.disabled \
+	sounds/flite-M/stereo/desktop-zone-unrotate.disabled \
 	sounds/flite-M/stereo/device-added.oga \
 	sounds/flite-M/stereo/device-removed.oga \
 	sounds/flite-M/stereo/dialog-cancel.oga \
@@ -678,6 +898,10 @@ nobase_dist_share_DATA += \
 	sounds/flite-M/stereo/window-inactive-click.oga \
 	sounds/flite-M/stereo/window-lower-below.oga \
 	sounds/flite-M/stereo/window-lower.oga \
+	sounds/flite-M/stereo/window-manager-quit.disabled \
+	sounds/flite-M/stereo/window-manager-reload.disabled \
+	sounds/flite-M/stereo/window-manager-restart.disabled \
+	sounds/flite-M/stereo/window-manager-start.disabled \
 	sounds/flite-M/stereo/window-maximized-filled.oga \
 	sounds/flite-M/stereo/window-maximized-fullscreen.oga \
 	sounds/flite-M/stereo/window-maximized-horizontal.oga \
@@ -978,4 +1202,3 @@ nobase_dist_share_DATA += \
 	sounds/Incredibles/stereo/window-urgent.oga \
 	sounds/Incredibles/stereo/workspace-created.oga \
 	sounds/Incredibles/stereo/workspace-destroyed.oga
-
