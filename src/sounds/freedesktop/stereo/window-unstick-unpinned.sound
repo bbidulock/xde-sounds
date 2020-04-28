@@ -1,2 +1,3 @@
 DisplayName=Window unpinned.
+Context=Support
 Description=The sound used when a window is unpinned from all workspaces.  Falls back to window-unstick.

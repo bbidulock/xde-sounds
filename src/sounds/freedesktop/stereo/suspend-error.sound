@@ -1,2 +1,3 @@
 DisplayName=Machine Suspend Failed
+Context=Alert
 Description=The machine failed to suspend.

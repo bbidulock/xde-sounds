@@ -1,2 +1,3 @@
 DisplayName=Showing Desktop
+Context=Support
 Description=The sound used when the desktop is revealed (all windows are hidden).

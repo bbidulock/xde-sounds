@@ -1,2 +1,3 @@
 DisplayName=Scroll left has reached the end of the scroll-bar.
+Context=Support
 Description=Some window was scrolled left and reached the end of the scroll-bar.

@@ -1,4 +1,8 @@
 DisplayName=Rear Right
 DisplayName[en]=Rear Right
 DisplayName[en_CA]=Rear Right
+Context=Action
 Description=The test sound for identifying the rear-right speaker.  A mono file with a voice saying 'rear right'.
+SpokenWords=Rear, right.
+SpokenWords[en]=Rear, right.
+SpokenWords[en_CA]=Rear, right.

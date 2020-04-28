@@ -1,2 +1,3 @@
 DisplayName=Network Connectivity Lost
+Context=Alert
 Description=The sound used when network connectivity is lost.

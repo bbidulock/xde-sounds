@@ -1,2 +1,3 @@
 DisplayName=Window maximized to the right.
+Context=Support
 Description=The sound used when an active window is set to maximize on the right of the screen.

@@ -1,2 +1,3 @@
 DisplayName=Window Killed
+Context=Support
 Description=The sound used when an existing window is killed.

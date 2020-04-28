@@ -1,2 +1,3 @@
 DisplayName=Session Restored
+Context=Notification
 Description=The sound used when a desktop session is restored.

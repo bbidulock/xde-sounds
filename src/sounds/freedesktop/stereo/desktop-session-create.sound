@@ -1,2 +1,3 @@
 DisplayName=Session Created
+Context=Notification
 Description=The sound used when a new desktop session is created.

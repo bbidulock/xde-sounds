@@ -1,2 +1,3 @@
 DisplayName=Caution: battery nearing exhaustion.
+Context=Notification
 Description=The sound used when the battery is nearing exhaustion (below 40%, for example).

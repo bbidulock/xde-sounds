@@ -1,2 +1,3 @@
 DisplayName=Item Deleted
+Context=Action
 Description=The sound used when an item is deleted.

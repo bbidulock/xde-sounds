@@ -1,2 +1,4 @@
 DisplayName=Window Resize Ended
+Context=Support
 Description=A window resize ended.
+SpokenWords=Window ree-size ended.

@@ -1,2 +1,3 @@
 DisplayName=Stopped Attracting Move
+Context=Support
 Description=The sound used when moving a window and the movement has stopped being attracted by another window or workspace boundary.

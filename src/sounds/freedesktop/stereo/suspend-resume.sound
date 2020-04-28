@@ -1,2 +1,3 @@
 DisplayName=Machine returned from suspended state.
+Context=Notification
 Description=The machine has returned from suspended state.

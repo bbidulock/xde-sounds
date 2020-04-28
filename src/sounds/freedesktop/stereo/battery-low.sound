@@ -1,2 +1,3 @@
 DisplayName=Low Battery! Low Battery! Low Battery!
+Context=Alert
 Description=The sound used when the battery is low (below 20%, for example).

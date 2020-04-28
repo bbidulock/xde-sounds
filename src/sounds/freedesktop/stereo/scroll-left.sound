@@ -1,2 +1,3 @@
 DisplayName=Scrolling to the Left
+Context=Support
 Description=Some window was scrolled left.

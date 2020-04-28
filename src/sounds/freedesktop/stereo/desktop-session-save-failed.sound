@@ -1,2 +1,3 @@
 DisplayName=Session Save Failed
+Context=Alert
 Description=The sound used when saving a desktop session failed.

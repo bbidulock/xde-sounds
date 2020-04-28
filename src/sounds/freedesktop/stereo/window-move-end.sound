@@ -1,2 +1,3 @@
 DisplayName=Window Move Ended
+Context=Support
 Description=A window move ended.

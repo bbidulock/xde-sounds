@@ -1,2 +1,4 @@
 DisplayName=Window undecorated.
+Context=Support
 Description=The sound used when decorations are removed from an existing window.
+SpokenWords=Window un-decorated.

@@ -1,2 +1,3 @@
 DisplayName=Initiating startup sequence.
+Context=Notification
 Description=The sound used when the computer is being booted up, played as early in bootup as possible.

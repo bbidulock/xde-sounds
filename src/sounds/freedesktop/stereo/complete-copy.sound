@@ -1,2 +1,3 @@
 DisplayName=File copy complete
+Context=Notification
 Description=The sound use when a file completed copying.

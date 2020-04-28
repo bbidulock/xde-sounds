@@ -1,2 +1,3 @@
 DisplayName=Window Killed by Process Identifier
+Context=Support
 Description=The sound used when an existing window is killed by process identifier.

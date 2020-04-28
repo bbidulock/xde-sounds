@@ -1,2 +1,4 @@
 DisplayName=Critical Error Dialog
+Context=Alert
 Description=Common sound used when a dialog is opened to explain a critical error condition to the user.
+SpokenWords=Critical, error dialog.

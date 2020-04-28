@@ -1,2 +1,3 @@
 DisplayName=The power cable has been plugged in.
+Context=Notification
 Description=The power cable has been plugged in.

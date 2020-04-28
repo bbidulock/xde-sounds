@@ -1,2 +1,3 @@
 DisplayName=Phone call cancelled due to error.
+Context=Notification
 Description=The sound used when a phone/voip call is canceled due to some error.

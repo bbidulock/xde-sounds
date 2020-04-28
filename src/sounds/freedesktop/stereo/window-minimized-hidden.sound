@@ -1,2 +1,3 @@
 DisplayName=Window hidden.
+Context=Support
 Description=The sound used when an existing window is hidden.

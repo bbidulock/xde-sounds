@@ -1,2 +1,3 @@
 DisplayName=Window revealed.
+Context=Support
 Description=The sound used when a window is unhidden.  Falls back to window-unminimized.

@@ -1,4 +1,8 @@
 DisplayName=Front Right
 DisplayName[en]=Front Right
 DisplayName[en_CA]=Front Right
+Context=Action
 Description=The test sound for identifying the front-right speaker.  A mono file with a voice saying 'front right'.
+SpokenWords=Front right.
+SpokenWords[en]=Front right.
+SpokenWords[en_CA]=Front right.

@@ -1,2 +1,3 @@
 DisplayName=Session Saved
+Context=Notification
 Description=The sound used when a desktop session is saved.

@@ -1,2 +1,3 @@
 DisplayName=Desktop to the Left
+Context=Support
 Description=Common sound used when the window manager switches to another desktop which is located to the left the current screen.

@@ -1,2 +1,3 @@
 DisplayName=Phone hung up.
+Context=Notification
 Description=The sound used when a phone/voip call is ended due to hangup.

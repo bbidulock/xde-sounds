@@ -1,2 +1,3 @@
-DisplayName=Work space destroyed.
+DisplayName=Workspace destroyed.
+Context=Support
 Description=The sound used when a workspace is destroyed on the screen.

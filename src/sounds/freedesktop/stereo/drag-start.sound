@@ -1,2 +1,3 @@
 DisplayName=Drag Started
+Context=Support
 Description=The sound used when drag of a file/item is started.

@@ -1,2 +1,3 @@
 DisplayName=New Email message.
+Context=Notification
 Description=The sound used when a new email is received.

@@ -1,2 +1,3 @@
 DisplayName=Window Move Started
+Context=Support
 Description=A window move started.

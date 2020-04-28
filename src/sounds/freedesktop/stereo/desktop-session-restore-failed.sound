@@ -1,2 +1,3 @@
 DisplayName=Session Restoration Failed
+Context=Alert
 Description=The sound used when the restoration of a desktop session fails.

@@ -1,4 +1,8 @@
 DisplayName=Front Left
 DisplayName[en]=Front Left
 DisplayName[en_CA]=Front Left
+Context=Action
 Description=The test sound for identifying the front-left speaker.  A mono file with a voice saying 'front left'.
+SpokenWords=Front left.
+SpokenWords[en]=Front left.
+SpokenWords[en_CA]=Front left.

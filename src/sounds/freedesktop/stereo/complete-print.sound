@@ -1,2 +1,3 @@
 DisplayName=File print complete
+Context=Notification
 Description=Common sound used when a file has completed printing.

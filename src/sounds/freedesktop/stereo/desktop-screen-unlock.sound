@@ -1,2 +1,3 @@
 DisplayName=Screen Unlocked
+Context=Notification
 Description=Common sound used when the user unlocks their current session.

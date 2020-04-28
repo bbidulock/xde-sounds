@@ -1,4 +1,5 @@
 DisplayName=Side Right
 DisplayName[en]=Side Right
 DisplayName[en_CA]=Side Right
+Context=Action
 Description=The test sound for identifying the side-right speaker.  A mono file with a voice saying 'side right'.

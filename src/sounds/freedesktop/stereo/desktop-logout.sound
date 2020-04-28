@@ -1,2 +1,4 @@
-DisplayName=Logging out of the X desktop environment.
+DisplayName=Leaving the X desktop environment.
+Context=Support
 Description=The sound used when a user logs out of the system.
+SpokenWords=Logging out of the X desktop environment.

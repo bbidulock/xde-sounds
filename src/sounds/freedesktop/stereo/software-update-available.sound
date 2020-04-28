@@ -1,2 +1,3 @@
 DisplayName=A software update is available through the system software update program.
+Context=Notification
 Description=The sound used when an update is available for software installed on the computing device, through the system software update program.

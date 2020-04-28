@@ -1,2 +1,3 @@
 DisplayName=Question Window Opened
+Context=Notification
 Description=The sound used when a new dialog window is opened.

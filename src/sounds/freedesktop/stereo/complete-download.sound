@@ -1,2 +1,3 @@
 DisplayName=File download complete
+Context=Notification
 Description=THe sound used when a file completed downloading.

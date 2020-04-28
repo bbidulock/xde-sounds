@@ -1,2 +1,3 @@
 DisplayName=Button toggled off
+Context=Support
 Description=The sound used when the toggle/check/radio button is deactivated.

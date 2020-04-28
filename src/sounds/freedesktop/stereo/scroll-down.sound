@@ -1,2 +1,3 @@
 DisplayName=Scrolling down.
+Context=Support
 Description=Some window was scrolled down.

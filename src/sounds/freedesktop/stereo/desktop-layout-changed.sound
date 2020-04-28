@@ -1,2 +1,3 @@
-DisplayName=Desk Top Layout Changed.
+DisplayName=Desktop Layout Changed.
+Context=Support
 Description=The sound used when the desktop layout (rows and columns) changes.

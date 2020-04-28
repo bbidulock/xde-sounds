@@ -1,2 +1,3 @@
 DisplayName=New Voicemail message.
+Context=Notification
 Description=The sound used when a new voicemail is received.

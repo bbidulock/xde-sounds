@@ -1,2 +1,4 @@
-DisplayName=Notebok Tab Changed
+DisplayName=Notebook Tab Changed
+Context=Support
 Description=The sound used when a notebook tab is changed.
+SpokenWords=Note book tab changed.

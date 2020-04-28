@@ -1,2 +1,3 @@
 DisplayName=New Instant Message.
+Context=Notification
 Description=The sound used when a new IM is received.

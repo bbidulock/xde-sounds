@@ -1,2 +1,4 @@
 DisplayName=Menu Popup
+Context=Support
 Description=The sound used when a menu is popped up.
+SpokenWords=Menu pop-up.

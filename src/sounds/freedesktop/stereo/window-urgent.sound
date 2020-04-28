@@ -1,2 +1,3 @@
 DisplayName=Urgent Window
+Context=Notification
 Description=The sound used when a window is marked as urgent.

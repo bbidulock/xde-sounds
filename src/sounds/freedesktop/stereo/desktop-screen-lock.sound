@@ -1,2 +1,3 @@
 DisplayName=Screen Locked
-Description=The sound used when the user locs their current session.
+Context=Notification
+Description=The sound used when the user locks their current session.

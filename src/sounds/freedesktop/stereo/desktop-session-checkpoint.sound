@@ -1,2 +1,3 @@
 DisplayName=Session Check-Point
+Context=Support
 Description=The sound used when a desktop session is checkpointed.

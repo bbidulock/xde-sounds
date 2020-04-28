@@ -1,2 +1,3 @@
 DisplayName=Action complete
+Context=Notification
 Description=Common sound used when an action is complete.

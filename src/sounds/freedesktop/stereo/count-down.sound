@@ -1,2 +1,3 @@
 DisplayName=Counting down.
+Context=Action
 Description=A countdown (e.g. for a photo shooting) sound that is repeated each second.

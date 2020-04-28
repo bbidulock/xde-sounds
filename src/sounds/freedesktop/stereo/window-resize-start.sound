@@ -1,2 +1,4 @@
 DisplayName=Window Resize Started
+Context=Support
 Description=A window resize started.
+SpokenWords=Window ree-size started.

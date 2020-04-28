@@ -1,2 +1,3 @@
 DisplayName=Initiating restart sequence.
+Context=Notification
 Description=Common sound used when the computer is being restarted.

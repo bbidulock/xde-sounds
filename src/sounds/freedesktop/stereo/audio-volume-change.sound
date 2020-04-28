@@ -1,4 +1,5 @@
 DisplayName=Volume Change
 DisplayName[en]=Volume Change
 DisplayName[en_CA]=Volume Change
+Context=Action
 Description=The teset sound that is used to make volume changes noticeable by the user when he uses a volume slider.

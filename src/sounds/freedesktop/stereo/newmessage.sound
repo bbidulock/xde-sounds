@@ -1,2 +1,4 @@
 DisplayName=New Message
+Context=Notification
 Description=Common sound used when a new IM arrives.  See also message-new-instant.
+SpokenWords=New message.

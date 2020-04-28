@@ -1,2 +1,3 @@
 DisplayName=No search results returned.
+Context=Notification
 Description=The sound used when one or more search results are returned.

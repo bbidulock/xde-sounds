@@ -1,2 +1,3 @@
 DisplayName=Window System Bell
+Context=Action
 Description=The sound to use as a generic bell for X11 and other window systems.

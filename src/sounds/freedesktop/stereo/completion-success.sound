@@ -1,2 +1,3 @@
 DisplayName=Text completion attempt successful.
+Context=Action
 Description=A text completion was attempted and was successful.

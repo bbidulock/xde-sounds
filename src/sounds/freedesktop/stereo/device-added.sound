@@ -1,2 +1,3 @@
 DisplayName=Device Added
+Context=Notification
 Description=The sound used when a device has become available to the desktop, i.e. due to USB plugging.

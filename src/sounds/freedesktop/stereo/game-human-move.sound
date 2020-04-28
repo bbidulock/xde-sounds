@@ -1,2 +1,4 @@
 DisplayName=Your move.
+Context=Game
 Description=The sound used when the user makes a move.
+SpokenWords=Your move: You! Filthy! Animal!

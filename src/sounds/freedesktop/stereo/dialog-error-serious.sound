@@ -1,2 +1,4 @@
-DisplayName=Seriuos Error Dialog
+DisplayName=Serious Error Dialog
+Context=Alert
 Description=Common sound used when a dialog is opened to explain a serious error condition to the user.
+SpokenWords=Serious, error dialog.

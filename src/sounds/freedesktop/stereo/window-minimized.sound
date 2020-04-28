@@ -1,2 +1,3 @@
 DisplayName=Window Minimized
+Context=Support
 Description=The sound used when when an existing window is iconified (minimized).

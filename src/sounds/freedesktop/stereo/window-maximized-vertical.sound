@@ -1,2 +1,3 @@
 DisplayName=Window maximized vertically.
+Context=Support
 Description=The sound used when an existing window is maximized in the vertical direction.

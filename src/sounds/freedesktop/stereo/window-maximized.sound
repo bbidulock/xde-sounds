@@ -1,2 +1,3 @@
 DisplayName=Window Maximized
+Context=Support
 Description=The sound used when an existing window is maximized in both directions (horizontal and vertical).

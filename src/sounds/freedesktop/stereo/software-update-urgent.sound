@@ -1,2 +1,3 @@
 DisplayName=An urgent software update is available through the system software update program.
+Context=Alert
 Description=The sound used when an urgent update is available through the system software update program.

@@ -1,2 +1,4 @@
 DisplayName=Cards Shuffled
+Context=Game
 Description=In card games, when the cards are shuffled.
+SpokenWords=Shuffle the cards: You! Filthy! Animal!

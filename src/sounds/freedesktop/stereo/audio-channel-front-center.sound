@@ -1,4 +1,8 @@
 DisplayName=Front Center
 DisplayName[en]=Front Center
 DisplayName[en_CA]=Front Centre
+Context=Action
 Description=The test sound for identify the front-center speaker.  A mono file with a voice saying 'front right'.
+SpokenWords=Front center.
+SpokenWords[en]=Front center.
+SpokenWords[en_CA]=Front centre.

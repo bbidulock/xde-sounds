@@ -1,2 +1,3 @@
 DisplayName=Optical medium ripping complete
+Context=Notification
 Description=The sound used when an optical medium completed ripping.

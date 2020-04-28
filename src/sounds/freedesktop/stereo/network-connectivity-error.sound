@@ -1,2 +1,3 @@
 DisplayName=Network Connectivity Error
+Context=Alert
 Description=The sound used when an error occurs when it is tried to initialize the network connection of the computing device.

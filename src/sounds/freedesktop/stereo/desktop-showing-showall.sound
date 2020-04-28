@@ -1,2 +1,3 @@
 DisplayName=Not Showing Desktop
+Context=Support
 Description=The sound used when the windows hidden to show the desktop are restored.

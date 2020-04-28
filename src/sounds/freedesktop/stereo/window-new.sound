@@ -1,2 +1,3 @@
 DisplayName=New Window Opened
+Context=Notification
 Description=The sound used when a new window or dialog is opened.

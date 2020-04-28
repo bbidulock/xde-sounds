@@ -1,2 +1,3 @@
 DisplayName=Trash Emptied
+Context=Action
 Description=The sound used when the user empties the trash.

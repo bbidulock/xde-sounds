@@ -1,2 +1,3 @@
 DisplayName=Window Requires Attention
+Context=Notification
 Description=Common sound used when a window demands attention.

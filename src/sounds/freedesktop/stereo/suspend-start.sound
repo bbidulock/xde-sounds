@@ -1,2 +1,3 @@
 DisplayName=Machine suspending.
+Context=Notification
 Description=The machine is about to suspend.

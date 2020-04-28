@@ -1,4 +1,5 @@
 DisplayName=Test Signal
 DisplayName[en]=Test Signal
 DisplayName[en_CA]=Test Signal
+Context=Action
 Description=The test sound for testing audio.

@@ -1,2 +1,3 @@
 DisplayName=My move.
+Context=Game
 Description=The sound used when the computer makes a move.

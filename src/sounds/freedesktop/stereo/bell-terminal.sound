@@ -1,2 +1,3 @@
 DisplayName=Terminal Bell
+Context=Action
 Description=The sound to use as a terminal bell.

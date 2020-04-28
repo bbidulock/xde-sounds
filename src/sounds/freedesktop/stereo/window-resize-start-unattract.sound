@@ -1,2 +1,4 @@
 DisplayName=Stopped Attracting Resize
+Context=Support
 Description=The sound used when resizing a window and the resize has stopped being attracted by another window or workspace boundary.
+SpokenWords=Stopped attracting ree-size.

@@ -1,2 +1,3 @@
 DisplayName=Drag Failed
+Context=Support
 Description=The sound used when a file/item drag is not accepted by a window, such as a folder or IM conversation.

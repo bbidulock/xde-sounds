@@ -1,2 +1,4 @@
 DisplayName=Attracting Resize
+Context=Support
 Description=The sound used when resizing a window and the resize is attracted by another window or workspace boundary.
+SpokenWords=Attracting ree-size.

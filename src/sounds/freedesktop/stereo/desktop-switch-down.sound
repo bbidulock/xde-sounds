@@ -1,2 +1,3 @@
 DisplayName=Desktop Below
+Context=Support
 Description=Common sound used when the window manager switches to another desktop which is located below the current screen.

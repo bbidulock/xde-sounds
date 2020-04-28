@@ -1,2 +1,3 @@
 DisplayName=Item Selected
+Context=Support
 Description=The sound used when an item is selected.

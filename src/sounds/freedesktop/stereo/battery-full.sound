@@ -1,2 +1,3 @@
 DisplayName=Battery is fully charged.
+Context=Notification
 Description=The sound used when the battery is fully loaded up.

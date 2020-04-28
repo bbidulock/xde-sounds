@@ -1,2 +1,4 @@
 DisplayName=Tooltip Popdown
+Context=Support
 Description=The sound used when a tooltip is popped down.
+SpokenWords=Tool, tip, pop-down.

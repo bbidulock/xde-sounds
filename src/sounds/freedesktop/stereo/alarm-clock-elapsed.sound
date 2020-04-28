@@ -1,2 +1,4 @@
 DisplayName=Alarm Clock Elapsed
+Context=Notification
 Description=A user configured alarm elapsed.
+SpokenWords=Alarm clock elapsed.

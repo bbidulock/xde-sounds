@@ -1,2 +1,3 @@
 DisplayName=Window Unminimized
+Context=Support
 Description=The sound used when an existing window is unminimized.

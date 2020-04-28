@@ -1,2 +1,3 @@
 DisplayName=Menu Clicked
+Context=Support
 Description=The sound used when a menu item is clicked.

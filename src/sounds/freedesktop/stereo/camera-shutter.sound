@@ -1,2 +1,3 @@
 DisplayName=Say "Cheese"!
+Context=Action
 Description=A photo has been shot.

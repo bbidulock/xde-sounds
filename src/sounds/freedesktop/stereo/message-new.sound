@@ -1,2 +1,3 @@
 DisplayName=New message.
+Context=Notification
 Description=The sound used when a new message is received.

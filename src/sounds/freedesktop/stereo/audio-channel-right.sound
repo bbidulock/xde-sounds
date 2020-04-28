@@ -1,4 +1,5 @@
 DisplayName=Right
 DisplayName[en]=Right
 DisplayName[en_CA]=Right
+Context=Action
 Description=The test sound for identifying the right speaker.  A mono file with a voice saying 'right'.

@@ -1,2 +1,3 @@
 DisplayName=Window Lowered
+Context=Support
 Description=The sound used when an active window is lowered.

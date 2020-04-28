@@ -1,2 +1,3 @@
 DisplayName=Device Removed
+Context=Notification
 Description=The sound used when a device has become unavailable to the desktop, i.e. due to USB unplug.

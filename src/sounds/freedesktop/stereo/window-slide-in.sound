@@ -1,2 +1,3 @@
 DisplayName=Window Slided In
+Context=Support
 Description=The sound used when a window is slided in by some means.  Example: panel.

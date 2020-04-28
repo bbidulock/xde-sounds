@@ -1,4 +1,8 @@
 DisplayName=Left
 DisplayName[en]=Left
 DisplayName[en_CA]=Left
+Context=Action
 Description=The test sound for identifying the left speaker.  A mono file with a voice saying 'left'.
+SpokenWords=Left.
+SpokenWords[en]=Left.
+SpokenWords[en_CA]=Left.

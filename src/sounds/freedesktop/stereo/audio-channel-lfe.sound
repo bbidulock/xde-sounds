@@ -1,4 +1,8 @@
 DisplayName=Subwoofer
 DisplayName[en]=Subwoofer
 DisplayName[en_CA]=Subwoofer
+Context=Action
 Description=The test sound for identifying the lfe/subwoofer speaker.  A mono file with a voice saying 'sub-woofer', alternatively a low frequency noise.
+SpokenWords=Sub-woofer.
+SpokenWords[en]=Sub-woofer.
+SpokenWords[en_CA]=Sub-woofer.

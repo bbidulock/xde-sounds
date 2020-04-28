@@ -1,2 +1,3 @@
 DisplayName=Repelling Move
+Context=Support
 Description=The sound used when moving a window and the movement is repelled by another window or workspace boundary.
