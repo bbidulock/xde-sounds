@@ -1,3 +1,5 @@
 DisplayName=Optical medium burning complete
 Context=Notification
 Description=The sound used when an optical medium completed burning.
+InvokedBy=Application
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

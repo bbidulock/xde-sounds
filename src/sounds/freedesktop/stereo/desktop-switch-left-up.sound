@@ -1,3 +1,5 @@
 DisplayName=Desktop Above
 Context=Support
 Description=Common sound used when the window manager switches to another desktop which is located above the current screen.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

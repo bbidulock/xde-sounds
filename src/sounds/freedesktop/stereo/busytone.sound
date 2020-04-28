@@ -2,3 +2,5 @@ DisplayName=Busy Tone
 Context=Notification
 Description=Common sound used when the phone/voip call is dialed out and the responder is already engaged.  See also phone-outgoing-busy.
 SpokenWords=Busy, tone! Busy! Busy, tone! Busy!
+InvokedBy=Application
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

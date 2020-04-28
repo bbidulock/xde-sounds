@@ -2,3 +2,5 @@ DisplayName=Stopped Repelling Resize
 Context=Support
 Description=The sound used when resizing a window and the resize has stopped being repelled by another window or workspace boundary.
 SpokenWords=Stopped repelling ree-size.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

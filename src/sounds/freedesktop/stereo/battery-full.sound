@@ -1,3 +1,5 @@
 DisplayName=Battery is fully charged.
 Context=Notification
 Description=The sound used when the battery is fully loaded up.
+InvokedBy=System
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

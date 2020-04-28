@@ -2,3 +2,5 @@ DisplayName=Mouse Clicked in Inactive Window
 Context=Support
 Description=The sound used when the user clicks on an inactive window.
 SpokenWords=Mouse clicked in in-active window
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

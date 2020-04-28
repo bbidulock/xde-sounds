@@ -1,3 +1,5 @@
 DisplayName=Text completion attempt not successful.
 Context=Action
 Description=A text completion was attempted and was not successful.
+InvokedBy=Toolkit
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

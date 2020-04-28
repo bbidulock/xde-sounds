@@ -2,3 +2,5 @@ DisplayName=Menu Popdown
 Context=Support
 Description=The sound used when a menu is popped down.
 SpokenWords=Menu pop-down.
+InvokedBy=Toolkit
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

@@ -2,3 +2,5 @@ DisplayName=Lid Opened
 Context=Notification
 Description=The lid has been opened (for laptops, mobile devices).
 SpokenWords=Lid, opened.
+InvokedBy=System
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

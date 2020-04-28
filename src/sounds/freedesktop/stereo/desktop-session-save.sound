@@ -1,3 +1,5 @@
 DisplayName=Session Saved
 Context=Notification
 Description=The sound used when a desktop session is saved.
+InvokedBy=SessionManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

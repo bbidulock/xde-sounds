@@ -1,3 +1,5 @@
 DisplayName=Machine suspending.
 Context=Notification
 Description=The machine is about to suspend.
+InvokedBy=System
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

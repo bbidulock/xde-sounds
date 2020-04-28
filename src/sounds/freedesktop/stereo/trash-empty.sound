@@ -1,3 +1,5 @@
 DisplayName=Trash Emptied
 Context=Action
 Description=The sound used when the user empties the trash.
+InvokedBy=Desktop
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

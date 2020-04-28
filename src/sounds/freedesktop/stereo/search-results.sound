@@ -1,3 +1,5 @@
 DisplayName=Search results returned.
 Context=Notification
 Description=The sound used when no search results are returned.
+InvokedBy=Application
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

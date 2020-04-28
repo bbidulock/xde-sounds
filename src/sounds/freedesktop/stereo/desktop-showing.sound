@@ -1,3 +1,5 @@
 DisplayName=Desktop Showing
 Context=Support
 Description=The sound used when showing the desktop changes.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

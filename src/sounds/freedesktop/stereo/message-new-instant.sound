@@ -1,3 +1,5 @@
 DisplayName=New Instant Message.
 Context=Notification
 Description=The sound used when a new IM is received.
+InvokedBy=Application
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

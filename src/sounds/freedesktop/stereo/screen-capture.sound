@@ -1,3 +1,5 @@
 DisplayName=Screen Capture Initiated
 Context=Action
 Description=A screenshot was made.
+InvokedBy=Application
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

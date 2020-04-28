@@ -1,3 +1,5 @@
 DisplayName=Arrangement Changed
 Context=Support
 Description=The sound used when the desktop mode changes its arrangement.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

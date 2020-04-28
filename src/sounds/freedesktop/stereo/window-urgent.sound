@@ -1,3 +1,5 @@
 DisplayName=Urgent Window
 Context=Notification
 Description=The sound used when a window is marked as urgent.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

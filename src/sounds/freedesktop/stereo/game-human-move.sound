@@ -2,3 +2,5 @@ DisplayName=Your move.
 Context=Game
 Description=The sound used when the user makes a move.
 SpokenWords=Your move: You! Filthy! Animal!
+InvokedBy=Application
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

@@ -1,3 +1,5 @@
 DisplayName=The power cable has been plugged in.
 Context=Notification
 Description=The power cable has been plugged in.
+InvokedBy=System
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

@@ -1,3 +1,5 @@
 DisplayName=User logged into service.
 Context=Notification
 Description=The sound used when a user logs into a service (i.e. Gaim login).
+InvokedBy=Application
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

@@ -1,3 +1,5 @@
 DisplayName=Scrolling to the Right
 Context=Support
 Description=Some window was scrolled right.
+InvokedBy=Toolkit
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

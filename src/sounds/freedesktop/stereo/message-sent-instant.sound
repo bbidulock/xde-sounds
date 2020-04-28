@@ -1,3 +1,5 @@
 DisplayName=Instant Message Sent
 Context=Action
 Description=The sound used when a new IM is sent.
+InvokedBy=Application
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

@@ -1,3 +1,5 @@
 DisplayName=Menu Clicked
 Context=Support
 Description=The sound used when a menu item is clicked.
+InvokedBy=Toolkit
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

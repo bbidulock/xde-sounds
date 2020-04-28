@@ -2,3 +2,5 @@ DisplayName=Notebook Tab Changed
 Context=Support
 Description=The sound used when a notebook tab is changed.
 SpokenWords=Note book tab changed.
+InvokedBy=Toolkit
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

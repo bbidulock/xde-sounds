@@ -1,3 +1,5 @@
 DisplayName=Drag Accepted
 Context=Support
 Description=The sound used when a file/item drag is accepted by a window, such as a folder or IM conversation.
+InvokedBy=Toolkit
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

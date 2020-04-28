@@ -1,3 +1,5 @@
 DisplayName=Ready for system log in.
 Context=Notification
 Description=The sound used when the computer is booted up and shows the login screen.
+InvokedBy=System
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

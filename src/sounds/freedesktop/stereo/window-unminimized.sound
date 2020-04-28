@@ -1,3 +1,5 @@
 DisplayName=Window Unminimized
 Context=Support
 Description=The sound used when an existing window is unminimized.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

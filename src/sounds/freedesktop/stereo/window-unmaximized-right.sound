@@ -1,3 +1,5 @@
 DisplayName=Window restored from right.
 Context=Support
 Description=The sound used when a window is unmaximized from the right half of the screen.  Falls back to window-unmaximized.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

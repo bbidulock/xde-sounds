@@ -2,3 +2,5 @@ DisplayName=Inactive Window Requires Attention
 Context=Notification
 Description=An inactive/invisible window demands attention.
 SpokenWords=In-active window requires attention.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

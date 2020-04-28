@@ -1,3 +1,5 @@
 DisplayName=Window hidden.
 Context=Support
 Description=The sound used when an existing window is hidden.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

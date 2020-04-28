@@ -1,3 +1,5 @@
 DisplayName=Attracting Move
 Context=Support
 Description=The sound used when moving a window and the movement is attracted by another window or workspace boundary.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

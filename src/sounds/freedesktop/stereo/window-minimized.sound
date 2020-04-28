@@ -1,3 +1,5 @@
 DisplayName=Window Minimized
 Context=Support
 Description=The sound used when when an existing window is iconified (minimized).
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

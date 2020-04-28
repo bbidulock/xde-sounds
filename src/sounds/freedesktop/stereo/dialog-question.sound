@@ -1,3 +1,5 @@
 DisplayName=Question Dialog
 Context=Notification
 Description=The sound used when a dialog is opened to ask the user a question.
+InvokedBy=Toolkit
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

@@ -1,3 +1,5 @@
 DisplayName=Window restored from Fullscreen.
 Context=Support
 Description=The sound used when a window is restored from fullscreen.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

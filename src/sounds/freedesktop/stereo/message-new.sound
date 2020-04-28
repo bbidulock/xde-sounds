@@ -1,3 +1,5 @@
 DisplayName=New message.
 Context=Notification
 Description=The sound used when a new message is received.
+InvokedBy=Application
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

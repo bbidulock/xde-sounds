@@ -1,3 +1,5 @@
 DisplayName=Window pinned.
 Context=Support
 Description=The sound used when an existing window is pinned so that it appears on all desktops.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

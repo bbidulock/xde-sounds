@@ -1,3 +1,5 @@
 DisplayName=Ring
 Description=Common sound used when a call is incoming.
 SpokenWords=Ring-ring, ring-ring, ring-ring.
+InvokedBy=Application
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

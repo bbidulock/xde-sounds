@@ -1,3 +1,5 @@
 DisplayName=Window will be placed below other windows.
 Context=Support
 Description=The sound used when an active window is set to be below other windows on the desktop.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

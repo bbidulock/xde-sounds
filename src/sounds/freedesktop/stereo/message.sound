@@ -1,3 +1,5 @@
 DisplayName=Message
 Context=Notification
 Description=Common sound used when a message is sent.
+InvokedBy=Application
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

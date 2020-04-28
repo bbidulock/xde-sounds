@@ -1,3 +1,5 @@
 DisplayName=Terminal Bell
 Context=Action
 Description=The sound to use as a terminal bell.
+InvokedBy=Toolkit
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

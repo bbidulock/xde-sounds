@@ -1,3 +1,5 @@
 DisplayName=File/Folder sent to Trash
 Context=Action
 Description=The sound used when a file or folder is sent to the trash.
+InvokedBy=Desktop
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

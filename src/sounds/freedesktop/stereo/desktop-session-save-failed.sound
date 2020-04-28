@@ -1,3 +1,5 @@
 DisplayName=Session Save Failed
 Context=Alert
 Description=The sound used when saving a desktop session failed.
+InvokedBy=SessionManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

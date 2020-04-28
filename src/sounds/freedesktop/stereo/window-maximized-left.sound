@@ -1,3 +1,5 @@
 DisplayName=Window maximized to the left.
 Context=Support
 Description=The sound used when an active window is set to maximize on the left of the screen.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

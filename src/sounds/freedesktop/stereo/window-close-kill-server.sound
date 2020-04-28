@@ -1,3 +1,5 @@
 DisplayName=Window Killed by Server
-Context=Support
+Context=Notification
 Description=The sound used when an existing window is killed by the windowing system server.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

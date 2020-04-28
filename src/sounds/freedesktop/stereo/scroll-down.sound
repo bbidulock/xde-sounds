@@ -1,3 +1,5 @@
 DisplayName=Scrolling down.
 Context=Support
 Description=Some window was scrolled down.
+InvokedBy=Toolkit
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

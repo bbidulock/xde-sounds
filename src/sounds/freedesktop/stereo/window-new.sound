@@ -1,3 +1,5 @@
 DisplayName=New Window Opened
 Context=Notification
 Description=The sound used when a new window or dialog is opened.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

@@ -1,2 +1,4 @@
 DisplayName=Test
 Description=Common sound used to test with.
+InvokedBy=Application
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

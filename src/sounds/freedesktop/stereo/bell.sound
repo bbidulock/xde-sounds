@@ -1,3 +1,5 @@
 DisplayName=Bell
 Context=Action
 Description=A common sound acting as a fallback for bell-terminal and bell-window-system.
+InvokedBy=Toolkit
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

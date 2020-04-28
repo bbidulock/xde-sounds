@@ -1,3 +1,5 @@
 DisplayName=Window Pinged
-Context=Support
+Context=Notification
 Description=The sound used when an existing window is pinged on the windowing system server to determine whether it's application is still responsive.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

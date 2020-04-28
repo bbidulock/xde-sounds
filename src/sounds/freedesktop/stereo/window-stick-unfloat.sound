@@ -1,3 +1,5 @@
 DisplayName=Window tiled.
 Context=Support
 Description=The sound used when a window is allowed to float.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

@@ -1,3 +1,5 @@
 DisplayName=Window Killed by Process Identifier
-Context=Support
+Context=Notification
 Description=The sound used when an existing window is killed by process identifier.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

@@ -1,3 +1,5 @@
 DisplayName=Initiating shutdown sequence.
 Context=Notification
 Description=The sound used when the computer is being shut down.
+InvokedBy=System
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

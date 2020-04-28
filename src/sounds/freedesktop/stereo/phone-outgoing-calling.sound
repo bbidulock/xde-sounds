@@ -1,3 +1,5 @@
 DisplayName=Outgoing Phone Call in progress.
 Context=Action
 Description=The sound used when a phone/voip call is dialed out.
+InvokedBy=Application
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

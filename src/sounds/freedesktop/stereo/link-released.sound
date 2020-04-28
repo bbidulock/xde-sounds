@@ -1,3 +1,5 @@
 DisplayName=Link Released
 Context=Support
 Description=The sound used when a link in a web or help browser is released.
+InvokedBy=Toolkit
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

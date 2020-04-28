@@ -1,3 +1,5 @@
 DisplayName=Windows Slided
 Context=Support
 Description=The sound used when multiple windows are slid.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

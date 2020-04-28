@@ -1,3 +1,5 @@
 DisplayName=Network Connectivity Lost
 Context=Alert
 Description=The sound used when network connectivity is lost.
+InvokedBy=System
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

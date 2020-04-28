@@ -1,3 +1,5 @@
 DisplayName=Item Selected
 Context=Support
 Description=The sound used when an item is selected.
+InvokedBy=Toolkit
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

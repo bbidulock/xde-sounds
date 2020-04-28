@@ -1,3 +1,5 @@
 DisplayName=Text completion attempt available options restarting.
 Context=Action
 Description=A test completion was attempted and the list of available options reached the end and completion started from the beginning.
+InvokedBy=Toolkit
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

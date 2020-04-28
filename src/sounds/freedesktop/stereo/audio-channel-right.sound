@@ -3,3 +3,5 @@ DisplayName[en]=Right
 DisplayName[en_CA]=Right
 Context=Action
 Description=The test sound for identifying the right speaker.  A mono file with a voice saying 'right'.
+InvokedBy=Application
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

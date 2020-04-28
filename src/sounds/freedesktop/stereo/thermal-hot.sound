@@ -1,3 +1,5 @@
 DisplayName=Device Hot! Device Hot! Device Hot!
 Context=Alert
 Description=The sound used when the computer or device has become hot (e.g. to 90% of thermal limits).
+InvokedBy=System
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

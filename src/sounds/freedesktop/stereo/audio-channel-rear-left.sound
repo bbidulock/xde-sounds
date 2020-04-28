@@ -6,3 +6,5 @@ Description=The test sound for identifying the rear-left speaker.  A mono file w
 SpokenWords=Rear, left.
 SpokenWords[en]=Rear, left.
 SpokenWords[en_CA]=Rear, left.
+InvokedBy=Application
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

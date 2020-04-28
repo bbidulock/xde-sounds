@@ -1,3 +1,5 @@
 DisplayName=My move.
 Context=Game
 Description=The sound used when the computer makes a move.
+InvokedBy=Application
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

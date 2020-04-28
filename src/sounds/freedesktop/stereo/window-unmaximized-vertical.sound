@@ -1,3 +1,5 @@
 DisplayName=Window restored vertically.
 Context=Support
 Description=The sound used when a window is unmaximized in the vertical direction only.  Falls back to window-unmaximized.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

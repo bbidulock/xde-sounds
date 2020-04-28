@@ -1,3 +1,5 @@
 DisplayName=Network Connectivity Established
 Context=Notification
 Description=The sound used when network connectivity is established.
+InvokedBy=System
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

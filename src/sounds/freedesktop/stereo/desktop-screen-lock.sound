@@ -1,3 +1,5 @@
 DisplayName=Screen Locked
 Context=Notification
 Description=The sound used when the user locks their current session.
+InvokedBy=SessionManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

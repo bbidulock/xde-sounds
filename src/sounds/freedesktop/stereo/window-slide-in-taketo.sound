@@ -1,3 +1,5 @@
 DisplayName=Window taken to other desktop.
 Context=Support
 Description=The sound used when an existing window is taken to another desktop.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

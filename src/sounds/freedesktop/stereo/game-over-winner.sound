@@ -1,3 +1,5 @@
 DisplayName=Game-Over, Winner
 Context=Game
 Description=The sound used when the game os over and the player won!
+InvokedBy=Application
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

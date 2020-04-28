@@ -1,3 +1,5 @@
 DisplayName=Window Slided In
 Context=Support
 Description=The sound used when a window is slided in by some means.  Example: panel.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

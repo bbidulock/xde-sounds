@@ -6,3 +6,5 @@ Description=The test signal for identifying the rear-center speaker.  A mono fil
 SpokenWords=Rear, center.
 SpokenWords[en]=Rear, center.
 SpokenWords[en_CA]=Rear, centre.
+InvokedBy=Application
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

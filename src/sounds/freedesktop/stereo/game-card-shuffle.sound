@@ -2,3 +2,5 @@ DisplayName=Cards Shuffled
 Context=Game
 Description=In card games, when the cards are shuffled.
 SpokenWords=Shuffle the cards: You! Filthy! Animal!
+InvokedBy=Application
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

@@ -2,3 +2,5 @@ DisplayName=Serious Error Dialog
 Context=Alert
 Description=Common sound used when a dialog is opened to explain a serious error condition to the user.
 SpokenWords=Serious, error dialog.
+InvokedBy=Toolkit
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

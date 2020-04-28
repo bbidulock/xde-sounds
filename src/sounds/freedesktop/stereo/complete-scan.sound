@@ -1,3 +1,5 @@
 DisplayName=Scanner completed image acquisition
 Context=Notification
 Description=The sound used when a scanner completed image acquisition and software completed image processing.
+InvokedBy=System
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

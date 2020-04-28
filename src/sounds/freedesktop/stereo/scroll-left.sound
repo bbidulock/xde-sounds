@@ -1,3 +1,5 @@
 DisplayName=Scrolling to the Left
 Context=Support
 Description=Some window was scrolled left.
+InvokedBy=Toolkit
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

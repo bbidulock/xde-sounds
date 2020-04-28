@@ -2,3 +2,5 @@ DisplayName=Window Resize Ended
 Context=Support
 Description=A window resize ended.
 SpokenWords=Window ree-size ended.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

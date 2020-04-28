@@ -1,3 +1,5 @@
 DisplayName=Initiating restart sequence.
 Context=Notification
 Description=Common sound used when the computer is being restarted.
+InvokedBy=System
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

@@ -2,3 +2,5 @@ DisplayName=Attracting Resize
 Context=Support
 Description=The sound used when resizing a window and the resize is attracted by another window or workspace boundary.
 SpokenWords=Attracting ree-size.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

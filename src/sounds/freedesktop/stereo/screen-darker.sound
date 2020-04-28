@@ -1,3 +1,5 @@
 DisplayName=Screen Darker
-Context=Support
+Context=Notification
 Description=The sound used when the device screen is made darker.
+InvokedBy=System
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

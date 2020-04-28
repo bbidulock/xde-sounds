@@ -1,3 +1,5 @@
 DisplayName=Game-Over, Loser
 Context=Game
 Description=The sound used when the game is over and the player lost.
+InvokedBy=Application
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

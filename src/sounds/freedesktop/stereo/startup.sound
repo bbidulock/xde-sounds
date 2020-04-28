@@ -1,2 +1,4 @@
 DisplayName=Starting up.
 Description=Common sound used when the system starts up.
+InvokedBy=System
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

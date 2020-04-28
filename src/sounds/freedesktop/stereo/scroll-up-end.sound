@@ -1,3 +1,5 @@
 DisplayName=Scroll up has reached the end of the scroll-bar.
 Context=Support
 Description=Some window was scrolled up and reached the end of the scroll-bar.
+InvokedBy=Toolkit
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

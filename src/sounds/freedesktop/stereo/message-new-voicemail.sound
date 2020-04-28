@@ -1,3 +1,5 @@
 DisplayName=New Voicemail message.
 Context=Notification
 Description=The sound used when a new voicemail is received.
+InvokedBy=Application
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

@@ -1,3 +1,5 @@
 DisplayName=The power cable has been unplugged.
 Context=Notification
 Description=The power cable has been unplugged.
+InvokedBy=System
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

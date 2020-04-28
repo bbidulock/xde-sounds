@@ -1,3 +1,5 @@
 DisplayName=Phone call cancelled due to error.
 Context=Notification
 Description=The sound used when a phone/voip call is canceled due to some error.
+InvokedBy=Application
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

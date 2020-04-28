@@ -1,3 +1,5 @@
 DisplayName=Incoming Phone Call
 Context=Notification
 Description=The sound used when a phone/voip call is coming in.  Usually some kind of ring sound.
+InvokedBy=Application
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

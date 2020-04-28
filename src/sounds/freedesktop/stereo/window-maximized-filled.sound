@@ -1,3 +1,5 @@
 DisplayName=Window will fill available area.
 Context=Support
 Description=The sound used when an active window is set to fill available space.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

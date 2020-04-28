@@ -1,3 +1,5 @@
 DisplayName=Button toggled on
 Context=Support
 Description=The sound used when the toggle/check/radio button is activated.
+InvokedBy=Toolkit
+# vim:set ft=desktop tw=72 fo+=tcqlorn:
