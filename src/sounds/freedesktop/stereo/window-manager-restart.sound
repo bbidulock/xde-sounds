@@ -1,0 +1,11 @@
+DisplayName=Window Manager Restart
+Context=Action
+Description=The sound used when the window manager restarts.
+SpokenWords=Window manager restarting.
+InvokedBy=WindowManager
+Disabled=true
+#
+# Note that window managers may customize their sound by naming
+# convention: window-manager-restart-adwm, for example.
+#
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

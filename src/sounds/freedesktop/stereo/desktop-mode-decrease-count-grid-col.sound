@@ -1,0 +1,6 @@
+DisplayName=Decrease Column Count
+Context=Support
+Description=The sound used when the grid column count decreases.
+InvokedBy=WindowManager
+Disabled=true
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

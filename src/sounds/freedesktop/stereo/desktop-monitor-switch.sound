@@ -1,0 +1,6 @@
+DisplayName=Monitor changed.
+Context=Support
+Description=The sound used when the window manager switches to another monitor.
+InvokedBy=WindowManager
+Disabled=true
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

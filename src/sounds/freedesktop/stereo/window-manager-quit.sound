@@ -1,0 +1,17 @@
+DisplayName=Window Manager Quit
+Context=Action
+Description=The sound used when the window manager quits.  See also desktop-logout.
+SpokenWords=Window manager shutting down.
+InvokedBy=WindowManager
+Disabled=true
+#
+# Note that this event can be invoked by the window manager, whereas
+# desktop-logout can only be invoked by the session manager.  This
+# means, for example, that startx (xinit) will result in this sound
+# being played when the window manager exits, whereas, startx (xinit)
+# will not play the desktop-logout sound as it exits.
+#
+# Note also, that window managers may customize their sound by naming
+# convention: window-manager-quit-adwm, for example.
+#
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

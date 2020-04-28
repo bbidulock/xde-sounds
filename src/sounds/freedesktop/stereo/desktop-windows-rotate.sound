@@ -1,0 +1,6 @@
+DisplayName=Windows Rotated Clockwise
+Context=Support
+Description=The sound used when the desktop windows rotate their position within the view clockwise.
+InvokedBy=WindowManager
+Disabled=true
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

@@ -1,0 +1,6 @@
+DisplayName=Zone Rotated Clockwise
+Context=Support
+Description=The sound used when the desktop zone (master, slave, row, column) rotates its orientation clockwise.
+InvokedBy=WindowManager
+Disabled=true
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

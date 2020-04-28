@@ -1,0 +1,6 @@
+DisplayName=View Flipped
+Context=Support
+Description=The sound used when the desktop view rotates its orientation 180 degrees.
+InvokedBy=WindowManager
+Disabled=true
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

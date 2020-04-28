@@ -1,0 +1,6 @@
+DisplayName=Increase Window Border
+Context=Support
+Description=The sound used when the desktop mode window border increases.
+InvokedBy=WindowManager
+Disabled=true
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

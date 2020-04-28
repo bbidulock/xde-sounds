@@ -1,0 +1,6 @@
+DisplayName=Windows Changed
+Context=Support
+Description=The sound used when the desktop windows change their position within the view.
+InvokedBy=WindowManager
+Disabled=true
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

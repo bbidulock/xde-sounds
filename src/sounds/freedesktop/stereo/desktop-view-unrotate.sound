@@ -1,0 +1,6 @@
+DisplayName=View Rotated Counter-Clockwise
+Context=Support
+Description=The sound used when the desktop view rotates its orientation counter-clockwise.
+InvokedBy=WindowManager
+Disabled=true
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

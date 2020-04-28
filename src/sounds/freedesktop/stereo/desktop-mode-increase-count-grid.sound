@@ -1,0 +1,6 @@
+DisplayName=Increase Grid Count
+Context=Support
+Description=The sound used when the grid count increases.
+InvokedBy=WindowManager
+Disabled=true
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

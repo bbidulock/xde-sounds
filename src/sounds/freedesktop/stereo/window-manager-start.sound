@@ -1,0 +1,17 @@
+DisplayName=Window Manager Start
+Context=Notification
+Description=The sound used when the window manager starts.  See also desktop-login.
+SpokenWords=Window manager starting.
+InvokedBy=WindowManager
+Disabled=true
+#
+# Note that this event can be invoked by the window manager, whereas
+# desktop-login can only be invoked by the session manager.  This means,
+# for example, that startx (xinit) will result in this sound being
+# played when the window manager starts, whereas, startx (xinit) will
+# not play the desktop-login sound as it starts.
+#
+# Note also, that window managers may customize their sound by naming
+# convention: window-manager-start-adwm, for example.
+#
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

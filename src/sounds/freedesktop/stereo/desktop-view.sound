@@ -1,0 +1,6 @@
+DisplayName=View Changed
+Context=Support
+Description=The sound used when the desktop view changes its orientation.
+InvokedBy=WindowManager
+Disabled=true
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

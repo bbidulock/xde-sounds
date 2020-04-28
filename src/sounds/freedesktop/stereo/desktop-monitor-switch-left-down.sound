@@ -1,0 +1,6 @@
+DisplayName=Monitor below.
+Context=Support
+Description=The sound used when the window manager switches to the monitor located below the current monitor.
+InvokedBy=WindowManager
+Disabled=true
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

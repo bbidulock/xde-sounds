@@ -1,0 +1,6 @@
+DisplayName=Decrease View Count
+Context=Support
+Description=The sound used when the view count decreases.
+InvokedBy=WindowManager
+Disabled=true
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

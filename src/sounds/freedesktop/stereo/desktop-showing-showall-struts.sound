@@ -1,0 +1,6 @@
+DisplayName=Show All Docks and Panels
+Context=Support
+Description=The sound used when the desktop view shows all struts (docks and panels).
+InvokedBy=WindowManager
+Disabled=true
+# vim:set ft=desktop tw=72 fo+=tcqlorn:
