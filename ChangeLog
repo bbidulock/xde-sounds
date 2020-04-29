@@ -1,5 +1,156 @@
 # created with git log --stat=76 -M -C -500|fmt -sct -w80
 
+commit f1941fbaea9018855f346eec69025bf242377f73
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Wed Apr 29 04:57:11 2020 -0600
+
+    check for and use vars for commands
+
+ configure.ac    |  7 +++++++
+ src/Makefile.am | 12 ++++++------
+ 2 files changed, 13 insertions(+), 6 deletions(-)
+
+commit 9597f90cb1b76bd83aa7c7d3d27cac90113d55ce
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Wed Apr 29 04:26:35 2020 -0600
+
+    vorbis files much smaller than WAV files
+
+ src/Makefile.am | 22 ++++++++++++++--------
+ src/genfiles.sh |  8 ++++----
+ 2 files changed, 18 insertions(+), 12 deletions(-)
+
+commit beca2aa15f49f07f46b4657cc4108bc1b2a7fadd
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Wed Apr 29 04:16:13 2020 -0600
+
+    update release files
+
+ ChangeLog | 31 +++++++++++++++++++++++++++++++
+ NEWS      |  5 ++++-
+ 2 files changed, 35 insertions(+), 1 deletion(-)
+
+commit 8335aa78e08cbea4f144bedd9a4147a18a427adf
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Wed Apr 29 04:15:32 2020 -0600
+
+    minor spoken word corrections
+
+ src/sounds/freedesktop/stereo/dialtone.sound                 | 1 +
+ src/sounds/freedesktop/stereo/file-trash.sound               | 1 +
+ src/sounds/freedesktop/stereo/newmail.sound                  | 1 -
+ src/sounds/freedesktop/stereo/power-unplug-battery-low.sound | 3 +--
+ 4 files changed, 3 insertions(+), 3 deletions(-)
+
+commit 995e17c850e2b9edaf1c4c8ed8c867e5d33e2aa6
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Wed Apr 29 04:13:14 2020 -0600
+
+    removed unnecessary reverberation sounds
+
+ src/Makefile.am                                  | 1249 +-----------------
+ src/genfiles.sh                                  |   99 ++
+ .../flite-F/stereo/alarm-clock-elapsed.ogg       |  Bin 26135 -> 0 bytes
+ .../stereo/audio-channel-front-center.ogg        |  Bin 16743 -> 0 bytes
+ .../flite-F/stereo/audio-channel-front-left.ogg  |  Bin 15027 -> 0 bytes
+ .../flite-F/stereo/audio-channel-front-right.ogg |  Bin 13834 -> 0 bytes
+ src/sounds/flite-F/stereo/audio-channel-left.ogg |  Bin 11102 -> 0 bytes
+ src/sounds/flite-F/stereo/audio-channel-lfe.ogg  |  Bin 15018 -> 0 bytes
+ .../flite-F/stereo/audio-channel-rear-center.ogg |  Bin 16633 -> 0 bytes
+ .../flite-F/stereo/audio-channel-rear-left.ogg   |  Bin 15694 -> 0 bytes
+ .../flite-F/stereo/audio-channel-rear-right.ogg  |  Bin 15281 -> 0 bytes
+ .../flite-F/stereo/audio-channel-right.ogg       |  Bin 11269 -> 0 bytes
+ .../flite-F/stereo/audio-channel-side-left.ogg   |  Bin 16099 -> 0 bytes
+ .../flite-F/stereo/audio-channel-side-right.ogg  |  Bin 15644 -> 0 bytes
+ .../flite-F/stereo/audio-volume-change.ogg       |  Bin 28016 -> 0 bytes
+ src/sounds/flite-F/stereo/battery-caution.ogg    |  Bin 44332 -> 0 bytes
+ src/sounds/flite-F/stereo/battery-full.ogg       |  Bin 34630 -> 0 bytes
+ src/sounds/flite-F/stereo/battery-low.ogg        |  Bin 52182 -> 0 bytes
+ src/sounds/flite-F/stereo/busytone.ogg           |  Bin 59458 -> 0 bytes
+ src/sounds/flite-F/stereo/camera-focus.ogg       |  Bin 22332 -> 0 bytes
+ src/sounds/flite-F/stereo/camera-shutter.ogg     |  Bin 18807 -> 0 bytes
+ src/sounds/flite-F/stereo/complete-copy.ogg      |  Bin 28486 -> 0 bytes
+ src/sounds/flite-F/stereo/complete-download.ogg  |  Bin 29003 -> 0 bytes
+ .../flite-F/stereo/complete-media-burn.ogg       |  Bin 36132 -> 0 bytes
+ src/sounds/flite-F/stereo/complete-media-rip.ogg |  Bin 35842 -> 0 bytes
+ src/sounds/flite-F/stereo/complete-print.ogg     |  Bin 26011 -> 0 bytes
+ src/sounds/flite-F/stereo/complete-scan.ogg      |  Bin 40278 -> 0 bytes
+ src/sounds/flite-F/stereo/complete.ogg           |  Bin 22191 -> 0 bytes
+ src/sounds/flite-F/stereo/count-down.ogg         |  Bin 22288 -> 0 bytes
+ src/sounds/flite-F/stereo/desktop-created.ogg    |  Bin 30813 -> 0 bytes
+ src/sounds/flite-F/stereo/desktop-destroyed.ogg  |  Bin 32089 -> 0 bytes
+ src/sounds/flite-F/stereo/desktop-login.ogg      |  Bin 41718 -> 0 bytes
+ src/sounds/flite-F/stereo/desktop-logout.ogg     |  Bin 41093 -> 0 bytes
+ .../flite-F/stereo/desktop-screen-lock.ogg       |  Bin 23631 -> 0 bytes
+ .../flite-F/stereo/desktop-screen-unlock.ogg     |  Bin 24810 -> 0 bytes
+ .../flite-F/stereo/desktop-switch-down.ogg       |  Bin 26377 -> 0 bytes
+ .../flite-F/stereo/desktop-switch-left-up.ogg    |  Bin 25489 -> 0 bytes
+ .../flite-F/stereo/desktop-switch-left.ogg       |  Bin 29270 -> 0 bytes
+ .../flite-F/stereo/desktop-switch-right-down.ogg |  Bin 26173 -> 0 bytes
+ .../flite-F/stereo/desktop-switch-right.ogg      |  Bin 27505 -> 0 bytes
+ src/sounds/flite-F/stereo/desktop-switch-up.ogg  |  Bin 25247 -> 0 bytes
+ src/sounds/flite-F/stereo/device-added.ogg       |  Bin 24487 -> 0 bytes
+ src/sounds/flite-F/stereo/device-removed.ogg     |  Bin 25633 -> 0 bytes
+ src/sounds/flite-F/stereo/dialog-cancel.ogg      |  Bin 25000 -> 0 bytes
+ .../flite-F/stereo/dialog-error-critical.ogg     |  Bin 27884 -> 0 bytes
+ .../flite-F/stereo/dialog-error-serious.ogg      |  Bin 31513 -> 0 bytes
+ src/sounds/flite-F/stereo/dialog-error.ogg       |  Bin 21091 -> 0 bytes
+ src/sounds/flite-F/stereo/dialog-information.ogg |  Bin 27936 -> 0 bytes
+ src/sounds/flite-F/stereo/dialog-ok.ogg          |  Bin 26993 -> 0 bytes
+ src/sounds/flite-F/stereo/dialog-question.ogg    |  Bin 24399 -> 0 bytes
+ src/sounds/flite-F/stereo/dialog-warning.ogg     |  Bin 23233 -> 0 bytes
+ src/sounds/flite-F/stereo/dialtone.ogg           |  Bin 67487 -> 0 bytes
+ src/sounds/flite-F/stereo/dummy-message.ogg      |  Bin 20933 -> 0 bytes
+ src/sounds/flite-F/stereo/file-trash.ogg         |  Bin 37436 -> 0 bytes
+ src/sounds/flite-F/stereo/game-card-shuffle.ogg  |  Bin 48051 -> 0 bytes
+ src/sounds/flite-F/stereo/game-computer-move.ogg |  Bin 17882 -> 0 bytes
+ src/sounds/flite-F/stereo/game-human-move.ogg    |  Bin 42009 -> 0 bytes
+ src/sounds/flite-F/stereo/game-over-loser.ogg    |  Bin 28491 -> 0 bytes
+ src/sounds/flite-F/stereo/game-over-winner.ogg   |  Bin 26425 -> 0 bytes
+ src/sounds/flite-F/stereo/item-deleted.ogg       |  Bin 19920 -> 0 bytes
+ src/sounds/flite-F/stereo/item-selected.ogg      |  Bin 22597 -> 0 bytes
+ src/sounds/flite-F/stereo/lid-close.ogg          |  Bin 22177 -> 0 bytes
+ src/sounds/flite-F/stereo/lid-open.ogg           |  Bin 21215 -> 0 bytes
+ src/sounds/flite-F/stereo/message-new-email.ogg  |  Bin 29131 -> 0 bytes
+ .../flite-F/stereo/message-new-instant.ogg       |  Bin 30069 -> 0 bytes
+ src/sounds/flite-F/stereo/message-sent-email.ogg |  Bin 29648 -> 0 bytes
+ .../flite-F/stereo/message-sent-instant.ogg      |  Bin 31421 -> 0 bytes
+ src/sounds/flite-F/stereo/message.ogg            |  Bin 20980 -> 0 bytes
+ .../stereo/network-connectivity-error.ogg        |  Bin 37452 -> 0 bytes
+ .../stereo/network-connectivity-established.ogg  |  Bin 44068 -> 0 bytes
+ .../flite-F/stereo/network-connectivity-lost.ogg |  Bin 37614 -> 0 bytes
+ src/sounds/flite-F/stereo/newmail.ogg            |  Bin 21212 -> 0 bytes
+ src/sounds/flite-F/stereo/newmessage.ogg         |  Bin 23530 -> 0 bytes
+ src/sounds/flite-F/stereo/phone-failure.ogg      |  Bin 45826 -> 0 bytes
+ src/sounds/flite-F/stereo/phone-hangup.ogg       |  Bin 23912 -> 0 bytes
+ .../flite-F/stereo/phone-incoming-call.ogg       |  Bin 31036 -> 0 bytes
+ .../flite-F/stereo/phone-outgoing-busy.ogg       |  Bin 41236 -> 0 bytes
+ .../flite-F/stereo/phone-outgoing-calling.ogg    |  Bin 44638 -> 0 bytes
+ src/sounds/flite-F/stereo/power-plug.ogg         |  Bin 35693 -> 0 bytes
+ .../flite-F/stereo/power-unplug-battery-low.ogg  |  Bin 53642 -> 0 bytes
+ src/sounds/flite-F/stereo/power-unplug.ogg       |  Bin 36286 -> 0 bytes
+ src/sounds/flite-F/stereo/ring.ogg               |  Bin 40016 -> 0 bytes
+ .../flite-F/stereo/screen-capture-complete.ogg   |  Bin 30452 -> 0 bytes
+ src/sounds/flite-F/stereo/screen-capture.ogg     |  Bin 34354 -> 0 bytes
+ .../flite-F/stereo/search-results-empty.ogg      |  Bin 36476 -> 0 bytes
+ src/sounds/flite-F/stereo/search-results.ogg     |  Bin 30956 -> 0 bytes
+ src/sounds/flite-F/stereo/service-login.ogg      |  Bin 31191 -> 0 bytes
+ src/sounds/flite-F/stereo/service-logout.ogg     |  Bin 30591 -> 0 bytes
+ .../flite-F/stereo/software-update-available.ogg |  Bin 63810 -> 0 bytes
+ .../flite-F/stereo/software-update-urgent.ogg    |  Bin 71087 -> 0 bytes
+ src/sounds/flite-F/stereo/suspend-error.ogg      |  Bin 37117 -> 0 bytes
+ src/sounds/flite-F/stereo/suspend-resume.ogg     |  Bin 46116 -> 0 bytes
+ src/sounds/flite-F/stereo/suspend-start.ogg      |  Bin 32036 -> 0 bytes
+ src/sounds/flite-F/stereo/system-bootup.ogg      |  Bin 51241 -> 0 bytes
+ src/sounds/flite-F/stereo/system-ready.ogg       |  Bin 45200 -> 0 bytes
+ .../flite-F/stereo/system-shutdown-reboot.ogg    |  Bin 74175 -> 0 bytes
+ src/sounds/flite-F/stereo/system-shutdown.ogg    |  Bin 73941 -> 0 bytes
+ src/sounds/flite-F/stereo/trash-empty.ogg        |  Bin 24895 -> 0 bytes
+ src/sounds/flite-F/stereo/voicemail.ogg          |  Bin 26921 -> 0 bytes
+ src/sounds/flite-F/stereo/workspace-created.ogg  |  Bin 34173 -> 0 bytes
+ .../flite-F/stereo/workspace-destroyed.ogg       |  Bin 35754 -> 0 bytes
+ 101 files changed, 124 insertions(+), 1224 deletions(-)
+
 commit 2878fc7f984e10054be25a89d170db13caebb997
 Author: Brian Bidulock <bidulock@openss7.org>
 Date:   Wed Apr 29 03:31:15 2020 -0600

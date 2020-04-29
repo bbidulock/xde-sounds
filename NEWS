@@ -20,7 +20,7 @@ git tag -n100 -l 1.0
 
 git shortlog -e -n -w80,6,8 1.0
 
-Brian Bidulock <bidulock@openss7.org> (37):
+Brian Bidulock <bidulock@openss7.org> (42):
       Initial commit
       added THANKS file
       update release files
@@ -58,4 +58,9 @@ Brian Bidulock <bidulock@openss7.org> (37):
       build neceessary files
       update release files
       ignore temporary file
+      removed unnecessary reverberation sounds
+      minor spoken word corrections
+      update release files
+      vorbis files much smaller than WAV files
+      check for and use vars for commands
 
