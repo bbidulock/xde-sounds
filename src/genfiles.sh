@@ -24,7 +24,7 @@ echo -e "\n" >>$file
 
 for dir in flite-M flite-F; do
 	var=$(echo "$dir"|sed 's,-,_,')
-	echo -n "${var}_wav_files =" >tmp1.$$
+	echo -n "${var}_oga_files =" >tmp1.$$
 	echo -n "${var}_dis_files =" >tmp2.$$
 	echo -n "${var}_ogg_files =" >tmp3.$$
 	for f in $files; do
@@ -39,9 +39,9 @@ for dir in flite-M flite-F; do
 		if [ -n "$text" ]; then
 			disabled=$(cat "$f"|sed -n '/^Disabled=/{s,Disabled=,,;p;q}')
 			if [ "$disabled" != "true" ]; then
-				test -n "$srcdir" && wav=$(echo "$wav"|sed "s,^$srcdir/,,")
+				test -n "$srcdir" && oga=$(echo "$oga"|sed "s,^$srcdir/,,")
 				echo -e " \\" >>tmp1.$$
-				echo -e -n "\t$wav" >>tmp1.$$
+				echo -e -n "\t$oga" >>tmp1.$$
 			else
 				test -n "$srcdir" && dis=$(echo "$dis"|sed "s,^$srcdir/,,")
 				echo -e " \\" >>tmp2.$$
@@ -64,7 +64,7 @@ for dir in flite-M flite-F; do
 	echo -e "\n" >>$file
 #	echo -n "${var}_files =" >>$file
 #	echo " \\" >>$file
-#	echo -e -n "\t\$(${var}_wav_files)" >>$file
+#	echo -e -n "\t\$(${var}_oga_files)" >>$file
 #	echo " \\" >>$file
 #	echo -e -n "\t\$(${var}_dis_files)" >>$file
 #	echo " \\" >>$file
