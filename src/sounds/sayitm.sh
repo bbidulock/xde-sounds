@@ -18,10 +18,16 @@ do
 			[ -z "$text" ] && text="$dn"
 			if [ -n "$text" ]
 			then
-				echo " -> Speaking:"
-				echo "    \"$text\""
-				flite_cmu_us_kal16 -t "$text"
-				f="flite-M/stereo/$id.oga"
+				 #for v in aup fem gka ahw rxr bdl jmk awb ksp aew rms; do
+				for v in rms; do
+					echo " -> Speaking: $v"
+					echo "    \"$text\""
+					flite -voice /usr/lib/flite/cmu_us_${v}.flitevox -t "$text"
+					sleep 1
+				done
+				f="flite-M/stereo/$id.ogg"
+				[ -s "$f" ] || f="flite-M/stereo/$id.oga"
+				[ -s "$f" ] || f="flite-M/stereo/$id.wav"
 				if [ -s "$f" ]
 				then
 					echo " -> Playing $f:"

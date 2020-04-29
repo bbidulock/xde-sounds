@@ -16,7 +16,8 @@ for f in $files ; do
 			if [ ! -s "flite-M/stereo/$h" ] ; then
 				echo "==> Synthesizing $g:"
 				echo "    \"$text\""
-				flite_cmu_us_kal16 -t "$text" -o $g
+				flite_cmu_us_rms -t "$text" -o $g
+				#flite -voice /home/brian/voices/cmu_us_rms.flitevox -t "$text" -o $g
 				echo "--> converting $g to flite-M/stereo/$h"
 #				sndfile-convert -normalize -vorbis $g flite-M/stereo/$h
 				sndfile-convert -vorbis $g flite-M/stereo/$h
@@ -51,6 +52,7 @@ for f in $files ; do
 				echo "==> Synthesizing $g:"
 				echo "    \"$text\""
 				flite_cmu_us_slt -t "$text" -o $g
+				#flite -voice /home/brian/voices/cmu_us_slt.flitevox -t "$text" -o $g
 				echo "--> converting $g to flite-F/stereo/$h"
 #				sndfile-convert -normalize -vorbis $g flite-F/stereo/$h
 				sndfile-convert -vorbis $g flite-F/stereo/$h
