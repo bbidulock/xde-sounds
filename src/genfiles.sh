@@ -11,7 +11,7 @@ test -n "$srcdir" && d="$srcdir/$d"
 
 files=$(find "$d" -name '*.sound'|sort)
 
-echo -n "Generating $file for srcdir=$srcdir ..."
+echo -n "Generating $file for srcdir=$srcdir ... (this will take a minute) ..."
 echo -n "" >$file
 
 echo -e -n "sound_data_files =" >>$file
