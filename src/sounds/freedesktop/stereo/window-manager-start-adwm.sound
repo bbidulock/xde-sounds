@@ -1,0 +1,5 @@
+DisplayName=ADWM Start
+Context=Notification
+Description=The sound used when the ADWM window manager starts.  See also desktop-login.
+SpokenWords=Welcome to the "Advanced Dynamic Window Manager".
+InvokedBy=WindowManager
