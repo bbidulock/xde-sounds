@@ -134,6 +134,13 @@ update to an application available.
 
 =over
 
+=item B<message-new>
+
+The sound used when a new message is received.
+
+B<Spoken words:>
+New message.
+
 =item I<message-new-instant>
 
 "New instant message."
@@ -143,6 +150,23 @@ The sound used when a new instant message is received.
 
 New Email message.
 The sound used when a new email is received.
+
+=item B<message-new-voicemail>
+
+The sound used when a new voicemail is received.
+
+B<Spoken words:>
+New Voicemail message.
+
+=item B<complete>
+
+Action complete
+Common sound used when an action is complete.
+
+=item B<complete-media>
+
+Optical medium processing complete
+The sound used when an optical medium completed processing.
 
 =item I<complete-media-burn>
 
@@ -169,25 +193,30 @@ The sound use when a file completed copying.
 Scanner completed image acquisition
 The sound used when a scanner completed image acquisition and software completed image processing.
 
+=item B<complete-print>
+
+File print complete
+Common sound used when a file has completed printing.
+
 =item I<phone-incoming-call>
 
 Incoming Phone Call
-The sound used when a phone/voip call is coming in.  Usually some kind of ring sound.
+The sound used when a phone/VOIP call is coming in.  Usually some kind of ring sound.
 
 =item I<phone-outgoing-busy>
 
 Outgoing Phone Call Busy
-The sound used when a phone/voip call is dialed out and the responder is already engaged.
+The sound used when a phone/VOIP call is dialed out and the responder is already engaged.
 
 =item I<phone-hangup>
 
 Phone hung up.
-The sound used when a phone/voip call is ended due to hangup.
+The sound used when a phone/VOIP call is ended due to hangup.
 
 =item I<phone-failure>
 
 Phone call cancelled due to error.
-The sound used when a phone/voip call is canceled due to some error.
+The sound used when a phone/VOIP call is canceled due to some error.
 
 =item I<network-connectivity-established>
 
@@ -227,7 +256,7 @@ The sound used when one or more search results are returned.
 =item I<desktop-login>
 
 Welcome to the X desktop environment.
-The sound used when the user logs into the system, played as a welcome sound immediate afte the login screen disappeared.
+The sound used when the user logs into the system, played as a welcome sound immediate after the login screen disappeared.
 
 =item I<desktop-logout>
 
@@ -237,7 +266,7 @@ The sound used when a user logs out of the system.
 =item I<desktop-screen-lock>
 
 Screen Locked
-The sound used when the user locs their current session.
+The sound used when the user locks their current session.
 
 =item B<desktop-screen-unlock>
 
@@ -264,6 +293,18 @@ The sound used when the battery is nearing exhaustion (below 40%, for example).
 
 Battery is fully charged.
 The sound used when the battery is fully loaded up.
+
+=item B<thermal-caution>
+
+"Device has Heated Up."
+The sound to use when the computer or device has heated up (above 80% of
+thermal limits, for example).
+
+=item B<thermal-cool>
+
+"Device has Cooled Down."
+The sound to use when the computer or device has cooled down (below 20%
+of thermal limits, for example).
 
 =item I<dialog-warning>
 
@@ -300,6 +341,26 @@ The sound used when a device has become unavailable to the desktop, i.e. due to 
 New Window Opened
 The sound used when a new window or dialog is opened.
 
+=item B<window-close-kill>
+
+Window Killed.
+The sound used when an existing window is killed.
+
+=item B<window-close-kill-process>
+
+Window Killed by Process Identifier.
+The sound used when an existing window is killed by process identifier.
+
+=item B<window-close-kill-server>
+
+Window Killed by Server.
+The sound used when an existing window is killed by the windowing system server.
+
+=item B<window-ping>
+
+Window Pinged.
+The sound used when an existing window is pinged on the windowing system server to determine whether it's application is still responsive.
+
 =item I<power-plug>
 
 The power cable has been plugged in.
@@ -334,6 +395,11 @@ The lid has been closed (for laptops, mobile devices).
 
 Alarm clock elapsed.
 A user configured alarm elapsed.
+
+=item B<window-attention>
+
+Window Requires Attention
+Common sound used when a window demands attention.
 
 =item I<window-attention-active>
 
@@ -370,17 +436,36 @@ The sound used when a desktop session is checkpointed.
 Session Restored
 The sound used when a desktop session is restored.
 
-=item B<thermal-caution>
+=item B<desktop-layout-changed>
 
-"Device has Heated Up."
-The sound to use when the computer or device has heated up (above 80% of
-thermal limits, for example).
+Desk Top Layout Changed.
+The sound used when the desktop layout (rows and columns) changes.
 
-=item B<thermal-cool>
+=item B<screen-brighter>
 
-"Device has Cooled Down."
-The sound to use when the computer or device has cooled down (below 20%
-of thermal limits, for example).
+Screen Brighter
+The sound used when the device screen is made brighter.
+
+=item B<screen-darker>
+
+Screen Darker
+The sound used when the device screen is made darker.
+
+=item B<window-manager-reload>
+
+Window Manager Reload.
+The sound used when the window manager reloads.
+
+B<Spoken words:>
+Window manager reloading.
+
+=item B<window-manager-start>
+
+Window Manager Restart.
+The sound used when the window manager restarts.
+
+B<Spoken words:>
+Window manager restarting.
 
 =back
 
@@ -393,7 +478,7 @@ Action sounds are use as feedback for user operations.
 =item I<phone-outgoing-calling>
 
 Outgoing Phone Call in progress.
-The sound used when a phone/voip call is dialed out.
+The sound used when a phone/VOIP call is dialed out.
 
 =item I<message-sent-instant>
 
@@ -444,6 +529,11 @@ A camera has the focus.
 
 Screen Capture Initiated
 A screenshot was made.
+
+=item B<screen-capture-complete>
+
+Screen Capture Complete
+Common sound used when a screen capture completes.
 
 =item I<count-down>
 
@@ -535,13 +625,49 @@ The test sound for identifying the side-right speaker.  A mono file with a voice
 Test Signal
 The test sound for testing audio.
 
+=item B<desktop-created>
+
+Desktop created.
+Common sound used when a new desktop is created.
+
+=item B<desktop-destroyed>
+
+Desktop destroyed.
+Common sound used when a desktop is destroyed.
+
+=item B<workspace-created>
+
+Work space created.
+The sound used when a workspace is created on the screen.
+
+=item B<workspace-destroyed>
+
+Work space destroyed.
+The sound used when a workspace is destroyed on the screen.
+
+=item B<window-manager-quit>
+
+Window Manager Quit.
+The sound used when the window manager quits.  See also desktop-logout.
+
+B<Spoken words:>
+Window manager shutting down.
+
+=item B<window-manager-restart>
+
+Window Manager Restart.
+The sound used when the window manager restarts.
+
+B<Spoken words:>
+Window manager restarting.
+
 =back
 
 =head2 STANDARD INPUT FEEDBACK SOUNDS
 
 Actions sounds are used as feedback for user input events, such as mouse
-clicks, or key presses.  In contrast to the sounds listed in "Actions"
-theres sounds contain much less context information and are solely used
+clicks, or key presses.  In contrast to the sounds listed in L</Actions>,
+these sounds contain much less context information and are solely used
 to give the user audible feedback to input events the user himself
 directly caused.
 
@@ -552,25 +678,15 @@ directly caused.
 Window Closed
 The sound used when an existing window is closed.
 
-=item B<window-close-kill>
+=item B<window-slide>
 
-Window Killed.
-The sound used when an existing window is killed.
+Window Slided
+The sound used when a window is slid.
 
-=item B<window-close-kill-process>
+=item B<windows-slide>
 
-Window Killed by Process Identifier.
-The sound used when an existing window is killed by process identifier.
-
-=item B<window-close-kill-server>
-
-Window Killed by Server.
-The sound used when an existing window is killed by the windowing system server.
-
-=item B<window-ping>
-
-Window Pinged.
-The sound used when an existing window is pinged on the windowing system server to determine whether it's application is still responsive.
+Windows Slided
+The sound used when multiple windows are slid.
 
 =item I<window-slide-in>
 
@@ -739,42 +855,22 @@ The sound used when decorations are removed from an existing window.
 Window restacked.
 The sound used when an existing window is restacked.
 
-=item B<window-raise>
+=item B<window-raise>, B<window-stack-raise>
 
 Window raised.
 The sound used when an existing window is raised.
 
-=item B<window-lower>
+=item B<window-lower>, B<window-stack-lower>
 
 Window Lowered
 The sound used when an active window is lowered.
 
-=item B<window-stack-raise>
-
-Window raised.
-The sound used when an existing window is raised.
-
-=item B<window-stack-lower>
-
-Window Lowered
-The sound used when an active window is lowered.
-
-=item B<window-raise-above>
+=item B<window-raise-above>, B<window-stack-raise-above>
 
 Window will be placed above other windows.
 The sound used when an active window is set to be placed above other windows.
 
-=item B<window-lower-below>
-
-Window will be placed below other windows.
-The sound used when an active window is set to be below other windows on the desktop.
-
-=item B<window-stack-raise-above>
-
-Window will be placed above other windows.
-The sound used when an active window is set to be placed above other windows.
-
-=item B<window-stack-lower-below>
+=item B<window-lower-below>, B<window-stack-lower-below>
 
 Window will be placed below other windows.
 The sound used when an active window is set to be below other windows on the desktop.
@@ -854,12 +950,12 @@ Common sound used when the window manager switches to another desktop which is l
 Desktop to the Right
 Common sound used when the window manager switches to another desktop which is located to the right of the current screen.
 
-=item B<desktop-switch-left-up>
+=item B<desktop-switch-up>, B<desktop-switch-left-up>
 
 Desktop Above
 Common sound used when the window manager switches to another desktop which is located above the current screen.
 
-=item B<desktop-switch-right-down>
+=item B<desktop-switch-down>, B<desktop-switch-right-down>
 
 Desktop Below
 Common sound used when the window manager switches to another desktop which is located below the current screen.
@@ -879,9 +975,14 @@ The sound used when the window manager switches to another window on the left.
 Window Switched Right
 The sound used when the window manager switches to another window on the right.
 
+=item B<window-switch-zoom>
+
+Window Zoomed.
+The sound used when the window manager switches a window from the slave area to the master area (under a tiling window manager).
+
 =item I<notebook-tab-changed>
 
-Notebok Tab Changed
+Notebook Tab Changed
 The sound used when a notebook tab is changed.
 
 =item I<scroll-up>
@@ -1024,74 +1125,6 @@ The sound used when a tooltip is popped down.
 Item Selected
 The sound used when an item is selected.
 
-=item B<screen-brighter>
-
-Screen Brighter
-The sound used when the device screen is made brighter.
-
-=item B<screen-darker>
-
-Screen Darker
-The sound used when the device screen is made darker.
-
-=back
-
-=head2 STANDARD GAME SOUNDS
-
-Sounds for usage in games.
-
-=over
-
-=item I<game-over-winner>
-
-Game-Over, Winner
-The sound used when the game os over and the player won!
-
-=item I<game-over-loser>
-
-Game-Over, Loser
-The sound used when the game is over and the player lost.
-
-=item I<game-card-shuffle>
-
-Cards Shuffled
-In card games, when the cards are shuffled.
-
-=item I<game-human-move>
-
-Your move.
-The sound used when the user makes a move.
-
-=item I<game-computer-move>
-
-My move.
-The sound used when the computer makes a move.
-
-=item B<desktop-created>
-
-Desktop created.
-Common sound used when a new desktop is created.
-
-=item B<desktop-destroyed>
-
-Desktop destroyed.
-Common sound used when a desktop is destroyed.
-
-=item B<workspace-created>
-
-Work space created.
-The sound used when a workspace is created on the screen.
-
-=item B<workspace-destroyed>
-
-Work space destroyed.
-The sound used when a workspace is destroyed on the screen.
-
-=item B<desktop-layout-changed>
-
-Desk Top Layout Changed.
-The sound used when the desktop layout (rows and columns) changes.
-
 =item B<desktop-mode>
 
 Arrangement Changed
@@ -1152,41 +1185,244 @@ The sound used when the desktop is revealed (all windows are hidden).
 Not Showing Desktop
 The sound used when the windows hidden to show the desktop are restored.
 
+=item B<desktop-showing-hideall-decorations>
+
+Undecorate Tiled Windows.
+The sound used when the desktop view undecorates tiled windows.
+
+=item B<desktop-showing-showall-decorations>
+
+Decorate Tiled Windows.
+The sound used when the desktop view decorates tiled windows.
+
+=item B<desktop-showing-hideall-struts>
+
+Hide All Docks and Panels.
+The sound used when the desktop view hides all struts (docks and panels).
+
+=item B<desktop-showing-showall-struts>
+
+Show All Docks and Panels.
+The sound used when the desktop view shows all struts (docks and panels).
+
+=item B<desktop-mode-increase-border>
+
+Increase Window Border.
+The sound used when the desktop mode window border increases.
+
+=item B<desktop-mode-decrease-border>
+
+Decrease Window Border.
+The sound used when the desktop mode window border decreases.
+
+=item B<desktop-mode-increase-margin>
+
+Increase Window Margin.
+The sound used when the desktop mode window margin increases.
+
+=item B<desktop-mode-decrease-margin>
+
+Decrease Window Margin.
+The sound used when the desktop mode window margin decreases.
+
+=item B<desktop-mode-increase-width-tiled>
+
+Increase Master Width Factor.
+The sound used when the desktop mode master window width factor increases.
+
+=item B<desktop-mode-decrease-width-tiled>
+
+Decrease Master Width Factor.
+The sound used when the desktop mode master window width factor decreases.
+
+=item B<desktop-mode-increase-count>
+
+Increase View Count.
+The sound used when the view count increases.
+
+=item B<desktop-mode-decrease-count>
+
+Decrease View Count.
+The sound used when the view count decreases.
+
+=item B<desktop-mode-increase-count-tiled>
+
+Increase Master Count.
+The sound used when the master count increases.
+
+=item B<desktop-mode-decrease-count-tiled>
+
+Decrease Master Count.
+The sound used when the master count decreases.
+
+=item B<desktop-mode-increase-count-grid>
+
+Increase Grid Count.
+The sound used when the grid count increases.
+
+=item B<desktop-mode-decrease-count-grid>
+
+Decrease Grid Count.
+The sound used when the grid count decreases.
+
+=item B<desktop-mode-increase-count-grid-row>
+
+Increase Row Count.
+The sound used when the grid row count increases.
+
+=item B<desktop-mode-decrease-count-grid-row>
+
+Decrease Row Count.
+The sound used when the grid row count decreases.
+
+=item B<desktop-mode-increase-count-grid-col>
+
+Increase Column Count.
+The sound used when the grid column count increases.
+
+=item B<desktop-mode-decrease-count-grid-col>
+
+Decrease Column Count.
+The sound used when the grid column count decreases.
+
+=item B<desktop-monitor-switch>
+
+Monitor changed.
+The sound used when the window manager switches to another monitor.
+
+=item B<desktop-monitor-switch-left>
+
+Monitor to the left.
+The sound used when the window manager switches to the monitor located to the left of the current monitor.
+
+=item B<desktop-monitor-switch-right>
+
+Monitor to the right.
+The sound used when the window manager switches to the monitor located to the right of the current monitor.
+
+=item B<desktop-monitor-switch-left-down>
+
+Monitor below.
+The sound used when the window manager switches to the monitor located below the current monitor.
+
+=item B<desktop-monitor-switch-right-up>
+
+Monitor above.
+The sound used when the window manager switches to the monitor located above the current monitor.
+
+=item B<desktop-view>
+
+View Changed.
+The sound used when the desktop view changes its orientation.
+
+=item B<desktop-view-flip>
+
+View Flipped.
+The sound used when the desktop view rotates its orientation 180 degrees.
+
+=item B<desktop-view-rotate>
+
+View Rotated Clockwise.
+The sound used when the desktop view rotates its orientation clockwise.
+
+=item B<desktop-view-unrotate>
+
+View Rotated Counter-Clockwise.
+The sound used when the desktop view rotates its orientation counter-clockwise.
+
+=item B<desktop-zone>
+
+Zone Changed.
+The sound used when the desktop zone (master, slave, row, column) changes its orientation.
+
+=item B<desktop-zone-flip>
+
+Zone Flipped.
+The sound used when the desktop zone (master, slave, row, column) rotates its orientation 180 degrees.
+
+=item B<desktop-zone-rotate>
+
+Zone Rotated Clockwise.
+The sound used when the desktop zone (master, slave, row, column) rotates its orientation clockwise.
+
+=item B<desktop-zone-unrotate>
+
+Zone Rotated Counter-Clockwise.
+The sound used when the desktop zone (master, slave, row, column) rotates its orientation counter-clockwise.
+
+=item B<desktop-windows>
+
+Windows Changed.
+The sound used when the desktop windows change their position within the view.
+
+=item B<desktop-windows-flip>
+
+Windows Flipped.
+The sound used when the desktop windows rotate their position within the view 180 degrees.
+
+=item B<desktop-windows-rotate>
+
+Windows Rotated Clockwise.
+The sound used when the desktop windows rotate their position within the view clockwise.
+
+=item B<desktop-windows-unrotate>
+
+Windows Rotated Counter-Clockwise.
+The sound used when the desktop windows rotates their position within the view counter-clockwise.
+
+=back
+
+=head2 STANDARD GAME SOUNDS
+
+Sounds for usage in games.
+
+=over
+
+=item I<game-over-winner>
+
+Game-Over, Winner
+The sound used when the game os over and the player won!
+
+=item I<game-over-loser>
+
+Game-Over, Loser
+The sound used when the game is over and the player lost.
+
+=item I<game-card-shuffle>
+
+Cards Shuffled
+In card games, when the cards are shuffled.
+
+=item I<game-human-move>
+
+Your move.
+The sound used when the user makes a move.
+
+=item I<game-computer-move>
+
+My move.
+The sound used when the computer makes a move.
+
 =back
 
 =head2 OTHER COMMON EVENT IDS
 
+Following are some other common sound names that have been used previous
+to the L<XDG Sound Naming> specification and are still in common use.
+They do not follow the L<XDG Sound Naming> specification guidelines,
+particularly with regard to hyphenation.
+
 =over
 
-=item B<bell>
+=item I<bell>
 
 Bell
-A common sound acting as a fallback for bell-terminal and bell-window-system.
+A common C<Action> sound acting as a fallback for bell-terminal and bell-window-system.
 
 =item I<busytone>
 
 Busy Tone
-Common sound used when the phone/voip call is dialed out and the responder is already engaged.  See also phone-outgoing-busy.
-
-=item B<complete>
-
-Action complete
-Common sound used when an action is complete.
-
-=item B<complete-print>
-
-File print complete
-Common sound used when a file has completed printing.
-
-=item B<desktop-switch-up>
-
-Desktop Above
-Common sound used when the window manager switches to another desktop which is located above the current screen.
-
-=item B<desktop-switch-down>
-
-Desktop Below
-Common sound used when the window manager switches to another desktop which is located below the current screen.
+Common C<Notification> sound used when the phone/VOIP call is dialed out and the responder is already engaged.  See also phone-outgoing-busy.
 
 =item I<dialtone>
 
@@ -1201,27 +1437,22 @@ Common sound used when any message is needed, usually to show how notifications 
 =item I<message>
 
 Message
-Common sound used when a message is sent.
+Common C<Notification> sound used when a message is sent.
 
 =item I<newmail>
 
 New Mail
-Common sound used when new mail arrives.  See also message-new-email.
+Common C<Notification> sound used when new mail arrives.  See also message-new-email.
 
 =item I<newmessage>
 
 New Message
-Common sound used when a new IM arrives.  See also message-new-instant.
+Common C<Notification> sound used when a new IM arrives.  See also message-new-instant.
 
 =item I<ring>
 
 Ring
 Common sound used when a call is incoming.
-
-=item B<screen-capture-complete>
-
-Screen Capture Complete
-Common sound used when a screen capture completes.
 
 =item I<startup>
 
@@ -1236,27 +1467,12 @@ Common sound used to test with.
 =item I<voicemail>
 
 Voicemail Available
-Common sound used when voicemail is available.
-
-=item B<window-attention>
-
-Window Requires Attention
-Common sound used when a window demands attention.
+Common C<Notification> sound used when voicemail is available.
 
 =item I<window-question>
 
-Question Window Opened
-The sound used when a new dialog window is opened.
-
-=item B<window-slide>
-
-Window Slided
-The sound used when a window is slid.
-
-=item I<windows-slide>
-
-Windows Slided
-The sound used when multiple windows are slid.
+Question Window Opened.
+Common C<Notification> sound used when a new dialog window is opened.
 
 =back
 
