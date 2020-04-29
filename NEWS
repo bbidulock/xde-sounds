@@ -20,7 +20,7 @@ git tag -n100 -l 1.0
 
 git shortlog -e -n -w80,6,8 1.0
 
-Brian Bidulock <bidulock@openss7.org> (34):
+Brian Bidulock <bidulock@openss7.org> (37):
       Initial commit
       added THANKS file
       update release files
@@ -55,4 +55,7 @@ Brian Bidulock <bidulock@openss7.org> (34):
       alter for new flite speakers
       remove more generated files
       more ignore files
+      build neceessary files
+      update release files
+      ignore temporary file
 

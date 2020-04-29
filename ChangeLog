@@ -1,5 +1,36 @@
 # created with git log --stat=76 -M -C -500|fmt -sct -w80
 
+commit 2878fc7f984e10054be25a89d170db13caebb997
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Wed Apr 29 03:31:15 2020 -0600
+
+    ignore temporary file
+
+ .gitignore | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit c215d73003c9c0c829a08f3c01c6626f5c1d7c79
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Wed Apr 29 01:33:39 2020 -0600
+
+    update release files
+
+ AUTHORS      |    2 +-
+ ChangeLog    | 1273 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ NEWS         |   20 +-
+ README.md    |    6 +-
+ configure.ac |    4 +-
+ 5 files changed, 1296 insertions(+), 9 deletions(-)
+
+commit 7693190ead1df151054a10451dc41f6c60968d88
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Wed Apr 29 01:27:12 2020 -0600
+
+    build neceessary files
+
+ src/Makefile.am | 1097 +++++++++++++++++++++++++++------------------------
+ 1 file changed, 577 insertions(+), 520 deletions(-)
+
 commit 4c60e0b392408a52db7229f1e693b72abcee003a
 Author: Brian Bidulock <bidulock@openss7.org>
 Date:   Wed Apr 29 01:02:31 2020 -0600
