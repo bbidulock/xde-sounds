@@ -1,5 +1,5 @@
 DisplayName=Welcome to the X desktop environment.
-Context=Action
+Context=Notification
 Description=The sound used when the user logs into the system, played as a welcome sound immediate afte the login screen disappeared.
 SpokenWords=Logged into the X desktop environment.
 InvokedBy=SessionManager

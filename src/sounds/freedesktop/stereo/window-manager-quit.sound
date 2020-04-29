@@ -5,9 +5,9 @@ SpokenWords=Window manager shutting down.
 InvokedBy=WindowManager
 Disabled=true
 #
-# Note that this event can be invoked by the window manager, whereas
-# desktop-logout can only be invoked by the session manager.  This
-# means, for example, that startx (xinit) will result in this sound
+# Note that this event can be invoked by the window or session manager,
+# whereas desktop-logout can only be invoked by the session manager.
+# This means, for example, that startx (xinit) will result in this sound
 # being played when the window manager exits, whereas, startx (xinit)
 # will not play the desktop-logout sound as it exits.
 #
