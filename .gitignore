@@ -38,3 +38,4 @@ stamp-h*
 *.tar.*
 *.tmp
 xde-icons*.tar.xz
+files.mkf
