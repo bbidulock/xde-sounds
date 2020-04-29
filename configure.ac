@@ -39,6 +39,13 @@ AC_PROG_LN_S
 AC_PROG_MAKE_SET
 AC_PROG_MKDIR_P
 
+AC_ARG_VAR([FLITE],[flite command. @<:@default=flite@:>@])
+AC_CHECK_PROGS([FLITE],[flite flite2 flite1],[${am_missing_run}flite],[$PATH])
+AC_ARG_VAR([FLITEDIR],[flite voice directory. @<:@default=/usr/lib/flite@:>@])
+if test -z "$FLITEDIR"; then
+	FLITEDIR=/usr/lib/flite
+fi
+
 AC_ARG_VAR([MARKDOWN],[markdown command. @<:@default=markdown@:>@])
 AC_CHECK_PROGS([MARKDOWN],[markdown],[${am_missing_run}markdown],[$PATH])
 
