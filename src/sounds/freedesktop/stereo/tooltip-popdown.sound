@@ -1,6 +1,6 @@
 DisplayName=Tooltip Popdown
 Context=Support
 Description=The sound used when a tooltip is popped down.
-SpokenWords=Tool, tip, pop-down.
+SpokenWords=Tool-tip pop-down.
 InvokedBy=Toolkit
 # vim:set ft=desktop tw=72 fo+=tcqlorn:
