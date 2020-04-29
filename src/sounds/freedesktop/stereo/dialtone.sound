@@ -1,4 +1,5 @@
 DisplayName=Dial Tone
 Description=Common sound used when the receive of a telephone goes off-hook for dialing a call.
 InvokedBy=Application
+SpokenWords=Give me your digits, I want to make a call.
 # vim:set ft=desktop tw=72 fo+=tcqlorn:

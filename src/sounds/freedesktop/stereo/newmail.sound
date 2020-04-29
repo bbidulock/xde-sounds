@@ -1,6 +1,5 @@
 DisplayName=New Mail
 Context=Notification
 Description=Common sound used when new mail arrives.  See also message-new-email.
-SpokenWords=New, e-mail.
 InvokedBy=Application
 # vim:set ft=desktop tw=72 fo+=tcqlorn:
