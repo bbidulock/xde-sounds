@@ -1,6 +1,6 @@
-xde-sounds -- history of user-visible changes.  2020-04-27
+xde-sounds -- history of user-visible changes.  2020-04-29
 
-Release xde-sounds-1.0 released 2020-04-27
+Release xde-sounds-1.0 released 2020-04-29
 ------------------------------------------
 
 git tag -n100 -l 1.0
@@ -20,7 +20,7 @@ git tag -n100 -l 1.0
 
 git shortlog -e -n -w80,6,8 1.0
 
-Brian Bidulock <bidulock@openss7.org> (20):
+Brian Bidulock <bidulock@openss7.org> (34):
       Initial commit
       added THANKS file
       update release files
@@ -41,4 +41,18 @@ Brian Bidulock <bidulock@openss7.org> (20):
       add documentation
       add new sounds and themes
       script for synthesizing voices
+      update release files
+      add spoken words and context
+      Added InvokedBy= to sound data
+      added additional custom events for tiling WMs
+      add some development scripts
+      handle disabling sound files during synthesis
+      add new files
+      add disabled sound files
+      delete files that can be generated
+      new speakers do ok job at these
+      add ignore files
+      alter for new flite speakers
+      remove more generated files
+      more ignore files
 

@@ -1,9 +1,9 @@
-[xde-sounds -- read me first file.  2020-04-27]: #
+[xde-sounds -- read me first file.  2020-04-29]: #
 
 xde-sounds
 ===============
 
-Package `xde-sounds-1.0` was released under GPLv3 license 2020-04-27.
+Package `xde-sounds-1.0` was released under GPLv3 license 2020-04-29.
 
 This is a set of sounds, primarily window manager sounds and sounds for
 shutdown and reboot of the system on logout, for the XDE (_X Desktop
@@ -12,7 +12,7 @@ Environment_).
 Release
 -------
 
-This is the `xde-sounds-1.0` package, released 2020-04-27.  This
+This is the `xde-sounds-1.0` package, released 2020-04-29.  This
 release, and the latest version, can be obtained from [GitHub][1], using
 a command such as:
 
