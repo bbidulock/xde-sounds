@@ -1,5 +1,143 @@
 # created with git log --stat=76 -M -C -500|fmt -sct -w80
 
+commit 4c4739744cef5c6a93613bffd8e724dae291fa0b
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Thu Apr 30 03:57:46 2020 -0600
+
+    update release files
+
+ ChangeLog    | 10 ++++++++++
+ NEWS         |  3 ++-
+ configure.ac |  4 ++--
+ 3 files changed, 14 insertions(+), 3 deletions(-)
+
+commit c879bda27e939fb7fcb605930e5c2489b99efc4a
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Thu Apr 30 03:07:36 2020 -0600
+
+    try some different speakers with reverb
+
+ src/sounds/freedesktop/stereo/suspend-error.sound          | 2 ++
+ src/sounds/freedesktop/stereo/suspend-resume.sound         | 2 ++
+ src/sounds/freedesktop/stereo/suspend-start.sound          | 2 ++
+ src/sounds/freedesktop/stereo/system-bootup.sound          | 1 +
+ src/sounds/freedesktop/stereo/system-ready.sound           | 1 +
+ src/sounds/freedesktop/stereo/system-shutdown-reboot.sound | 1 +
+ src/sounds/freedesktop/stereo/system-shutdown.sound        | 1 +
+ 7 files changed, 10 insertions(+)
+
+commit 7a22847af644cdff64ba64a30f73488654bf99f9
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Thu Apr 30 03:07:11 2020 -0600
+
+    update release file
+
+ README.md | 60 ++++++++++++++++++++++++++++++++++++++++++++++++-----------
+ 1 file changed, 49 insertions(+), 11 deletions(-)
+
+commit 3c0041fae15510f30ec5b2721765aa459a0971a1
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Thu Apr 30 03:05:44 2020 -0600
+
+    update release files
+
+ README.md.in | 40 +++++++++++++++++++++++++++++++++++++++-
+ RELEASE.md   |  6 +++---
+ 2 files changed, 42 insertions(+), 4 deletions(-)
+
+commit 0dc91591da8c0957e4cdadfbc7ca83173f42650c
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Thu Apr 30 02:19:40 2020 -0600
+
+    start specifying new features (Hidden, SoxEffects, Speaker[M|F])
+
+ src/sounds/freedesktop/stereo/suspend-error.sound               | 2 ++
+ src/sounds/freedesktop/stereo/suspend-resume.sound              | 2 ++
+ src/sounds/freedesktop/stereo/suspend-start.sound               | 2 ++
+ src/sounds/freedesktop/stereo/system-bootup.sound               | 3 +++
+ src/sounds/freedesktop/stereo/system-ready.sound                | 3 +++
+ src/sounds/freedesktop/stereo/system-shutdown-reboot.sound      | 3 +++
+ src/sounds/freedesktop/stereo/system-shutdown.sound             | 3 +++
+ src/sounds/freedesktop/stereo/window-manager-quit-adwm.sound    | 6 ++++++
+ .../freedesktop/stereo/window-manager-quit-blackbox.sound       | 6 ++++++
+ src/sounds/freedesktop/stereo/window-manager-quit.sound         | 1 +
+ src/sounds/freedesktop/stereo/window-manager-reload.sound       | 1 +
+ src/sounds/freedesktop/stereo/window-manager-restart.sound      | 1 +
+ src/sounds/freedesktop/stereo/window-manager-start-adwm.sound   | 1 +
+ .../freedesktop/stereo/window-manager-start-blackbox.sound      | 1 +
+ src/sounds/freedesktop/stereo/window-manager-start.sound        | 1 +
+ 15 files changed, 36 insertions(+)
+
+commit 77c3df1ddc7853fe96ddebd225ae98b985461c64
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Thu Apr 30 02:18:29 2020 -0600
+
+    set up to use sox, configure voices and effects
+
+ configure.ac    | 77 ++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ src/Makefile.am | 70 +++++++++++++++++++++++++++++++++++-------------
+ 2 files changed, 127 insertions(+), 20 deletions(-)
+
+commit 1fabdfa2f9b63b8a0cdabcd74c8dc9ed21c9593f
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Thu Apr 30 02:16:42 2020 -0600
+
+    handle Hidden= attributes and .wav files
+
+ src/genfiles.sh | 41 ++++++++++++++++++++++++++---------------
+ 1 file changed, 26 insertions(+), 15 deletions(-)
+
+commit 8feab3211fe70a886554571abe3162bf77b5116c
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Thu Apr 30 02:15:27 2020 -0600
+
+    set up development scripts to use sox, voices and effects
+
+ src/sounds/sayit.sh  | 56 +++++++++++++++++++++++++++++++++-------
+ src/sounds/sayitf.sh | 67 +++++++++++++++++++++++++++++++++---------------
+ src/sounds/sayitm.sh | 66 +++++++++++++++++++++++++++++++++--------------
+ 3 files changed, 141 insertions(+), 48 deletions(-)
+
+commit 0b062b5fd5e779cf07965906f8765f3aed949a1c
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Wed Apr 29 17:13:39 2020 -0600
+
+    update documentation
+
+ man/sound.pod | 562 +++++++++++++++++++++++++++++++++++++-----------------
+ 1 file changed, 389 insertions(+), 173 deletions(-)
+
+commit 4594d350e352283072861d79909da3a7fa5fd806
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Wed Apr 29 17:13:23 2020 -0600
+
+    add a couple of window-manager specific sounds
+
+ src/sounds/freedesktop/stereo/window-manager-start-adwm.sound    | 5 +++++
+ .../freedesktop/stereo/window-manager-start-blackbox.sound       | 5 +++++
+ 2 files changed, 10 insertions(+)
+
+commit fd106319787b75f0b2cfd4e29a223f0769e1f73d
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Wed Apr 29 17:12:22 2020 -0600
+
+    minor context change
+
+ src/sounds/freedesktop/stereo/desktop-login.sound        |  2 +-
+ src/sounds/freedesktop/stereo/desktop-logout.sound       |  2 +-
+ src/sounds/freedesktop/stereo/window-manager-quit.sound  |  6 +++---
+ src/sounds/freedesktop/stereo/window-manager-start.sound | 10 +++++-----
+ 4 files changed, 10 insertions(+), 10 deletions(-)
+
+commit 2b4b55e78d6bde496b692254e2e45afe13c8bc97
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Wed Apr 29 17:11:33 2020 -0600
+
+    better status message
+
+ src/genfiles.sh | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
 commit e695da424b585618b98b35e52c74618d7752b2a1
 Author: Brian Bidulock <bidulock@openss7.org>
 Date:   Wed Apr 29 05:14:28 2020 -0600

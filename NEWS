@@ -1,6 +1,6 @@
-xde-sounds -- history of user-visible changes.  2020-04-29
+xde-sounds -- history of user-visible changes.  2020-04-30
 
-Release xde-sounds-1.0 released 2020-04-29
+Release xde-sounds-1.0 released 2020-04-30
 ------------------------------------------
 
 git tag -n100 -l 1.0
@@ -9,8 +9,8 @@ git tag -n100 -l 1.0
 
     This is the first release of the xde-sounds package that provides
     desktop sounds for the XDE (X Desktop Environment). It provides the
-    necessary sound themes to work with XDE tools as well as supporting the
-    desktop entries in the xde-helpers package.
+    necessary sound themes to work with XDE tools as well as providing the
+    default theme for XDE.
 
     This release is the initial release.
 
@@ -20,7 +20,7 @@ git tag -n100 -l 1.0
 
 git shortlog -e -n -w80,6,8 1.0
 
-Brian Bidulock <bidulock@openss7.org> (43):
+Brian Bidulock <bidulock@openss7.org> (55):
       Initial commit
       added THANKS file
       update release files
@@ -63,5 +63,17 @@ Brian Bidulock <bidulock@openss7.org> (43):
       update release files
       vorbis files much smaller than WAV files
       check for and use vars for commands
+      update release files
+      better status message
+      minor context change
+      add a couple of window-manager specific sounds
+      update documentation
+      set up development scripts to use sox, voices and effects
+      handle Hidden= attributes and .wav files
+      set up to use sox, configure voices and effects
+      start specifying new features (Hidden, SoxEffects, Speaker[M|F])
+      update release files
+      update release file
+      try some different speakers with reverb
       update release files
 

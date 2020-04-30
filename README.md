@@ -3,7 +3,7 @@
 xde-sounds
 ===============
 
-Package `xde-sounds-1.0.8` was released under GPLv3 license 2020-04-30.
+Package `xde-sounds-1.0` was released under GPLv3 license 2020-04-30.
 
 This is a set of sounds, primarily window manager sounds and sounds for
 shutdown and reboot of the system on logout, for the XDE (_X Desktop
@@ -12,7 +12,7 @@ Environment_).
 Release
 -------
 
-This is the `xde-sounds-1.0.8` package, released 2020-04-30.  This
+This is the `xde-sounds-1.0` package, released 2020-04-30.  This
 release, and the latest version, can be obtained from [GitHub][1], using
 a command such as:
 
@@ -107,12 +107,12 @@ Report issues on GitHub [here][2].
 
 [1]: https://github.com/bbidulock/xde-sounds
 [2]: https://github.com/bbidulock/xde-sounds/issues
-[3]: https://github.com/bbidulock/xde-sounds/blob/master/NEWS
-[4]: https://github.com/bbidulock/xde-sounds/blob/master/ChangeLog
-[5]: https://github.com/bbidulock/xde-sounds/blob/master/TODO
-[6]: https://github.com/bbidulock/xde-sounds/blob/master/COMPLIANCE
-[7]: https://github.com/bbidulock/xde-sounds/blob/master/INSTALL
-[8]: https://github.com/bbidulock/xde-sounds/blob/master/LICENSE
-[9]: https://github.com/bbidulock/xde-sounds/blob/master/COPYING
+[3]: https://github.com/bbidulock/xde-sounds/blob/1.0/NEWS
+[4]: https://github.com/bbidulock/xde-sounds/blob/1.0/ChangeLog
+[5]: https://github.com/bbidulock/xde-sounds/blob/1.0/TODO
+[6]: https://github.com/bbidulock/xde-sounds/blob/1.0/COMPLIANCE
+[7]: https://github.com/bbidulock/xde-sounds/blob/1.0/INSTALL
+[8]: https://github.com/bbidulock/xde-sounds/blob/1.0/LICENSE
+[9]: https://github.com/bbidulock/xde-sounds/blob/1.0/COPYING
 
 [ vim: set ft=markdown sw=4 tw=72 nocin nosi fo+=tcqlorn spell: ]: #
