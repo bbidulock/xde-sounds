@@ -4,6 +4,7 @@ Description=The sound used when the window manager reloads.
 SpokenWords=Window manager reloading.
 InvokedBy=WindowManager
 Disabled=true
+Hidden=true
 #
 # Note that window managers may customize their sound by naming
 # convention: window-manager-reload-adwm, for example.

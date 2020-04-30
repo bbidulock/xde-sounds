@@ -3,3 +3,4 @@ Context=Notification
 Description=The sound used when the blackbox window manager starts.  See also desktop-login.
 SpokenWords=Welcome to the "Blackbox" light-weight window manager.
 InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

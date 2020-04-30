@@ -1,0 +1,6 @@
+DisplayName=ADWM Shutdown
+Context=Notification
+Description=The sound used when the ADWM window manager quits.  See also desktop-logout.
+SpokenWords=Leaving the "Advanced Dynamic Window Manager".
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

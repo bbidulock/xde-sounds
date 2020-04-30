@@ -1,0 +1,6 @@
+DisplayName=Blackbox Shutdown
+Context=Action
+Description=The sound used when the Blackbox window manager quits.  See also desktop-logout.
+SpokenWords=Leaving "Blackbox".
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

@@ -4,6 +4,7 @@ Description=The sound used when the window manager quits.  See also desktop-logo
 SpokenWords=Window manager shutting down.
 InvokedBy=WindowManager
 Disabled=true
+Hidden=true
 #
 # Note that this event can be invoked by the window or session manager,
 # whereas desktop-logout can only be invoked by the session manager.

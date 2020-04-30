@@ -3,3 +3,4 @@ Context=Notification
 Description=The sound used when the ADWM window manager starts.  See also desktop-login.
 SpokenWords=Welcome to the "Advanced Dynamic Window Manager".
 InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:
