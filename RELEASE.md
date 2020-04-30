@@ -1,12 +1,12 @@
-[xde-sounds -- release notes.  2020-04-15]: #
+[xde-sounds -- release notes.  2020-04-30]: #
 
 Initial Release 1.0
 ===================
 
 This is the first release of the xde-sounds package that provides
 desktop sounds for the _XDE (X Desktop Environment)_.  It provides the
-necessary sound themes to work with XDE tools as well as supporting the
-desktop entries in the xde-helpers package.
+necessary sound themes to work with XDE tools as well as providing the
+default theme for _XDE_.
 
 This release is the initial release.
 

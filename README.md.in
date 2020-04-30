@@ -54,17 +54,55 @@ For general information on GNU's `./configure`, see the file
 [INSTALL][7].
 
 
+Dependencies
+------------
+
+To build and install the package you will need a basic development
+installation.  To build and install the package you will also need the
+`flite(1)` speech synthesizer from CMU with a full set of `.flitevox`
+voices installed in the /usr/lib/flite directory.
+
+The build and install the package you will also need the `sox(1)`
+program to manipulate and apply effects to the resulting synthesized
+speech files.
+
+
 Running
 -------
 
 Read the manual page after installation:
+
+    $> man 7 sound
+
+The package currently installs four sound themes:
+
+- `freedesktop`  
+It supplements the `freedesktop` sound theme by adding a full
+set of standard and enhanced `.sound` data files.
+- `flite-F`  
+This sound there contains a sound theme of spoken words spoken (by
+default) by the CMU US SLT female voice.
+- `flite-M`  
+This sound there contains a sound theme of spoken words spoken (by
+default) by the CMU US RMS male voice.
+- `XDE`  
+The default sound theme for the X Desktop Environment.
+- `Incredibles`  
+A fun theme that includes funny clips and sound effects from the
+animated movie, "The Incredibles."
+
+To use any of these themes, set your gtk-sound-theme-name to one of the
+names above in either your ~/.gtkrc-2.0 file or your
+~/.config/gtk-3.0/settings.ini file (or both).
+
+
+Enjoy!
 
 
 Issues
 ------
 
 Report issues on GitHub [here][2].
-
 
 
 [1]: https://github.com/bbidulock/@PACKAGE@
