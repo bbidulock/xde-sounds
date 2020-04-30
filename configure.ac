@@ -40,10 +40,44 @@ AC_PROG_MAKE_SET
 AC_PROG_MKDIR_P
 
 AC_ARG_VAR([FLITE],[flite command. @<:@default=flite@:>@])
-AC_CHECK_PROGS([FLITE],[flite flite2 flite1],[${am_missing_run}flite],[$PATH])
+AC_CHECK_PROGS([FLITE],[flite flite2],[],[$PATH])
+if test -z "$FLITE" ; then
+	AC_MSG_ERROR([
+*** 
+*** Need the flite program to generate speech synthesis samples.  Please
+*** specify the location of the flite binary with the FLITE variable to
+*** ./configure before running again.
+*** ])
+fi
+
 AC_ARG_VAR([FLITEDIR],[flite voice directory. @<:@default=/usr/lib/flite@:>@])
+AC_MSG_CHECKING([for flite voice directory])
 if test -z "$FLITEDIR"; then
 	FLITEDIR=/usr/lib/flite
+fi
+if test -d "$FLITEDIR" ; then
+	AC_MSG_RESULT([$FLITEDIR])
+else
+	AC_MSG_RESULT([no])
+	AC_MSG_ERROR([
+*** 
+*** Need to know the directory where flitevox voices are stored.
+*** Please specify the directory with the FLITEDIR variable to
+*** ./configure before running again.
+*** ])
+fi
+
+AC_ARG_VAR([SOX],[sox audio processing command. @<:@default=sox@:>@])
+AC_CHECK_PROGS([SOX],[sox],[],[$PATH])
+AM_CONDITIONAL([HAVE_SOX],[test -n "$SOX"])
+if test -z "$SOX" ; then
+	AC_MSG_WARN([
+*** 
+*** Need the sox program to apply effects to and normalize synthesized
+*** voice.  Please consider specifying the location of the sox binary
+*** with the SOX variable to ./configure before running again.
+*** ])
+	enable_effects=no
 fi
 
 AC_ARG_VAR([MARKDOWN],[markdown command. @<:@default=markdown@:>@])
@@ -78,6 +112,47 @@ AC_CHECK_PROGS([LINKS],[lynx links],[${am_missing_run}lynx],[$PATH])
 if test "$LINKS" = "links"; then
 	LINKS="links -codepage utf-8"
 fi
+
+AC_ARG_ENABLE([effects],
+	AC_HELP_STRING([--disable-effects],
+		[Enable sox effects on output files @<:@default=enabled@:>@]))
+AM_CONDITIONAL([EFFECTS],[test x${enable_effects:-yes} = xyes])
+AC_MSG_CHECKING([for effects])
+AC_MSG_RESULT([${enable_effects:-yes}])
+
+AC_ARG_WITH([male-voice],
+	AC_HELP_STRING([--with-male-voice],
+		[Specify the default male voice @<:@default=cmu_us_rms@:>@]))
+AC_MSG_CHECKING([for M voice])
+if test -z "$with_male_voice" ; then
+	MVOICE=cmu_us_rms
+else
+	MVOICE=$(basename "$with_male_voice" .flitevox)
+fi
+if test -f "${FLITEDIR}/${MVOICE}.flitevox" ; then
+	AC_MSG_RESULT([$MVOICE])
+else
+	AC_MSG_RESULT([no])
+	AC_MSG_ERROR([Male voice ${FLITEDIR}/${MVOICE}.flitevox not available.])
+fi
+AC_SUBST([MVOICE])
+
+AC_ARG_WITH([female-voice],
+	AC_HELP_STRING([--with-female-voice],
+		[Specify the default female voice @<:@default=cmu_us_slt@:>@]))
+AC_MSG_CHECKING([for F voice])
+if test -z "$with_female_voice" ; then
+	FVOICE=cmu_us_slt
+else
+	FVOICE=$(basename "$with_female_voice" .flitevox)
+fi
+if test -f "${FLITEDIR}/${FVOICE}.flitevox" ; then
+	AC_MSG_RESULT([$FVOICE])
+else
+	AC_MSG_RESULT([no])
+	AC_MSG_ERROR([Female voice ${FLITEDIR}/${FVOICE}.flitevox not available.])
+fi
+AC_SUBST([FVOICE])
 
 test "x$prefix" = xNONE && prefix="$ac_default_prefix"
 sharedir="$datadir"
