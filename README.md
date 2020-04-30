@@ -1,9 +1,9 @@
-[xde-sounds -- read me first file.  2020-04-29]: #
+[xde-sounds -- read me first file.  2020-04-30]: #
 
 xde-sounds
 ===============
 
-Package `xde-sounds-1.0` was released under GPLv3 license 2020-04-29.
+Package `xde-sounds-1.0.8` was released under GPLv3 license 2020-04-30.
 
 This is a set of sounds, primarily window manager sounds and sounds for
 shutdown and reboot of the system on logout, for the XDE (_X Desktop
@@ -12,7 +12,7 @@ Environment_).
 Release
 -------
 
-This is the `xde-sounds-1.0` package, released 2020-04-29.  This
+This is the `xde-sounds-1.0.8` package, released 2020-04-30.  This
 release, and the latest version, can be obtained from [GitHub][1], using
 a command such as:
 
@@ -54,10 +54,49 @@ For general information on GNU's `./configure`, see the file
 [INSTALL][7].
 
 
+Dependencies
+------------
+
+To build and install the package you will need a basic development
+installation.  To build and install the package you will also need the
+`flite(1)` speech synthesizer from CMU with a full set of `.flitevox`
+voices installed in the /usr/lib/flite directory.
+
+The build and install the package you will also need the `sox(1)`
+program to manipulate and apply effects to the resulting synthesized
+speech files.
+
+
 Running
 -------
 
 Read the manual page after installation:
+
+    $> man 7 sound
+
+The package currently installs four sound themes:
+
+- `freedesktop`  
+It supplements the `freedesktop` sound theme by adding a full
+set of standard and enhanced `.sound` data files.
+- `flite-F`  
+This sound there contains a sound theme of spoken words spoken (by
+default) by the CMU US SLT female voice.
+- `flite-M`  
+This sound there contains a sound theme of spoken words spoken (by
+default) by the CMU US RMS male voice.
+- `XDE`  
+The default sound theme for the X Desktop Environment.
+- `Incredibles`  
+A fun theme that includes funny clips and sound effects from the
+animated movie, "The Incredibles."
+
+To use any of these themes, set your gtk-sound-theme-name to one of the
+names above in either your ~/.gtkrc-2.0 file or your
+~/.config/gtk-3.0/settings.ini file (or both).
+
+
+Enjoy!
 
 
 Issues
@@ -66,15 +105,14 @@ Issues
 Report issues on GitHub [here][2].
 
 
-
 [1]: https://github.com/bbidulock/xde-sounds
 [2]: https://github.com/bbidulock/xde-sounds/issues
-[3]: https://github.com/bbidulock/xde-sounds/blob/1.0/NEWS
-[4]: https://github.com/bbidulock/xde-sounds/blob/1.0/ChangeLog
-[5]: https://github.com/bbidulock/xde-sounds/blob/1.0/TODO
-[6]: https://github.com/bbidulock/xde-sounds/blob/1.0/COMPLIANCE
-[7]: https://github.com/bbidulock/xde-sounds/blob/1.0/INSTALL
-[8]: https://github.com/bbidulock/xde-sounds/blob/1.0/LICENSE
-[9]: https://github.com/bbidulock/xde-sounds/blob/1.0/COPYING
+[3]: https://github.com/bbidulock/xde-sounds/blob/master/NEWS
+[4]: https://github.com/bbidulock/xde-sounds/blob/master/ChangeLog
+[5]: https://github.com/bbidulock/xde-sounds/blob/master/TODO
+[6]: https://github.com/bbidulock/xde-sounds/blob/master/COMPLIANCE
+[7]: https://github.com/bbidulock/xde-sounds/blob/master/INSTALL
+[8]: https://github.com/bbidulock/xde-sounds/blob/master/LICENSE
+[9]: https://github.com/bbidulock/xde-sounds/blob/master/COPYING
 
 [ vim: set ft=markdown sw=4 tw=72 nocin nosi fo+=tcqlorn spell: ]: #
