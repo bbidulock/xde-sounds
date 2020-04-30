@@ -24,6 +24,7 @@ echo -e "\n" >>$file
 
 for dir in flite-M flite-F; do
 	var=$(echo "$dir"|sed 's,-,_,')
+	echo -n "${var}_wav_files =" >tmp0.$$
 	echo -n "${var}_oga_files =" >tmp1.$$
 	echo -n "${var}_dis_files =" >tmp2.$$
 	echo -n "${var}_ogg_files =" >tmp3.$$
@@ -37,25 +38,33 @@ for dir in flite-M flite-F; do
 		[ -z "$text" ] && text=$(cat "$f"|sed -n '/^SpokenWords=/{s,SpokenWords=,,;p;q}')
 		[ -z "$text" ] && text=$(cat "$f"|sed -n '/^DisplayName=/{s,DisplayName=,,;p;q}')
 		if [ -n "$text" ]; then
-			disabled=$(cat "$f"|sed -n '/^Disabled=/{s,Disabled=,,;p;q}')
-			if [ "$disabled" != "true" ]; then
-				test -n "$srcdir" && oga=$(echo "$oga"|sed "s,^$srcdir/,,")
-				echo -e " \\" >>tmp1.$$
-				echo -e -n "\t$oga" >>tmp1.$$
-			else
-				test -n "$srcdir" && dis=$(echo "$dis"|sed "s,^$srcdir/,,")
-				echo -e " \\" >>tmp2.$$
-				echo -e -n "\t$dis" >>tmp2.$$
+			hidden=$(cat "$f"|sed -n '/^Hidden=/{s,Hidden=,,;p;q}')
+			if [ "$hidden" != "true" ]; then
+				disabled=$(cat "$f"|sed -n '/^Disabled=/{s,Disabled=,,;p;q}')
+				if [ "$disabled" != "true" ]; then
+					test -n "$srcdir" && wav=$(echo "$wav"|sed "s,^$srcdir/,,")
+					echo -e " \\" >>tmp0.$$
+					echo -e -n "\t$wav" >>tmp0.$$
+					test -n "$srcdir" && oga=$(echo "$oga"|sed "s,^$srcdir/,,")
+					echo -e " \\" >>tmp1.$$
+					echo -e -n "\t$oga" >>tmp1.$$
+				else
+					test -n "$srcdir" && dis=$(echo "$dis"|sed "s,^$srcdir/,,")
+					echo -e " \\" >>tmp2.$$
+					echo -e -n "\t$dis" >>tmp2.$$
+				fi
+				[ -s "$ogg" ] && {
+					test -n "$srcdir" && ogg=$(echo "$ogg"|sed "s,^$srcdir/,,")
+					echo -e " \\" >>tmp3.$$
+					echo -e -n "\t$ogg" >>tmp3.$$
+				}
 			fi
-			[ -s "$ogg" ] && {
-				test -n "$srcdir" && ogg=$(echo "$ogg"|sed "s,^$srcdir/,,")
-				echo -e " \\" >>tmp3.$$
-				echo -e -n "\t$ogg" >>tmp3.$$
-			}
 		else
 			echo "WARNING: missing text for $f" >&2
 		fi
 	done
+	cat tmp0.$$ >>$file
+	echo -e "\n" >>$file
 	cat tmp1.$$ >>$file
 	echo -e "\n" >>$file
 	cat tmp2.$$ >>$file
@@ -64,13 +73,15 @@ for dir in flite-M flite-F; do
 	echo -e "\n" >>$file
 #	echo -n "${var}_files =" >>$file
 #	echo " \\" >>$file
+#	echo -e -n "\t\$(${var}_wav_files)" >>$file
+#	echo " \\" >>$file
 #	echo -e -n "\t\$(${var}_oga_files)" >>$file
 #	echo " \\" >>$file
 #	echo -e -n "\t\$(${var}_dis_files)" >>$file
 #	echo " \\" >>$file
 #	echo -e -n "\t\$(${var}_ogg_files)" >>$file
 #	echo "" >>$file
-	rm -f tmp1.$$ tmp2.$$ tmp3.$$
+	rm -f tmp0.$$ tmp1.$$ tmp2.$$ tmp3.$$
 done
 
 echo -e -n "incredible_files =" >>$file
