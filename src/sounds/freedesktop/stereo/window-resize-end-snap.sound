@@ -1,0 +1,6 @@
+DisplayName=Window Resize Snapped
+Context=Support
+Description=The sound used when resizing a window and the resize snapped to another window edge or workspace boundary.
+SpokenWords=Window ree-size snapped.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

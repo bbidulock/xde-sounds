@@ -1,0 +1,6 @@
+DisplayName=Window Resize Unsnapped
+Context=Support
+Description=The sound used when resizing a window and the resize unsnapped from another window edge or workspace boundary.
+SpokenWords=Window ree-size unsnapped.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

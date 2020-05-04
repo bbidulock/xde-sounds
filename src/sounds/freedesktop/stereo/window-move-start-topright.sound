@@ -1,0 +1,5 @@
+DisplayName=Window Move Started From Top Right
+Context=Support
+Description=A window move started from the top right.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

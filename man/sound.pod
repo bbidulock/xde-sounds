@@ -40,7 +40,7 @@ B<Spoken words:>
 
 =item I<dialog-error>
 
-Common sound used when a dialog is opened to explain an error condition
+The sound used when a dialog is opened to explain an error condition
 to the user.
 
 B<Spoken words:>
@@ -285,8 +285,7 @@ The sound used when a user logs out of a service (i.e. Gaim logout).
 
 =item I<battery-caution>
 
-Caution
-battery nearing exhaustion.
+Caution battery nearing exhaustion.
 The sound used when the battery is nearing exhaustion (below 40%, for example).
 
 =item I<battery-full>
@@ -461,11 +460,11 @@ Window manager reloading.
 
 =item B<window-manager-start>
 
-Window Manager Restart.
-The sound used when the window manager restarts.
+Window Manager start.
+The sound used when the window manager starts.
 
 B<Spoken words:>
-Window manager restarting.
+Window manager starting.
 
 =back
 
@@ -882,62 +881,187 @@ The sound used when the user clicks on an inactive window.
 
 =item I<window-move-start>
 
-Window Move Started
+Window Move Started.
 A window move started.
+
+=item B<window-move-start-topleft>
+
+Window Move Started From Top Left.
+A window move started from the top left.
+
+=item B<window-move-start-top>
+
+Window Move Started From Top.
+A window move started from the top.
+
+=item B<window-move-start-topright>
+
+Window Move Started From Top Right.
+A window move started from the top right.
+
+=item B<window-move-start-right>
+
+Window Move Started From Right.
+A window move started from the right.
+
+=item B<window-move-start-bottomright>
+
+Window Move Started From Bottom Right.
+A window move started from the bottom right.
+
+=item B<window-move-start-bottom>
+
+Window Move Started From Bottom.
+A window move started from the bottom.
+
+=item B<window-move-start-bottomleft>
+
+Window Move Started From Bottom Left.
+A window move started from the bottom left.
+
+=item B<window-move-start-left>
+
+Window Move Started From Left.
+A window move started from the left.
+
+=item B<window-move-start-center>
+
+Window Move Started From Center.
+A window move started from the center.
+
+=item B<window-move-start-keyboard>
+
+Window Move Started From Keyboard.
+A window move started from the keyboard.
 
 =item I<window-move-end>
 
-Window Move Ended
+Window Move Ended.
 A window move ended.
 
-=item B<window-move-end-repel>
+=item B<window-move-end-cancel>
 
-Repelling Move
+Window Move Cancelled.
+A window move was cancelled.
+
+=item B<window-move-end-snap>
+
+Window Move Snapped.
+The sound used when moving a window and the movement snapped to another window edge or workspace boundary.
+
+=item B<window-move-end-snap-repel>
+
+Repelling Move.
 The sound used when moving a window and the movement is repelled by another window or workspace boundary.
 
-=item B<window-move-end-attract>
+=item B<window-move-end-snap-attract>
 
-Attracting Move
+Attracting Move.
 The sound used when moving a window and the movement is attracted by another window or workspace boundary.
 
-=item B<window-move-start-unrepel>
+=item B<window-move-start-unsnap>
 
-Stopped Repelling Move
+Window Move Unsnapped.
+The sound used when moving a window and the movement unsnapped from another window edge or workspace boundary.
+
+=item B<window-move-start-unsnap-unrepel>
+
+Stopped Repelling Move.
 The sound used when moving a window and the movement has stopped being repelled by another window or workspace boundary.
 
-=item B<window-move-start-unattract>
+=item B<window-move-start-unsnap-unattract>
 
-Stopped Attracting Move
+Stopped Attracting Move.
 The sound used when moving a window and the movement has stopped being attracted by another window or workspace boundary.
 
 =item I<window-resize-start>
 
-Window Resize Started
+Window Resize Started.
 A window resize started.
+
+=item B<window-resize-start-topleft>
+
+Window Resize Started From Top Left.
+A window resize started from the top left.
+
+=item B<window-resize-start-top>
+
+Window Resize Started From Top.
+A window resize started from the top.
+
+=item B<window-resize-start-topright>
+
+Window Resize Started From Top Right.
+A window resize started from the top right.
+
+=item B<window-resize-start-right>
+
+Window Resize Started From Right.
+A window resize started from the right.
+
+=item B<window-resize-start-bottomright>
+
+Window Resize Started From Bottom Right.
+A window resize started from the bottom right.
+
+=item B<window-resize-start-bottom>
+
+Window Resize Started From Bottom.
+A window resize started from the bottom.
+
+=item B<window-resize-start-bottomleft>
+
+Window Resize Started From Bottom Left.
+A window resize started from the bottom left.
+
+=item B<window-resize-start-left>
+
+Window Resize Started From Left.
+A window resize started from the left.
+
+=item B<window-resize-start-keyboard>
+
+Window Resize Started From Keyboard
+A window resize started from the keyboard.
 
 =item I<window-resize-end>
 
-Window Resize Ended
+Window Resize Ended.
 A window resize ended.
 
-=item B<window-resize-end-repel>
+=item B<window-resize-end-cancel>
 
-Repelling Resize
+Window Resize Cancelled.
+A window resize was cancelled.
+
+=item B<window-resize-end-snap>
+
+Window Resize Snapped.
+The sound used when resizing a window and the resize snapped to another window edge or workspace boundary.
+
+=item B<window-resize-end-snap-repel>
+
+Repelling Resize.
 The sound used when resizing a window and the resize is repelled by another window or workspace boundary.
 
-=item B<window-resize-end-attract>
+=item B<window-resize-end-snap-attract>
 
-Attracting Resize
+Attracting Resize.
 The sound used when resizing a window and the resize is attracted by another window or workspace boundary.
 
-=item B<window-resize-start-unrepel>
+=item B<window-resize-start-unsnap>
 
-Stopped Repelling Resize
+Window Resize Unsnapped.
+The sound used when resizing a window and the resize unsnapped from another window edge or workspace boundary.
+
+=item B<window-resize-start-unsnap-unrepel>
+
+Stopped Repelling Resize.
 The sound used when resizing a window and the resize has stopped being repelled by another window or workspace boundary.
 
-=item B<window-resize-start-unattract>
+=item B<window-resize-start-unsnap-unattract>
 
-Stopped Attracting Resize
+Stopped Attracting Resize.
 The sound used when resizing a window and the resize has stopped being attracted by another window or workspace boundary.
 
 =item I<desktop-switch-left>

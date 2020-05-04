@@ -1,0 +1,6 @@
+DisplayName=Window Resize Started From Top Left
+Context=Support
+Description=A window resize started from the top left.
+SpokenWords=Window ree-size started from top-left.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

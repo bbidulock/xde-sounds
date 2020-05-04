@@ -1,0 +1,5 @@
+DisplayName=Window Move Snapped
+Context=Support
+Description=The sound used when moving a window and the movement snapped to another window edge or workspace boundary.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

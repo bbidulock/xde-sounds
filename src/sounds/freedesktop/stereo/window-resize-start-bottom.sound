@@ -1,0 +1,6 @@
+DisplayName=Window Resize Started From Bottom
+Context=Support
+Description=A window resize started from the bottom.
+SpokenWords=Window ree-size started from bottom.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

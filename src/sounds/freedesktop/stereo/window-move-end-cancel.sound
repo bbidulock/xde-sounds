@@ -1,0 +1,5 @@
+DisplayName=Window Move Cancelled
+Context=Support
+Description=A window move was cancelled.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

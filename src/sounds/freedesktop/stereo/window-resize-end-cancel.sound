@@ -1,0 +1,6 @@
+DisplayName=Window Resize Cancelled
+Context=Support
+Description=A window resize ended was cancelled.
+SpokenWords=Window ree-size cancelled.
+InvokedBy=WindowManager
+# vim:set ft=desktop tw=72 fo+=tcqlorn:
