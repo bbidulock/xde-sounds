@@ -1231,67 +1231,67 @@ The sound used when a menu is popped down.
 
 =item I<menu-replace>
 
-Menu Replace
+Menu Replace.
 The sound used when replacing an active menu with another menu.
 
 =item I<tooltip-popup>
 
-Tooltip Popup
+Tooltip Popup.
 The sound used when a tooltip is popped up.
 
 =item I<tooltip-popdown>
 
-Tooltip Popdown
+Tooltip Popdown.
 The sound used when a tooltip is popped down.
 
 =item I<item-selected>
 
-Item Selected
+Item Selected.
 The sound used when an item is selected.
 
 =item B<desktop-mode>
 
-Arrangement Changed
+Arrangement Changed.
 The sound used when the desktop mode changes its arrangement.
 
 =item B<desktop-mode-floating>
 
-Arrange Floating
+Arrange Floating.
 The sound used when the desktop mode is changed to a floating arrangement.
 
 =item B<desktop-mode-grid>
 
-Arrange Grid
+Arrange Grid.
 The sound used when the desktop mode is set to a grid arrangement.
 
 =item B<desktop-mode-monocle>
 
-Arrange Monocle
+Arrange Monocle.
 The sound used when the desktop mode is set to a monocle arrangement.
 
 =item B<desktop-mode-tiled>
 
-Arrange Tiled
+Arrange Tiled.
 The sound used when the desktop mode is set to a tiled arrangement.
 
 =item B<desktop-mode-tiled-left>
 
-Arrange Tiled with Left Master
+Arrange Tiled with Left Master.
 The sound used when the desktop mode is set to a tiled arrangement with a left master position.
 
 =item B<desktop-mode-tiled-right>
 
-Arrange Tiled with Right Master
+Arrange Tiled with Right Master.
 The sound used when the desktop mode is set to a tiled arrangement with a right master position.
 
 =item B<desktop-mode-tiled-top>
 
-Arrange Tiled with Top Master
+Arrange Tiled with Top Master.
 The sound used when the desktop mode is set to a tiled arrangement with a top master position.
 
 =item B<desktop-mode-tiled-bottom>
 
-Arrange Tiled with Bottom Master
+Arrange Tiled with Bottom Master.
 The sound used when the desktop mode is set to a tiled arrangement with a bottom master position.
 
 =item B<desktop-showing>
