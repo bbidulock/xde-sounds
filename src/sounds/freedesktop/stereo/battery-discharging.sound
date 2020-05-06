@@ -1,0 +1,5 @@
+DisplayName=Battery discharging.
+Context=Notification
+Description=The sound used when the battery begins discharging.
+InvokedBy=System
+# vim:set ft=desktop tw=72 fo+=tcqlorn:
