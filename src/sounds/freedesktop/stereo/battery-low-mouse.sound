@@ -1,0 +1,5 @@
+DisplayName=Low Mouse Battery! Low Mouse Battery! Low Mouse Battery!
+Context=Alert
+Description=The sound used when the mouse battery is low (below 20%, for example).
+InvokedBy=System
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

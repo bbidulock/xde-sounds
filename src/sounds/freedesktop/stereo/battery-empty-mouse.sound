@@ -1,0 +1,5 @@
+DisplayName=Mouse battery empty.
+Context=Notification
+Description=The sound used when the mouse battery is depleted.
+InvokedBy=System
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

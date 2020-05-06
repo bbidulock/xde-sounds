@@ -1,0 +1,5 @@
+DisplayName=Caution: mouse battery nearing exhaustion.
+Context=Notification
+Description=The sound used when the mouse battery is nearing exhaustion (below 40%, for example).
+InvokedBy=System
+# vim:set ft=desktop tw=72 fo+=tcqlorn:

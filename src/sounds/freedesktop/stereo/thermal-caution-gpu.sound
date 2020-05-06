@@ -1,0 +1,5 @@
+DisplayName=GPU has Heated Up
+Context=Notification
+Description=The sound to use when the GPU has heated up (e.g. to 80% of thermal limits).
+InvokedBy=System
+# vim:set ft=desktop tw=72 fo+=tcqlorn:
