@@ -1,7 +1,8 @@
-DisplayName=Ready for system log in.
+DisplayName=Ready for system login.
 Context=Notification
 Description=The sound used when the computer is booted up and shows the login screen.
 InvokedBy=System
+SpokenWords=Initiating system log-in.
 SoxEffects=rate -h 44100 gain -n -3 tempo -s 0.8 channels 2 pad 0.0 1.0 gain -20 reverb 38 50 90 100 10 0 highpass -1 400 rate -m 16000
 Speaker[F]=cmu_us_lnh
 Speaker[M]=cmu_us_aew
