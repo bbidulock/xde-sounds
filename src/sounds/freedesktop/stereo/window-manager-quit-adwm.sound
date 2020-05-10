@@ -1,5 +1,5 @@
 DisplayName=ADWM Shutdown
-Context=Notification
+Context=Action
 Description=The sound used when the ADWM window manager quits.  See also desktop-logout.
 SpokenWords=Leaving the "Advanced Dynamic Window Manager".
 InvokedBy=WindowManager

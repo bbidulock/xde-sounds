@@ -2,4 +2,6 @@ DisplayName=Device Hot! Device Hot! Device Hot!
 Context=Alert
 Description=The sound used when the computer or device has become hot (e.g. to 90% of thermal limits).
 InvokedBy=System
+Speaker[F]=cmu_us_slt
+SoxEffects=rate -h 44100 norm tempo -s 1.2 channels 2 pad 0.0 1.0 gain -20 reverb 5 rate -m 16000
 # vim:set ft=desktop tw=72 fo+=tcqlorn:
