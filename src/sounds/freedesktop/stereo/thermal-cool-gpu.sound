@@ -2,4 +2,5 @@ DisplayName=GPU has Cooled Down
 Context=Notification
 Description=The sound to use when the GPU has cooled down (e.g. to 20% of thermal limits).
 InvokedBy=System
+SpokenWords=GPU cooled, down.
 # vim:set ft=desktop tw=72 fo+=tcqlorn:

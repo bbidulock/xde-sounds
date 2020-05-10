@@ -3,5 +3,5 @@ Context=Notification
 Description=The sound used when the keyboard battery is nearing exhaustion (below 40%, for example).
 InvokedBy=System
 Speaker[F]=cmu_us_slt
-SoxEffects=rate -h 44100 norm tempo -s 1.2 channels 2 pad 0.0 1.0 gain -20 reverb 5 rate -m 16000
+SoxEffects=rate -h 44100 gain -n -3 tempo -s 1.2 channels 2 pad 0.0 1.0 gain -20 reverb 5 rate -m 16000
 # vim:set ft=desktop tw=72 fo+=tcqlorn:
