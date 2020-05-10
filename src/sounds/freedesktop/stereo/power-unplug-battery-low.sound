@@ -2,6 +2,9 @@ DisplayName=The power cable has been unplugged and the battery level is low.
 Context=Alert
 Description=The power cable has been unplugged and the battery level is still low.
 InvokedBy=System
-SpokenWords=Battery low still!  Battery low still!  Battery low still!
-SoxEffects=rate -h 44100 gain -n -3 tempo -s 1.2 channels 2 pad 0.0 1.0 gain -20 reverb 5 rate -m 16000
+#SpokenWords=Battery low still!  Battery low still!  Battery low still!
+SpokenWords=The power cable has been unplugged, and the battery level is still low.
+Speaker[F]=cmu_us_clb
+Speaker[M]=cmu_us_rms
+SoxEffects=rate -h 44100 gain -n -3 tempo -s 1.3 channels 2 pad 0.0 1.0 gain -20 reverb 5 rate -m 16000
 # vim:set ft=desktop tw=72 fo+=tcqlorn:
