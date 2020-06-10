@@ -20,7 +20,7 @@ git tag -n100 -l 1.1
 
 git shortlog -e -n -w80,6,8 1.0...1.1
 
-Brian Bidulock <bidulock@openss7.org> (13):
+Brian Bidulock <bidulock@openss7.org> (14):
       post-release update
       handle window moves and resizes
       swap thermal-caution and thermal-hot for incredibles
@@ -34,6 +34,7 @@ Brian Bidulock <bidulock@openss7.org> (13):
       a few better sounds
       a few more speech tweaks
       update release files
+      update release files again
 
 
 Release xde-sounds-1.0 released 2020-04-30
