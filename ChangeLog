@@ -1,5 +1,256 @@
 # created with git log --stat=76 -M -C -500|fmt -sct -w80
 
+commit fc636a9e9c54f17fe56bbd3d94e24446b699e465
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun May 10 04:05:39 2020 -0600
+
+    a few more speech tweaks
+
+ src/sounds/freedesktop/stereo/battery-caution-keyboard.sound   | 1 -
+ src/sounds/freedesktop/stereo/battery-caution-mouse.sound      | 1 -
+ src/sounds/freedesktop/stereo/battery-caution.sound            | 1 -
+ src/sounds/freedesktop/stereo/battery-charging-keyboard.sound  | 1 -
+ src/sounds/freedesktop/stereo/battery-charging-mouse.sound     | 1 -
+ src/sounds/freedesktop/stereo/battery-charging.sound           | 1 -
+ .../freedesktop/stereo/battery-discharging-keyboard.sound      | 1 -
+ src/sounds/freedesktop/stereo/battery-discharging-mouse.sound  | 1 -
+ src/sounds/freedesktop/stereo/battery-discharging.sound        | 1 -
+ src/sounds/freedesktop/stereo/battery-empty-keyboard.sound     | 1 -
+ src/sounds/freedesktop/stereo/battery-empty-mouse.sound        | 1 -
+ src/sounds/freedesktop/stereo/battery-empty.sound              | 1 -
+ src/sounds/freedesktop/stereo/battery-low-keyboard.sound       | 1 -
+ src/sounds/freedesktop/stereo/battery-low-mouse.sound          | 1 -
+ src/sounds/freedesktop/stereo/battery-low.sound                | 1 -
+ src/sounds/freedesktop/stereo/power-plug.sound                 | 4 +++-
+ src/sounds/freedesktop/stereo/power-unplug-battery-low.sound   | 7 +++++--
+ src/sounds/freedesktop/stereo/power-unplug.sound               | 4 +++-
+ src/sounds/freedesktop/stereo/thermal-caution-cpu.sound        | 1 -
+ src/sounds/freedesktop/stereo/thermal-caution-gpu.sound        | 1 -
+ src/sounds/freedesktop/stereo/thermal-caution.sound            | 1 -
+ src/sounds/freedesktop/stereo/thermal-hot-cpu.sound            | 1 -
+ src/sounds/freedesktop/stereo/thermal-hot-gpu.sound            | 1 -
+ src/sounds/freedesktop/stereo/thermal-hot.sound                | 1 -
+ 24 files changed, 11 insertions(+), 25 deletions(-)
+
+commit 9e2e4b3a4a36cb9218c0a6cc9cfe4f9258234dae
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun May 10 03:07:15 2020 -0600
+
+    a few better sounds
+
+ src/sounds/freedesktop/stereo/suspend-resume.sound | 2 +-
+ src/sounds/freedesktop/stereo/system-ready.sound   | 3 ++-
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+
+commit 79187133b3cbfe7406493842f7c50a413f1a91eb
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun May 10 02:48:18 2020 -0600
+
+    more sound improvements
+
+ src/sounds/freedesktop/stereo/battery-caution-keyboard.sound    | 2 +-
+ src/sounds/freedesktop/stereo/battery-caution-mouse.sound       | 2 +-
+ src/sounds/freedesktop/stereo/battery-caution.sound             | 2 +-
+ src/sounds/freedesktop/stereo/battery-charging-keyboard.sound   | 2 +-
+ src/sounds/freedesktop/stereo/battery-charging-mouse.sound      | 2 +-
+ src/sounds/freedesktop/stereo/battery-charging.sound            | 2 +-
+ .../freedesktop/stereo/battery-discharging-keyboard.sound       | 2 +-
+ src/sounds/freedesktop/stereo/battery-discharging-mouse.sound   | 2 +-
+ src/sounds/freedesktop/stereo/battery-discharging.sound         | 2 +-
+ src/sounds/freedesktop/stereo/battery-empty-keyboard.sound      | 2 +-
+ src/sounds/freedesktop/stereo/battery-empty-mouse.sound         | 2 +-
+ src/sounds/freedesktop/stereo/battery-empty.sound               | 2 +-
+ src/sounds/freedesktop/stereo/battery-low-keyboard.sound        | 2 +-
+ src/sounds/freedesktop/stereo/battery-low-mouse.sound           | 2 +-
+ src/sounds/freedesktop/stereo/battery-low.sound                 | 2 +-
+ src/sounds/freedesktop/stereo/power-plug.sound                  | 1 +
+ src/sounds/freedesktop/stereo/power-unplug-battery-low.sound    | 2 ++
+ src/sounds/freedesktop/stereo/power-unplug.sound                | 1 +
+ src/sounds/freedesktop/stereo/system-bootup.sound               | 6 +++---
+ src/sounds/freedesktop/stereo/system-ready.sound                | 6 +++---
+ src/sounds/freedesktop/stereo/system-shutdown-reboot.sound      | 6 +++---
+ src/sounds/freedesktop/stereo/system-shutdown.sound             | 6 +++---
+ src/sounds/freedesktop/stereo/thermal-caution-cpu.sound         | 2 +-
+ src/sounds/freedesktop/stereo/thermal-caution-gpu.sound         | 2 +-
+ src/sounds/freedesktop/stereo/thermal-caution.sound             | 2 +-
+ src/sounds/freedesktop/stereo/thermal-cool-cpu.sound            | 1 +
+ src/sounds/freedesktop/stereo/thermal-cool-gpu.sound            | 1 +
+ src/sounds/freedesktop/stereo/thermal-cool.sound                | 1 +
+ src/sounds/freedesktop/stereo/thermal-hot-cpu.sound             | 2 +-
+ src/sounds/freedesktop/stereo/thermal-hot-gpu.sound             | 2 +-
+ src/sounds/freedesktop/stereo/thermal-hot.sound                 | 2 +-
+ 31 files changed, 40 insertions(+), 33 deletions(-)
+
+commit c7e158e38d89b5fca7f454fd1dbc48b1c0d81b15
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun May 10 01:21:32 2020 -0600
+
+    improve a few sounds
+
+ src/sounds/freedesktop/stereo/battery-caution-keyboard.sound     | 2 ++
+ src/sounds/freedesktop/stereo/battery-caution-mouse.sound        | 2 ++
+ src/sounds/freedesktop/stereo/battery-caution.sound              | 2 ++
+ src/sounds/freedesktop/stereo/battery-charging-keyboard.sound    | 2 ++
+ src/sounds/freedesktop/stereo/battery-charging-mouse.sound       | 2 ++
+ src/sounds/freedesktop/stereo/battery-charging.sound             | 2 ++
+ src/sounds/freedesktop/stereo/battery-discharging-keyboard.sound | 2 ++
+ src/sounds/freedesktop/stereo/battery-discharging-mouse.sound    | 2 ++
+ src/sounds/freedesktop/stereo/battery-discharging.sound          | 2 ++
+ src/sounds/freedesktop/stereo/battery-empty-keyboard.sound       | 2 ++
+ src/sounds/freedesktop/stereo/battery-empty-mouse.sound          | 2 ++
+ src/sounds/freedesktop/stereo/battery-empty.sound                | 2 ++
+ src/sounds/freedesktop/stereo/battery-low-keyboard.sound         | 2 ++
+ src/sounds/freedesktop/stereo/battery-low-mouse.sound            | 2 ++
+ src/sounds/freedesktop/stereo/battery-low.sound                  | 2 ++
+ src/sounds/freedesktop/stereo/suspend-error.sound                | 5 +++--
+ src/sounds/freedesktop/stereo/suspend-resume.sound               | 5 +++--
+ src/sounds/freedesktop/stereo/suspend-start.sound                | 5 +++--
+ src/sounds/freedesktop/stereo/system-bootup.sound                | 4 +++-
+ src/sounds/freedesktop/stereo/system-ready.sound                 | 4 +++-
+ src/sounds/freedesktop/stereo/system-shutdown-reboot.sound       | 4 +++-
+ src/sounds/freedesktop/stereo/system-shutdown.sound              | 4 +++-
+ src/sounds/freedesktop/stereo/thermal-caution-cpu.sound          | 2 ++
+ src/sounds/freedesktop/stereo/thermal-caution-gpu.sound          | 2 ++
+ src/sounds/freedesktop/stereo/thermal-caution.sound              | 2 ++
+ src/sounds/freedesktop/stereo/thermal-hot-cpu.sound              | 2 ++
+ src/sounds/freedesktop/stereo/thermal-hot-gpu.sound              | 2 ++
+ src/sounds/freedesktop/stereo/thermal-hot.sound                  | 2 ++
+ src/sounds/freedesktop/stereo/window-manager-quit-adwm.sound     | 2 +-
+ 29 files changed, 64 insertions(+), 11 deletions(-)
+
+commit 8a2f53e7b063098e18355aee15b91762578a0144
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Wed May 6 14:23:58 2020 -0600
+
+    add device specific events for battery and thermal
+
+ src/sounds/freedesktop/stereo/battery-caution-keyboard.sound     | 5 +++++
+ src/sounds/freedesktop/stereo/battery-caution-mouse.sound        | 5 +++++
+ src/sounds/freedesktop/stereo/battery-charging-keyboard.sound    | 5 +++++
+ src/sounds/freedesktop/stereo/battery-charging-mouse.sound       | 5 +++++
+ src/sounds/freedesktop/stereo/battery-discharging-keyboard.sound | 5 +++++
+ src/sounds/freedesktop/stereo/battery-discharging-mouse.sound    | 5 +++++
+ src/sounds/freedesktop/stereo/battery-empty-keyboard.sound       | 5 +++++
+ src/sounds/freedesktop/stereo/battery-empty-mouse.sound          | 5 +++++
+ src/sounds/freedesktop/stereo/battery-full-keyboard.sound        | 5 +++++
+ src/sounds/freedesktop/stereo/battery-full-mouse.sound           | 5 +++++
+ src/sounds/freedesktop/stereo/battery-low-keyboard.sound         | 5 +++++
+ src/sounds/freedesktop/stereo/battery-low-mouse.sound            | 5 +++++
+ src/sounds/freedesktop/stereo/thermal-caution-cpu.sound          | 5 +++++
+ src/sounds/freedesktop/stereo/thermal-caution-gpu.sound          | 5 +++++
+ src/sounds/freedesktop/stereo/thermal-cool-cpu.sound             | 5 +++++
+ src/sounds/freedesktop/stereo/thermal-cool-gpu.sound             | 5 +++++
+ src/sounds/freedesktop/stereo/thermal-hot-cpu.sound              | 5 +++++
+ src/sounds/freedesktop/stereo/thermal-hot-gpu.sound              | 5 +++++
+ 18 files changed, 90 insertions(+)
+
+commit c496c4ba5879ef2c9400eb9f8f193536d8a51956
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Wed May 6 14:22:48 2020 -0600
+
+    remove echo from sox effects for some sounds
+
+ src/sounds/freedesktop/stereo/suspend-error.sound          | 3 ++-
+ src/sounds/freedesktop/stereo/suspend-resume.sound         | 3 ++-
+ src/sounds/freedesktop/stereo/suspend-start.sound          | 3 ++-
+ src/sounds/freedesktop/stereo/system-bootup.sound          | 3 ++-
+ src/sounds/freedesktop/stereo/system-ready.sound           | 3 ++-
+ src/sounds/freedesktop/stereo/system-shutdown-reboot.sound | 3 ++-
+ src/sounds/freedesktop/stereo/system-shutdown.sound        | 3 ++-
+ 7 files changed, 14 insertions(+), 7 deletions(-)
+
+commit 6bbf8fd8578b9ef084c736322d554b28dedb5438
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue May 5 20:53:52 2020 -0600
+
+    add batter notifications to incredibles
+
+ src/sounds/Incredibles/stereo/battery-charging.oga | Bin 0 -> 35186 bytes
+ .../Incredibles/stereo/battery-discharging.oga     | Bin 0 -> 103886 bytes
+ src/sounds/Incredibles/stereo/battery-empty.oga    | Bin 0 -> 30304 bytes
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit c60903c4d524a6c146935af5917c0d2d43c3e685
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue May 5 20:45:56 2020 -0600
+
+    add some battery notifications
+
+ src/sounds/freedesktop/stereo/battery-charging.sound    | 5 +++++
+ src/sounds/freedesktop/stereo/battery-discharging.sound | 5 +++++
+ src/sounds/freedesktop/stereo/battery-empty.sound       | 5 +++++
+ 3 files changed, 15 insertions(+)
+
+commit 2c374f3e40300b96733dbe4f4241fcda07127987
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue May 5 05:09:48 2020 -0600
+
+    update manpage slightly
+
+ man/sound.pod | 26 +++++++++++++-------------
+ 1 file changed, 13 insertions(+), 13 deletions(-)
+
+commit ff7484fe64840bbadec37bcc8d8e7ae1bbb9ce0a
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue May 5 05:09:26 2020 -0600
+
+    swap thermal-caution and thermal-hot for incredibles
+
+ .../Incredibles/stereo/thermal-caution.oga       | Bin 42926 -> 305578 bytes
+ src/sounds/Incredibles/stereo/thermal-hot.oga    | Bin 305578 -> 42926 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 802d56507756cea48a4bd060f63bfb7f15b65a82
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon May 4 04:36:12 2020 -0600
+
+    handle window moves and resizes
+
+ man/sound.pod                                    | 176 ++++++++++++++++---
+ .../stereo/window-move-end-cancel.sound          |   5 +
+ ....sound => window-move-end-snap-attract.sound} |   0
+ ...el.sound => window-move-end-snap-repel.sound} |   0
+ ...-attract.sound => window-move-end-snap.sound} |   4 +-
+ .../stereo/window-move-start-bottom.sound        |   5 +
+ .../stereo/window-move-start-bottomleft.sound    |   5 +
+ .../stereo/window-move-start-bottomright.sound   |   5 +
+ .../stereo/window-move-start-left.sound          |   5 +
+ .../stereo/window-move-start-right.sound         |   5 +
+ .../stereo/window-move-start-top.sound           |   5 +
+ .../stereo/window-move-start-topleft.sound       |   5 +
+ .../stereo/window-move-start-topright.sound      |   5 +
+ ... => window-move-start-unsnap-unattract.sound} |   0
+ ...nd => window-move-start-unsnap-unrepel.sound} |   0
+ ...ract.sound => window-move-start-unsnap.sound} |   4 +-
+ .../stereo/window-resize-end-cancel.sound        |   6 +
+ ...ound => window-resize-end-snap-attract.sound} |   0
+ ....sound => window-resize-end-snap-repel.sound} |   0
+ ...ttract.sound => window-resize-end-snap.sound} |   6 +-
+ .../stereo/window-resize-start-bottom.sound      |   6 +
+ .../stereo/window-resize-start-bottomleft.sound  |   6 +
+ .../stereo/window-resize-start-bottomright.sound |   6 +
+ .../stereo/window-resize-start-left.sound        |   6 +
+ .../stereo/window-resize-start-right.sound       |   6 +
+ .../stereo/window-resize-start-top.sound         |   6 +
+ .../stereo/window-resize-start-topleft.sound     |   6 +
+ .../stereo/window-resize-start-topright.sound    |   6 +
+ ...> window-resize-start-unsnap-unattract.sound} |   0
+ ... => window-resize-start-unsnap-unrepel.sound} |   0
+ ...ct.sound => window-resize-start-unsnap.sound} |   6 +-
+ 31 files changed, 259 insertions(+), 36 deletions(-)
+
+commit 91229cdbf206ad34d468c7f0af4b95597013525d
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Thu Apr 30 04:09:32 2020 -0600
+
+    post-release update
+
+ AUTHORS   |   2 +-
+ ChangeLog | 138 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ NEWS      |  22 +++++++---
+ README.md |  18 ++++----
+ 4 files changed, 165 insertions(+), 15 deletions(-)
+
 commit 4c4739744cef5c6a93613bffd8e724dae291fa0b
 Author: Brian Bidulock <bidulock@openss7.org>
 Date:   Thu Apr 30 03:57:46 2020 -0600

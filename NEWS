@@ -1,4 +1,39 @@
-xde-sounds -- history of user-visible changes.  2020-04-30
+xde-sounds -- history of user-visible changes.  2020-05-10
+
+Release xde-sounds-1.1 released 2020-05-10
+------------------------------------------
+
+git tag -n100 -l 1.1
+
+1.1             Maintenance Release 1.1
+
+    This is the second release of the xde-sounds package that provides
+    desktop sounds for the XDE (X Desktop Environment). It provides the
+    necessary sound themes to work with XDE tools as well as providing the
+    default theme for XDE.
+
+    This release is a maintenance release.
+
+    Included in the release is an autoconf tarball for building the package
+    from source. See the NEWS and TODO file in the release for more
+    information. Please report problems to the issues list on GitHub.
+
+git shortlog -e -n -w80,6,8 1.0...1.1
+
+Brian Bidulock <bidulock@openss7.org> (12):
+      post-release update
+      handle window moves and resizes
+      swap thermal-caution and thermal-hot for incredibles
+      update manpage slightly
+      add some battery notifications
+      add batter notifications to incredibles
+      remove echo from sox effects for some sounds
+      add device specific events for battery and thermal
+      improve a few sounds
+      more sound improvements
+      a few better sounds
+      a few more speech tweaks
+
 
 Release xde-sounds-1.0 released 2020-04-30
 ------------------------------------------
