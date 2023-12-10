@@ -1,5 +1,17 @@
 # created with git log --stat=76 -M -C -500|fmt -sct -w80
 
+commit 5f169fff8615343c404d5dac15cb2b573dcbc705
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sat Dec 9 21:11:10 2023 -0700
+
+    update release files
+
+ AUTHORS   |  2 +-
+ ChangeLog | 78 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ NEWS      | 18 +++++++++++++-
+ README.md |  8 +++---
+ 4 files changed, 100 insertions(+), 6 deletions(-)
+
 commit dae5958042509ce659692505d9db30d2bbbc22fa
 Author: Brian Bidulock <bidulock@openss7.org>
 Date:   Sat Dec 9 21:10:12 2023 -0700

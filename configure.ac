@@ -2,8 +2,8 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.71])
-AC_INIT([xde-sounds],[1.1.2],[https://github.com/bbidulock/xde-sounds],[xde-sounds])
-AC_REVISION([1.1.2])
+AC_INIT([xde-sounds],[1.2],[https://github.com/bbidulock/xde-sounds],[xde-sounds])
+AC_REVISION([1.2])
 
 # set better defaults
 AC_PREFIX_DEFAULT([/usr])
@@ -17,17 +17,17 @@ AC_CONFIG_SRCDIR([configure.ac])
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_AUX_DIR([scripts])
 
-DATE='2022-01-27'
+DATE='2023-12-09'
 AC_SUBST([DATE])
 
-MDOCDATE='January 27, 2022'
+MDOCDATE='December 9, 2023'
 AC_SUBST([MDOCDATE])
 
-BRANCH='master'
+BRANCH='1.2'
 AC_SUBST([BRANCH])
 
 # Initialize Automake
-AM_INIT_AUTOMAKE([1.16 dist-lzip no-dist-gzip std-options -Wall color-tests silent-rules tar-pax])
+AM_INIT_AUTOMAKE([gnits 1.16 dist-lzip no-dist-gzip std-options -Wall color-tests silent-rules tar-pax])
 AM_MAINTAINER_MODE
 AM_SILENT_RULES([yes])
 

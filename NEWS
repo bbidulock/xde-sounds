@@ -1,11 +1,11 @@
-xde-sounds -- history of user-visible changes.  2022-01-27
+xde-sounds -- history of user-visible changes.  2023-12-09
 
-Release xde-sounds-1.1.8 released 2023-12-09
---------------------------------------------
+Release xde-sounds-1.2 released 2023-12-09
+------------------------------------------
 
-git shortlog -e -n -w80,6,8 1.1...HEAD
+git shortlog -e -n -w80,6,8 1.1...1.2
 
-Brian Bidulock <bidulock@openss7.org> (8):
+Brian Bidulock <bidulock@openss7.org> (9):
       post release update
       update build flags
       speed up tempo on male voices
@@ -14,6 +14,7 @@ Brian Bidulock <bidulock@openss7.org> (8):
       add github.io file
       update release file
       release targets
+      update release files
 
 
 Release xde-sounds-1.1 released 2020-06-10
