@@ -85,3 +85,7 @@ NOTES.html: NOTES
 TODO.html: TODO
 	$(AM_V_GEN)$(ASCIIDOC) -o - $< >$@
 
+release-files: $(DISTCLEANFILES)
+
+release-clean:
+	-test -z "$(DISTCLEANFILES)" || rm -f $(DISTCLEANFILES)
