@@ -90,7 +90,7 @@ $(flite_M_oga_files): sounds/flite-M/stereo/%.oga: $(srcdir)/sounds/freedesktop/
 	if test -n "$$text"; then \
 		voice=$$(cat "$<"|sed -n '/^Speaker[[]M[]]/{s,Speaker[[]M[]]=,,;p;q}') ; \
 		$(FLITE) -voice $(FLITEDIR)/$${voice:-$(MVOICE)}.flitevox -t "$$text" -o /dev/stdout | \
-		$(SOX) -t wav - -t ogg "$@" $(EFFECTS) gain -n -3 ; \
+		$(SOX) -t wav - -t ogg "$@" tempo -s 1.2 $(EFFECTS) gain -n -3 ; \
 	fi
 
 $(flite_M_dis_files): sounds/flite-M/stereo/%.disabled: $(srcdir)/sounds/freedesktop/stereo/%.sound
