@@ -1,9 +1,9 @@
-[xde-sounds -- release notes.  2020-06-10]: #
+[xde-sounds -- release notes.  2023-12-09]: #
 
-Maintenance Release 1.1
+Maintenance Release 1.2
 =======================
 
-This is the second release of the xde-sounds package that provides
+This is the third release of the xde-sounds package that provides
 desktop sounds for the _XDE (X Desktop Environment)_.  It provides the
 necessary sound themes to work with XDE tools as well as providing the
 default theme for _XDE_.
