@@ -1,5 +1,83 @@
 # created with git log --stat=76 -M -C -500|fmt -sct -w80
 
+commit dae5958042509ce659692505d9db30d2bbbc22fa
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sat Dec 9 21:10:12 2023 -0700
+
+    release targets
+
+ Makefile.am | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit f3240df9e4e5fdeec0ffc2638b60a1df25d4df62
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sat Dec 9 21:07:29 2023 -0700
+
+    update release file
+
+ RELEASE.md | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit b73392a20c3dcbf7d101087bb5899e0049c333f9
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sat Dec 9 21:02:50 2023 -0700
+
+    add github.io file
+
+ _config.yml | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit ba66cdc8fcee0e75dc71dae7641ac26a6b8b0aca
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sat Dec 9 21:02:15 2023 -0700
+
+    updates
+
+ .gitignore   |  1 +
+ README.md    | 52 +++++++++++++++++---------------
+ README.md.in | 52 +++++++++++++++++---------------
+ configure.ac | 23 +++++++-------
+ configure.sh |  3 ++
+ logo.svg     | 91 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 6 files changed, 161 insertions(+), 61 deletions(-)
+
+commit d13c138c845bd117bc8338ddf8b29a83e089c9fa
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sat Dec 9 21:01:02 2023 -0700
+
+    speed up tempo on male voices
+
+ src/Makefile.am | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit e15656a6f8036948ca52f8764990c38986015872
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sat Dec 9 21:00:48 2023 -0700
+
+    speed up tempo on male voices
+
+ Makefile.am | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+
+commit 893cec008576ff1fc0fd9b002e214c2bde5f6553
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Thu Jan 27 21:16:37 2022 -0700
+
+    update build flags
+
+ configure.sh | 15 +++++++++------
+ 1 file changed, 9 insertions(+), 6 deletions(-)
+
+commit 6fd8bb57b3b0ff49b42eaaa1b72de1bcc5ef9f41
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Wed Jun 10 01:15:06 2020 -0600
+
+    post release update
+
+ ChangeLog | 13 +++++++++++++
+ NEWS      |  3 ++-
+ 2 files changed, 15 insertions(+), 1 deletion(-)
+
 commit 28c741116171d9674009efc5c63722939c992aa3
 Author: Brian Bidulock <bidulock@openss7.org>
 Date:   Wed Jun 10 01:13:08 2020 -0600
